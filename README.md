@@ -10,13 +10,13 @@
 
 You only need to do this _**once**_, not every time you're submitting homework!
 
-1. **Fork this repository**
+**1. Fork this repository**
 
 _'Forking' creates a personal, 'forked' copy of this repository on your Github account._
 
 - Hit the **Fork** button in the top right-hand corner of this page.
 
-2. **Clone your forked repository to your computer**
+**2. Clone your forked repository to your computer**
 
 _'Cloning' takes your 'forked' repository on GitHub and creates a local copy - or 'clone' - on your computer._
 
@@ -25,7 +25,7 @@ _'Cloning' takes your 'forked' repository on GitHub and creates a local copy - o
 - Open your computer's terminal to the directory in which you intend to store your homework.
 - `git clone URL_OF_YOUR_FORK_ON_GITHUB` (where `URL_OF_YOUR_FORK_ON_GITHUB` is the URL you copied after hitting 'Clone or Download', above).
 
-3. **Add an upstream remote repository**
+**3. Add an upstream remote repository**
 
 _Adding an upstream repository links the local repository on your computer to the original repository on Github (i.e. mine, the one from which you created the fork)_
 
