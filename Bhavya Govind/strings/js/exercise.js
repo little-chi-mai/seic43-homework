@@ -65,12 +65,15 @@ fixStartFunc('babble');
 // ```
 //
 function verbing(verb){
-    if(verb.length > 3){
+ const verbing = verb.substring(verb.length - 3);
+    if(verb.length > 3 && verbing === `ing`){
+      verb = verb + `ly`;
+    }else if(verb.length > 3){
       verb = verb + `ing`;
     }
     console.log(verb);
 }
-verbing(`drown`);
+verbing(`drowning`);
 // ## Not Bad
 //
 // Create a function called notBad that takes a single argument, a string.
