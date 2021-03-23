@@ -37,7 +37,7 @@ function verbing(a){
     console.log(a + "ing");
   }
 }
-verbing('swimming');
+verbing('swim');
 
 //not Bad
 function notBad(a){
