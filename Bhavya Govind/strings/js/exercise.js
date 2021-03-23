@@ -13,7 +13,8 @@ const DrEvil = function amount(money){
    console.log(`${ money } dollars (pinky)`);
  }
 }
-
+DrEvil(100);
+DrEvil(23400000);
 
 // ## MixUp
 //
@@ -25,7 +26,11 @@ const DrEvil = function amount(money){
 // ```
 //
 const mixUpFunc = function mixUp(x,y){
-  console.log(`${ x }  ${ y }`);
+ const f2Char = x.slice(0,2);
+ const s2Char = y.slice(0,2);
+ const result = `${x.replace(f2Char,s2Char)} ${y.replace(s2Char,f2Char)}`;
+
+  console.log(result);
 
 }
 mixUpFunc('mix', 'pod');
@@ -89,7 +94,7 @@ function notBad(str){
     if(result.includes(x) && result.includes(y) && (position1 < position2)){
           console.log(`positions ${position1} ${position2}`);
           result = str.replace(/not.*bad/, 'good');
-    } 
+    }
   console.log(result);
 }
 notBad('This movie is not so bad!');
