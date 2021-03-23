@@ -38,3 +38,28 @@ areaOfCircle(4);
   return (percentageResult);
 };
 grandTotal(5);
+
+// warmup
+const displayResult = function (x){
+
+    for  (let i = 1; i <= x; i++);
+    {
+      if ( x/i === 0) {
+        console.log (i);
+        if ( i === 3)
+        {
+          console.log ('Pling');
+        }
+        else if ( i === 5) {
+          console.log ('Plang');
+        }
+        else if (i === 7) {
+          console.log ('Plong')
+        }
+        else {
+          console.log(x.tostring(x))
+        }
+      }
+    }
+  }
+  displayResult(28);
