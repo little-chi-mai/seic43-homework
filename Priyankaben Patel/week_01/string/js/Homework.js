@@ -52,7 +52,7 @@ const fixStart = function (a) {
 verbing('going');
 
 //Create a  function Not Bad
-const notBad = function (z){
+/*const notBad = function (z){
   const separator = "";
   const arrayOfString = z.split(separator);
   for (i = 0, i <= arrayOfString.length; i++);
@@ -69,4 +69,28 @@ const notBad = function (z){
   console.log(stg);
   return stg;
 }
-notBad('This dinner is not that bad!');
+notBad('This dinner is not that bad!');*/
+
+const displayResult = function (x){
+
+    for  (let i = 1; i <= x; i++)
+    {
+      if ( (x / i) === 0) {
+        console.log (i);
+        if ( i === 3)
+        {
+          console.log ('Pling');
+        }
+        else if ( i === 5) {
+          console.log ('Plang');
+        }
+        else if (i === 7) {
+          console.log ('Plong')
+        }
+        else {
+          console.log(x.tostring(x))
+        }
+      }
+    }
+  }
+  displayResult(28);
