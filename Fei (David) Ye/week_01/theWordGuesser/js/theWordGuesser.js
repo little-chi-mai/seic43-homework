@@ -26,71 +26,10 @@
 
 //###David's Word Guesser (Please comment the other 2 version of the game out and uncomment this one to play)#######################
 
-const guessWord = 'Fox';
 
-const guessWordArr = guessWord.split('');
+// let guessWord = 'Fox';  //to lower case
 
-const currentGuessedLettersArr = [];
-
-for (let i = 0; i < guessWordArr.length; i++) {
-    currentGuessedLettersArr.push('_ ');
-}
-
-console.log(currentGuessedLettersArr.join(''));
-
-const guessLetter = (letter) => {
-    console.log(`>>> User guessed letter "${letter}"`)
-    if (guessWordArr.indexOf(letter)===-1) {
-        console.log('No letter matched, please keep trying!');
-    } else {
-        const indices = [];
-        for (let i = 0; i < guessWord.length; i++) {
-            if (guessWord[i] === letter) {
-                indices.push(i);
-                console.log('Congratulations, you find a new letter!')
-            }
-        }
-
-        for (let i = 0; i < indices.length; i++) {
-            currentGuessedLettersArr[indices[i]] = letter;
-        }
-
-        console.log(currentGuessedLettersArr.join(''));
-
-        let remainingLetterNumber = 0;
-        for (let i = 0; i < currentGuessedLettersArr.length; ++i) {
-            if (currentGuessedLettersArr[i] === '_ ') {
-                remainingLetterNumber++
-            }
-        }
-
-        if (remainingLetterNumber!==0) {
-            console.log(`You still have to find ${remainingLetterNumber} letters to win the game!`);
-        } else {
-            console.log(`Congratulations, you have won the game!`)
-        }
-    }
-}
-
-guessLetter('a');
-guessLetter('F');
-guessLetter('o');
-guessLetter('x');
-
-//#################################################################
-
-
-// ## Bonus: Make it more like Wheel of Fortune:
-// - Start with a reward amount of $0
-// - Every time a letter is guessed, generate a random amount and reward the user if they found a letter (multiplying the reward if multiple letters found), otherwise subtract from their reward.
-// - When they guess the word, log their final reward amount.
-
-
-//###David's Wheel of Fortune (Please comment the other 2 version of the game out and uncomment this one to play)####################
-
-// let reward = 0;
-
-// const guessWord = 'Fox';
+// guessWord = guessWord.toLowerCase(); //to lower case
 
 // const guessWordArr = guessWord.split('');
 
@@ -102,101 +41,14 @@ guessLetter('x');
 
 // console.log(currentGuessedLettersArr.join(''));
 
-// const showRewardAmount =()=>{
-//     console.log(`Current reward amount is $${reward}`);
-// }
-
 // const guessLetter = (letter) => {
 
-//     showRewardAmount();
-
-//     let randomAmount = Math.round(Math.random()*100);
+//     letter = letter.toLowerCase();   //to lower case
 
 //     console.log(`>>> User guessed letter "${letter}"`);
 
-//     if (guessWordArr.indexOf(letter)===-1) {
-//         console.log('No letter matched, please keep trying!');
-//         reward-=randomAmount;
-//         console.log(`You lose $${randomAmount}!`);
-//         showRewardAmount();
-//     } else {
-//         const indices = [];
-//         for (let i = 0; i < guessWord.length; i++) {
-//             if (guessWord[i] === letter) {
-//                 indices.push(i);
-//                 console.log('Congratulations, you find a new letter!')
-//                 reward+=randomAmount;
-//                 console.log(`You win $${randomAmount}!`);
-//                 showRewardAmount();
-//             }
-//         }
-
-//         for (let i = 0; i < indices.length; i++) {
-//             currentGuessedLettersArr[indices[i]] = letter;
-//         }
-
-//         console.log(currentGuessedLettersArr.join(''));
-
-//         let remainingLetterNumber = 0;
-//         for (let i = 0; i < currentGuessedLettersArr.length; ++i) {
-//             if (currentGuessedLettersArr[i] === '_ ') {
-//                 remainingLetterNumber++
-//             }
-//         }
-
-//         if (remainingLetterNumber!==0) {
-//             console.log(`You still have to find ${remainingLetterNumber} letters to win the game!`);
-//         } else {
-//             console.log(`Congratulations, you have won the game!`);
-//             showRewardAmount();
-//         }
-//     }
-// }
-
-// guessLetter('a');
-// guessLetter('F');
-// guessLetter('o');
-// guessLetter('x');
-
-//#################################################################
-
-
-// ## Bonus: Make it like Hangman:
-// - Keep track of all the guessed letters (right and wrong) and only let the user guess a letter once. If they guess a letter twice, do nothing.
-// - Keep track of the state of the hangman as a number (starting at 0), and subtract or add to that number every time they make a wrong guess.
-// - Once the number reaches 6 (a reasonable number of body parts for a hangman), inform the user that they lost and show a hangman on the log.
-
-
-//###David's Hangman (Please comment the other 2 version of the game out and uncomment this one to play)###########################
-
-// let hangman = 0;
-
-// const guessWord = 'Fox';
-
-// const guessWordArr = guessWord.split('');
-
-// const currentGuessedLettersArr = [];
-
-// for (let i = 0; i < guessWordArr.length; i++) {
-//     currentGuessedLettersArr.push('_ ');
-// }
-
-// console.log(currentGuessedLettersArr.join(''));
-
-// const letterArr = [];
-
-// const guessLetter = (letter) => {
-
-//     console.log(`>>> User guessed letter "${letter}"`)
-
 //     if (guessWordArr.indexOf(letter) === -1) {
-//         if (letterArr.indexOf(letter) === -1) {
-//             console.log('No letter matched, please keep trying!');
-//             hangman++;
-//         } else {
-//             console.log(`You have already guessed this letter!`);
-//         }
-//         letterArr.push(letter);
+//         console.log('No letter matched, please keep trying!');
 //     } else {
 //         const indices = [];
 //         for (let i = 0; i < guessWord.length; i++) {
@@ -207,7 +59,16 @@ guessLetter('x');
 //         }
 
 //         for (let i = 0; i < indices.length; i++) {
-//             currentGuessedLettersArr[indices[i]] = letter;
+//             //to uppser case
+
+//             if (indices[i] === 0) {
+//                 currentGuessedLettersArr[indices[i]] = letter.toUpperCase();
+//             } else {
+//                 currentGuessedLettersArr[indices[i]] = letter;
+//             }
+
+
+//             //to upper case
 //         }
 
 //         console.log(currentGuessedLettersArr.join(''));
@@ -225,31 +86,207 @@ guessLetter('x');
 //             console.log(`Congratulations, you have won the game!`)
 //         }
 //     }
-
-//     if (hangman >= 6) {
-//         console.log('Sorry, you lost!');
-//         console.log('  |');
-//         console.log('  |');
-//         console.log('  o');
-//         console.log(' /|\\');
-//         console.log('  /\\');
-//     }
 // }
 
 
+// guessLetter('a');
+// guessLetter('f');
+// guessLetter('o');
+// guessLetter('x');
 
-// guessLetter('b');
-// guessLetter('b');
-// guessLetter('b');
-// guessLetter('b');
-// guessLetter('b');
-// guessLetter('b');
+
+//#################################################################
+
+
+// ## Bonus: Make it more like Wheel of Fortune:
+// - Start with a reward amount of $0
+// - Every time a letter is guessed, generate a random amount and reward the user if they found a letter (multiplying the reward if multiple letters found), otherwise subtract from their reward.
+// - When they guess the word, log their final reward amount.
+
+
+//###David's Wheel of Fortune (Please comment the other 2 version of the game out and uncomment this one to play)####################
+
+
+// let reward = 0;
+
+// let guessWord = 'DEDUCT';
+
+// guessWord = guessWord.toLowerCase();
+
+// const guessWordArr = guessWord.split('');
+
+// const currentGuessedLettersArr = [];
+
+// for (let i = 0; i < guessWordArr.length; i++) {
+//     currentGuessedLettersArr.push('_ ');
+// }
+
+// console.log(currentGuessedLettersArr.join(''));
+
+// const showRewardAmount = () => {
+//     console.log(`Current reward amount is $${reward}`);
+// }
+
+// const guessLetter = (letter) => {
+
+//     letter = letter.toLowerCase();
+
+//     showRewardAmount();
+
+//     let randomAmount = Math.round(Math.random() * 100);
+
+//     console.log(`>>> User guessed letter "${letter}"`);
+
+//     if (guessWordArr.indexOf(letter) === -1) {
+//         console.log('No letter matched, please keep trying!');
+//         reward -= randomAmount;
+//         console.log(`You lose $${randomAmount}!`);
+//         showRewardAmount();
+//     } else {
+//         const indices = [];
+//         for (let i = 0; i < guessWord.length; i++) {
+//             if (guessWord[i] === letter) {
+//                 indices.push(i);
+//                 console.log('Congratulations, you find a new letter!')
+//                 reward += randomAmount;
+//                 console.log(`You win $${randomAmount}!`);
+//                 showRewardAmount();
+//             }
+//         }
+
+//         for (let i = 0; i < indices.length; i++) {
+
+//             if (indices[i] === 0) {
+//                 currentGuessedLettersArr[indices[i]] = letter.toUpperCase();
+//             } else {
+//                 currentGuessedLettersArr[indices[i]] = letter;
+//             }
+//         }
+
+//         console.log(currentGuessedLettersArr.join(''));
+
+//         let remainingLetterNumber = 0;
+//         for (let i = 0; i < currentGuessedLettersArr.length; ++i) {
+//             if (currentGuessedLettersArr[i] === '_ ') {
+//                 remainingLetterNumber++
+//             }
+//         }
+
+//         if (remainingLetterNumber !== 0) {
+//             console.log(`You still have to find ${remainingLetterNumber} letters to win the game!`);
+//         } else {
+//             console.log(`Congratulations, you have won the game!`);
+//             showRewardAmount();
+//         }
+//     }
+// }
 
 // guessLetter('d');
-// guessLetter('e');
+// guessLetter('a');
 // guessLetter('f');
-// guessLetter('g');
-// guessLetter('h');
+// guessLetter('e');
+// guessLetter('u');
+// guessLetter('c');
+// guessLetter('t');
+
+//#################################################################
+
+
+// ## Bonus: Make it like Hangman:
+// - Keep track of all the guessed letters (right and wrong) and only let the user guess a letter once. If they guess a letter twice, do nothing.
+// - Keep track of the state of the hangman as a number (starting at 0), and subtract or add to that number every time they make a wrong guess.
+// - Once the number reaches 6 (a reasonable number of body parts for a hangman), inform the user that they lost and show a hangman on the log.
+
+
+//###David's Hangman (Please comment the other 2 version of the game out and uncomment this one to play)###########################
+
+let hangman = 0;
+
+let guessWord = 'Fox';  //to lower case
+
+guessWord = guessWord.toLowerCase(); //to lower case
+
+const guessWordArr = guessWord.split('');
+
+const currentGuessedLettersArr = [];
+
+for (let i = 0; i < guessWordArr.length; i++) {
+    currentGuessedLettersArr.push('_ ');
+}
+
+console.log(currentGuessedLettersArr.join(''));
+
+const letterArr = [];
+
+const guessLetter = (letter) => {
+
+    letter = letter.toLowerCase();
+
+    console.log(`>>> User guessed letter "${letter}"`)
+
+    if (guessWordArr.indexOf(letter) === -1) {
+        if (letterArr.indexOf(letter) === -1) {
+            console.log('No letter matched, please keep trying!');
+            hangman++;
+        } else {
+            console.log(`You have already guessed this letter!`);
+        }
+        letterArr.push(letter);
+    } else {
+        const indices = [];
+        for (let i = 0; i < guessWord.length; i++) {
+            if (guessWord[i] === letter) {
+                indices.push(i);
+                console.log('Congratulations, you find a new letter!')
+            }
+        }
+
+        for (let i = 0; i < indices.length; i++) {
+            if (indices[i] === 0) {
+                currentGuessedLettersArr[indices[i]] = letter.toUpperCase();
+            } else {
+                currentGuessedLettersArr[indices[i]] = letter;
+            }
+        }
+
+        console.log(currentGuessedLettersArr.join(''));
+
+        let remainingLetterNumber = 0;
+        for (let i = 0; i < currentGuessedLettersArr.length; ++i) {
+            if (currentGuessedLettersArr[i] === '_ ') {
+                remainingLetterNumber++
+            }
+        }
+
+        if (remainingLetterNumber !== 0) {
+            console.log(`You still have to find ${remainingLetterNumber} letters to win the game!`);
+        } else {
+            console.log(`Congratulations, you have won the game!`)
+        }
+    }
+
+    if (hangman >= 6) {
+        console.log('Sorry, you lost!');
+        console.log('  |');
+        console.log('  |');
+        console.log('  o');
+        console.log(' /|\\');
+        console.log('  /\\');
+    }
+}
+
+
+for (let i = 0; i < 6; i++) {
+    guessLetter('b'); 
+}
+
+guessLetter('d');
+guessLetter('e');
+guessLetter('f');
+guessLetter('g');
+guessLetter('h');
+guessLetter('j');
+
 
 
 
