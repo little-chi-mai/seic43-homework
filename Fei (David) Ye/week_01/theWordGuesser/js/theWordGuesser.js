@@ -16,7 +16,7 @@
 
 // David's comment of the game:
 // Things to improve if had more time:
-// 1. Make the guess letter case insensitive
+// 1. Make the guess letter case insensitive  --- Solved!
 // 2. Reduce some redundant log
 // 3. Add more interation, e.g. allow user to prompt a word for another user to guess
 // 4. Add some HTML and CSS to make it look better
@@ -27,72 +27,72 @@
 //###David's Word Guesser (Please comment the other 2 version of the game out and uncomment this one to play)#######################
 
 
-// let guessWord = 'Fox';  //to lower case
+let guessWord = 'Fox';  //to lower case
 
-// guessWord = guessWord.toLowerCase(); //to lower case
+guessWord = guessWord.toLowerCase(); //to lower case
 
-// const guessWordArr = guessWord.split('');
+const guessWordArr = guessWord.split('');
 
-// const currentGuessedLettersArr = [];
+const currentGuessedLettersArr = [];
 
-// for (let i = 0; i < guessWordArr.length; i++) {
-//     currentGuessedLettersArr.push('_ ');
-// }
+for (let i = 0; i < guessWordArr.length; i++) {
+    currentGuessedLettersArr.push('_ ');
+}
 
-// console.log(currentGuessedLettersArr.join(''));
+console.log(currentGuessedLettersArr.join(''));
 
-// const guessLetter = (letter) => {
+const guessLetter = (letter) => {
 
-//     letter = letter.toLowerCase();   //to lower case
+    letter = letter.toLowerCase();   //to lower case
 
-//     console.log(`>>> User guessed letter "${letter}"`);
+    console.log(`>>> User guessed letter "${letter}"`);
 
-//     if (guessWordArr.indexOf(letter) === -1) {
-//         console.log('No letter matched, please keep trying!');
-//     } else {
-//         const indices = [];
-//         for (let i = 0; i < guessWord.length; i++) {
-//             if (guessWord[i] === letter) {
-//                 indices.push(i);
-//                 console.log('Congratulations, you find a new letter!')
-//             }
-//         }
+    if (guessWordArr.indexOf(letter) === -1) {
+        console.log('No letter matched, please keep trying!');
+    } else {
+        const indices = [];
+        for (let i = 0; i < guessWord.length; i++) {
+            if (guessWord[i] === letter) {
+                indices.push(i);
+                console.log('Congratulations, you find a new letter!')
+            }
+        }
 
-//         for (let i = 0; i < indices.length; i++) {
-//             //to uppser case
+        for (let i = 0; i < indices.length; i++) {
+            //to uppser case
 
-//             if (indices[i] === 0) {
-//                 currentGuessedLettersArr[indices[i]] = letter.toUpperCase();
-//             } else {
-//                 currentGuessedLettersArr[indices[i]] = letter;
-//             }
-
-
-//             //to upper case
-//         }
-
-//         console.log(currentGuessedLettersArr.join(''));
-
-//         let remainingLetterNumber = 0;
-//         for (let i = 0; i < currentGuessedLettersArr.length; ++i) {
-//             if (currentGuessedLettersArr[i] === '_ ') {
-//                 remainingLetterNumber++
-//             }
-//         }
-
-//         if (remainingLetterNumber !== 0) {
-//             console.log(`You still have to find ${remainingLetterNumber} letters to win the game!`);
-//         } else {
-//             console.log(`Congratulations, you have won the game!`)
-//         }
-//     }
-// }
+            if (indices[i] === 0) {
+                currentGuessedLettersArr[indices[i]] = letter.toUpperCase();
+            } else {
+                currentGuessedLettersArr[indices[i]] = letter;
+            }
 
 
-// guessLetter('a');
-// guessLetter('f');
-// guessLetter('o');
-// guessLetter('x');
+            //to upper case
+        }
+
+        console.log(currentGuessedLettersArr.join(''));
+
+        let remainingLetterNumber = 0;
+        for (let i = 0; i < currentGuessedLettersArr.length; ++i) {
+            if (currentGuessedLettersArr[i] === '_ ') {
+                remainingLetterNumber++
+            }
+        }
+
+        if (remainingLetterNumber !== 0) {
+            console.log(`You still have to find ${remainingLetterNumber} letters to win the game!`);
+        } else {
+            console.log(`Congratulations, you have won the game!`)
+        }
+    }
+}
+
+
+guessLetter('a');
+guessLetter('f');
+guessLetter('o');
+guessLetter('x');
 
 
 //#################################################################
@@ -200,92 +200,92 @@
 
 //###David's Hangman (Please comment the other 2 version of the game out and uncomment this one to play)###########################
 
-let hangman = 0;
+// let hangman = 0;
 
-let guessWord = 'Fox';  //to lower case
+// let guessWord = 'Fox';  //to lower case
 
-guessWord = guessWord.toLowerCase(); //to lower case
+// guessWord = guessWord.toLowerCase(); //to lower case
 
-const guessWordArr = guessWord.split('');
+// const guessWordArr = guessWord.split('');
 
-const currentGuessedLettersArr = [];
+// const currentGuessedLettersArr = [];
 
-for (let i = 0; i < guessWordArr.length; i++) {
-    currentGuessedLettersArr.push('_ ');
-}
+// for (let i = 0; i < guessWordArr.length; i++) {
+//     currentGuessedLettersArr.push('_ ');
+// }
 
-console.log(currentGuessedLettersArr.join(''));
+// console.log(currentGuessedLettersArr.join(''));
 
-const letterArr = [];
+// const letterArr = [];
 
-const guessLetter = (letter) => {
+// const guessLetter = (letter) => {
 
-    letter = letter.toLowerCase();
+//     letter = letter.toLowerCase();
 
-    console.log(`>>> User guessed letter "${letter}"`)
+//     console.log(`>>> User guessed letter "${letter}"`)
 
-    if (guessWordArr.indexOf(letter) === -1) {
-        if (letterArr.indexOf(letter) === -1) {
-            console.log('No letter matched, please keep trying!');
-            hangman++;
-        } else {
-            console.log(`You have already guessed this letter!`);
-        }
-        letterArr.push(letter);
-    } else {
-        const indices = [];
-        for (let i = 0; i < guessWord.length; i++) {
-            if (guessWord[i] === letter) {
-                indices.push(i);
-                console.log('Congratulations, you find a new letter!')
-            }
-        }
+//     if (guessWordArr.indexOf(letter) === -1) {
+//         if (letterArr.indexOf(letter) === -1) {
+//             console.log('No letter matched, please keep trying!');
+//             hangman++;
+//         } else {
+//             console.log(`You have already guessed this letter!`);
+//         }
+//         letterArr.push(letter);
+//     } else {
+//         const indices = [];
+//         for (let i = 0; i < guessWord.length; i++) {
+//             if (guessWord[i] === letter) {
+//                 indices.push(i);
+//                 console.log('Congratulations, you find a new letter!')
+//             }
+//         }
 
-        for (let i = 0; i < indices.length; i++) {
-            if (indices[i] === 0) {
-                currentGuessedLettersArr[indices[i]] = letter.toUpperCase();
-            } else {
-                currentGuessedLettersArr[indices[i]] = letter;
-            }
-        }
+//         for (let i = 0; i < indices.length; i++) {
+//             if (indices[i] === 0) {
+//                 currentGuessedLettersArr[indices[i]] = letter.toUpperCase();
+//             } else {
+//                 currentGuessedLettersArr[indices[i]] = letter;
+//             }
+//         }
 
-        console.log(currentGuessedLettersArr.join(''));
+//         console.log(currentGuessedLettersArr.join(''));
 
-        let remainingLetterNumber = 0;
-        for (let i = 0; i < currentGuessedLettersArr.length; ++i) {
-            if (currentGuessedLettersArr[i] === '_ ') {
-                remainingLetterNumber++
-            }
-        }
+//         let remainingLetterNumber = 0;
+//         for (let i = 0; i < currentGuessedLettersArr.length; ++i) {
+//             if (currentGuessedLettersArr[i] === '_ ') {
+//                 remainingLetterNumber++
+//             }
+//         }
 
-        if (remainingLetterNumber !== 0) {
-            console.log(`You still have to find ${remainingLetterNumber} letters to win the game!`);
-        } else {
-            console.log(`Congratulations, you have won the game!`)
-        }
-    }
+//         if (remainingLetterNumber !== 0) {
+//             console.log(`You still have to find ${remainingLetterNumber} letters to win the game!`);
+//         } else {
+//             console.log(`Congratulations, you have won the game!`)
+//         }
+//     }
 
-    if (hangman >= 6) {
-        console.log('Sorry, you lost!');
-        console.log('  |');
-        console.log('  |');
-        console.log('  o');
-        console.log(' /|\\');
-        console.log('  /\\');
-    }
-}
+//     if (hangman >= 6) {
+//         console.log('Sorry, you lost!');
+//         console.log('  |');
+//         console.log('  |');
+//         console.log('  o');
+//         console.log(' /|\\');
+//         console.log('  /\\');
+//     }
+// }
 
 
-for (let i = 0; i < 6; i++) {
-    guessLetter('b'); 
-}
+// for (let i = 0; i < 6; i++) {
+//     guessLetter('b'); 
+// }
 
-guessLetter('d');
-guessLetter('e');
-guessLetter('f');
-guessLetter('g');
-guessLetter('h');
-guessLetter('j');
+// guessLetter('d');
+// guessLetter('e');
+// guessLetter('f');
+// guessLetter('g');
+// guessLetter('h');
+// guessLetter('j');
 
 
 
