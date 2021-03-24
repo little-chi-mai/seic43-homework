@@ -1,5 +1,5 @@
 consol.log( "Priyanka");
-
+//
 /*  const squareNumber = function (number){
   result = number * number;
   return result;
