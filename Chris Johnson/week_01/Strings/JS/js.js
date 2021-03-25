@@ -9,12 +9,16 @@ console.log(DrEvil(1000000));
 
 // Word Mixer
 const mixedUp = function(word1, word2){
+
 let startWord1 = ( word1.charAt(0) + word1.charAt(1) )
 let startWord2 = ( word2.charAt(0) + word2.charAt(1) )
+
 let endWord1 = word1.slice(2);
 let endWord2 = word2.slice(2);
+
 let mixedWord1 = (startWord2 + endWord1);
 let mixedWord2 = (startWord1 + endWord2);
+
 return (mixedWord1 + " " + mixedWord2);
 }
 console.log (mixedUp("New York", "Boston"));
@@ -42,3 +46,5 @@ const verbing = function (verb){
       else {return word};
 }
 console.log(verbing("running"));
+
+const notBad = function ()
