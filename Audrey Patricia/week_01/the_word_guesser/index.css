@@ -1,0 +1,16 @@
+body{
+  text-align: center;
+}
+
+h1{
+  font-family: 'Train One', cursive;
+  font-size: 100px;
+}
+
+h3{
+  font-size: 48px;
+}
+
+ul{
+  list-style-position: inside;
+}
