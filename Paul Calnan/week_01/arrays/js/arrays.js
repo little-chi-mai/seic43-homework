@@ -48,7 +48,7 @@ const sumArray = function(numbers) {
 console.log(sumArray([1, 2, 3, 4]));
 
 const multiplyArray = function(numbers) {
-  let total = 1; // <- tricked me for a bit - 
+  let total = 1; // <- tricked me for a bit -
   for (i = 0; i < numbers.length; i++) {
     total = (total * numbers[i]);
   }
@@ -94,7 +94,7 @@ const filterLongWords = function(str, num) {
 
   for (i = 0; i < words.length; i++) {
     if (words[i].length > num) {
-      longestWords[longestWords.length] = words[i];
+      longestWords.push(words[i]);
     }
   }
   return longestWords;
