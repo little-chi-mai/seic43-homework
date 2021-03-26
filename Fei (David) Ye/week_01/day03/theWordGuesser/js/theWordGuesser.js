@@ -19,15 +19,16 @@
 // 1. Make the guess letter case insensitive  --- Solved!
 // 2. Reduce some redundant log
 // 3. Add more interation, e.g. allow user to prompt a word for another user to guess
-// 4. Add some HTML and CSS to make it look better
+// 4. Add some HTML and CSS to make it look better  --- Audrey did that
 // 5. The code might need refactoring to improve the quality
 // 6. Add more comment to the statements.
+// 7. Design the interface in console and refresh the console when user make a guess --- Chris did that
 
 
 //###David's Word Guesser (Please comment the other 2 version of the game out and uncomment this one to play)#######################
 
 
-let guessWord = 'Fox';  //to lower case
+let guessWord = 'Fox'; 
 
 guessWord = guessWord.toLowerCase(); //to lower case
 
@@ -90,9 +91,9 @@ const guessLetter = (letter) => {
 
 
 guessLetter('a');
-guessLetter('f');
-guessLetter('o');
-guessLetter('x');
+// guessLetter('f');
+// guessLetter('O');
+// guessLetter('x');
 
 
 //#################################################################
