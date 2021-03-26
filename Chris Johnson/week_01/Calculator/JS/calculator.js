@@ -1,6 +1,6 @@
 console.log("hello world");
 
-/*
+w
 const squareNumber = function (number) {
   let output = (number * number);
   console.log (`The result of squaring the number ${number} is ${output}`);
@@ -52,9 +52,10 @@ const whyDoThis = function(poorNumber){
 }
 
 whyDoThis(10);
-*/
 
 
+
+/*
 const warmup = function(numInput){
 
   let output = ""
@@ -78,3 +79,4 @@ return output
 }
 
 console.log(warmup(41));
+*/

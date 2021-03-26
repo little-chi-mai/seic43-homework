@@ -25,6 +25,16 @@ const mixUp = function(a,b){
 }
 mixUp("itchy","scratchy");
 
+// EXAMPLE OF SPLIT AND RETURN BACKWARDS
+// var str = "abcba";
+//
+// function isPalindrome(str) {
+//   // split the string to array, reverse the array, then join the array with ''
+//   return str === str.split('').reverse().join('');
+// }
+//
+// isPalindrome(str); // return true
+
 //
 // FixStart
 // Create a function called fixStart. It should take a single argument, a string,
