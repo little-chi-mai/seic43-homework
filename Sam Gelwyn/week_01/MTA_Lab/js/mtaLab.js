@@ -28,13 +28,33 @@ const planTrip = function (startLine, startStop, finshLine, finishStop) {
 //   * The L line has the following stops: 8th, 6th, Union Square, 3rd, and 1st
 //   * The 6 line has the following stops: Grand Central, 33rd, 28th, 23rd, Union Square, and Astor Place.
 //   * All 3 subway lines intersect at Union Square, but there are no other intersection points. (For example, this means the 28th stop on the N line is different than the 28th street stop on the 6 line, so you'll have to differentiate this when you name your stops in the arrays.)
- const lines = [
-   { name: "N", stops: ["Times Square", "34th", "28th", "23rd", "Union Square", "8th"]},
-   { name: "L", stops: ["8th", "6th", "Union Square", "3rd", "1st"]},
-   { name: "6", stops: ["Grand Central", "33rd", "28th", "23rd", "Union Square", "Astor Place"]}
- ];
+
+// setting up lines
+
+const lines = {
+  N: ["Times Square", "34th", "28th", "Union Square", "8th"],
+  L: ["8th", "6th", "Union Square", "3rd", "1st"],
+  6: ["Grand Central", "33rd", "28th", "23rd", "Union Square", "Astor Place"]
+};
+
+//  first go at tripPlan function
+
+const tripPlan = function(startLine, startStop, finishLine, finishStop){
+  return;
+}
 
 
+const arrStopsA = [];
+const arrStopsB = [];
+const arrStopsTotal = [];
+
+const legA = lines[startLine];
+const legB = lines[finishLine];
+
+const startIndex = legA.indexOf(startStop);
+const unionIndexA = legA.indexOf("Union Square");
+const unionIndexB = legB.indexOf("Union Square");
+const finishIndex = legB.indexOf(finishStop);
 
 
 // * Tell the user the number of stops AND the stops IN ORDER that they will pass through or change at.
@@ -48,8 +68,28 @@ const planTrip = function (startLine, startStop, finshLine, finishStop) {
 // * The key to the lab is finding the index positions of each stop. (hint: ```indexOf()```)
 // * Make sure the stops that are the same for different lines have different names (i.e. 23rd on the N and on the 6 need to be differentiated)
 
-// // const myArray = [1,2,3,4,5,6,7,8];
-// //for (let i = myArray.length - 1; i >= 0; i--){
-// //    console.log(myArray[i])
-// //};
+   // const myArray = [1,2,3,4,5,6,7,8];
+   //for (let i = myArray.length - 1; i >= 0; i--){
+   //    console.log(myArray[i])
+   //};
+
+    // if same line
+  if (legA === legB) {
+    // travelling forwards
+    if (finishIndex > startIndex) {
+      for (i = startIndex + 1; i <= finishIndex; i++) {
+        arrStopsTotal.push(legA[i]);
+      }
+    }
+    // travelling backwards
+    else {
+      for (i = startIndex - 1; i >= finishIndex; i--) {
+        arrStopsTotal.push(legA[i]);
+      }
+    }
+  };
+
+    // console.log('Travel through these stops on the ' + startLine + ' line: ' + arrStopsTotal.join(', '));
+    // console.log(arrStopsA.length + arrStopsTotal.length + ' stops in total');
+
 
