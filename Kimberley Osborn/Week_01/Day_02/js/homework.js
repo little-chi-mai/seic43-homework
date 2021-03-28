@@ -139,22 +139,3 @@ const fixStart = function (word) {
 // };
 //
 // findFactor(15);
-
-const raindrops = function (number) {
-  const output = '';
-  if (number % 3 === 0) {
-     output = output + 'Pling';
-  }
-  if (number % 5 === 0) {
-     output = output + 'Plong';
-  }
-  if (number % 7 === 0) {
-    output = output + 'Plong';
-  }
-  if (output.length === 0) {
-    //output = number.toString(); // convert a number to a string
-    output = number + '';
-  }
-return output;
-}
-console.log(raindrops(105));
