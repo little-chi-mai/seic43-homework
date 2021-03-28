@@ -51,7 +51,14 @@ const subwayLines =[
   const planTrip = function (getInLine, getInStop, getOutLine, getOutStop) {
     firstMetroLineStops = [];
     secondMetroLineStops = [];
-    let idFound = false;
+  //  let idFound = false;
+    let getInID;
+    let firstTrip = [];
+    let firstTripLineId;
+    let junction = "";
+    let changeLineID;
+    let secondTripLineId;
+    let secondTrip  = [];
     for (let i = 0; i < subwayLines.length; i++) {
 
 // check for getIn ID match in array of subwayLines
@@ -60,50 +67,55 @@ const subwayLines =[
       firstTripLineId = subwayLines[i].id
       firstTrip = subwayLines[i].stops;
       junction = 'Union Square'
-      idFound = true;
+      //idFound = true;
 
-    }
+    };
 // Check for newLine ID and stops
     if (getOutLine === subwayLines[i].id){
       changeLineID = i;
       secondTripLineId = subwayLines[i].id
       secondTrip = subwayLines[i].stops;
-      idFound = true;
-      break;
-    }
-
-    if (!idFound) {
-      return false;
-    }
-  }
-// looping to get the firsttrip before reaching junction
-    for (let index = firstTrip.indexOf(getInStop) + 1; index <=firstTrip.indexOf('Union Square'); index ++) {
-      firstMetroLineStops.push(firstTrip[index]);
+      //idFound = true;
 
     }
+  };
+// looping to get the firsttrip before reaching junction in both direction
+    if (firstTrip.indexOf(getInStop) <= firstTrip.indexOf('Union Square')) {
+      for (let index = firstTrip.indexOf(getInStop) + 1; index <=firstTrip.indexOf('Union Square'); index ++) {
+        firstMetroLineStops.push(firstTrip[index]);
+      }
+    }
+
+    else if (firstTrip.indexOf(getInStop) >= firstTrip.indexOf('Union Square')) {
+      for (let b = firstTrip.indexOf(getInStop) - 1; b >=firstTrip.indexOf('Union Square'); b --) {
+        firstMetroLineStops.push(firstTrip[b]);
+      }
+    };
     console.log('You must travel through the following stops on the ' + firstTripLineId + 'line: ' + firstMetroLineStops + '.')
     console.log('Changed at ' + junction);
 
 // check for change to ID match in array of subwayLines and going backward
-    if (secondTrip.indexOf(getOutStop) < secondTrip.indexOf('Union Square')) {
+    if (secondTrip.indexOf(getOutStop) <= secondTrip.indexOf('Union Square')) {
 
       for (let k = secondTrip.indexOf('Union Square') - 1; k >= secondTrip.indexOf(getOutStop); k --) {
-      secondMetroLineStops.push(secondTrip[k]);
+        secondMetroLineStops.push(secondTrip[k]);
       }
     }
 
-    else if (secondTrip.indexOf(getOutStop) > secondTrip.indexOf('Union Square')){
+    else if (secondTrip.indexOf(getOutStop) >= secondTrip.indexOf('Union Square')){
 // check for change to ID match in array of subwayLines and going forward
       for (let a = secondTrip.indexOf('Union Square') + 1; a <= secondTrip.indexOf(getOutStop); a ++) {
-      secondMetroLineStops.push(secondTrip[a]);
+        secondMetroLineStops.push(secondTrip[a]);
       }
     };
     console.log('Your journey continues through the following stops on ' + secondTripLineId + 'line: ' + secondMetroLineStops );
     console.log(firstMetroLineStops.length + secondMetroLineStops.length + ' total stops');
     return firstMetroLineStops;
-  }
+};
 
 //planTrip('L', 'l8th', 'six', '33rd')
-planTrip('N', 'Times Square', 'L', '1st')
-planTrip('N', '34th', 'L', 'l8th')
-//planTrip('L', '34th', 'six', 'Astor Place')
+//planTrip('N', 'Times Square', 'L', '1st')
+//planTrip('N', '34th', 'L', 'l8th')
+//planTrip('L', '6th', 'six', 'Astor Place')
+//planTrip("six", "Union Square", "N", "Times Square");
+planTrip("L", "1st", "six", "Union Square");
