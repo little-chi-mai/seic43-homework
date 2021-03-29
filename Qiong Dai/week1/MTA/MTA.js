@@ -26,9 +26,9 @@ Consider diagramming the lines by sketching out the subway lines and their stops
 The key to the lab is finding the index positions of each stop. (hint: indexOf())
 Make sure the stops that are the same for different lines have different names (i.e. 23rd on the N and on the 6 need to be differentiated) */
 
-const lineN = ["Times Square", "34th", "28th", "23rd", "Union Square", "8th"];
-const lineL = ["8th", "6th", "Union Square", "3rd", "1st"];
-const line6 = [
+const N = ["Times Square", "34th", "28th", "23rd", "Union Square", "8th"];
+const L = ["8th", "6th", "Union Square", "3rd", "1st"];
+const '6' = [
   "Grand Central",
   "33rd",
   "28th",
