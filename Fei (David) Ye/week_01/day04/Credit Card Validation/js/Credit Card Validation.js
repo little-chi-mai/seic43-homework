@@ -61,9 +61,12 @@ const validateCreditCard = (cardNumber) => {
   let isLastDigitEven =
     (cardNumberArr[cardNumberArr.length - 1] - 0) % 2 === 0 ? true : false;
 
+
+  
   let isSumOfAllDigitsGreaterThan16 = true;
 
   let cardNumberArrToNumberType = [];
+  
   for (let i = 0; i < cardNumberArr.length; i++) {
     cardNumberArrToNumberType.push(cardNumberArr[i] - 0);
   }
