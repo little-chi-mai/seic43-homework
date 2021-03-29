@@ -11,11 +11,11 @@ return ' dollars', except it will add '(pinky)' at the end if the amount is 1 mi
     DrEvil(10): 10 dollars
 DrEvil(1000000): 1000000 dollars(pinky) */
 
-const DrEvil = function(amount) {
+const DrEvil = function (amount) {
     if (amount === 1000000) {
         return `${amount} dollars(pinky)`;
     } else {
-        return `${amount} dollars`;
+        return `${amount} dollars`
     }
 };
 console.log(DrEvil(10));
@@ -32,7 +32,7 @@ return the concatenation of the two strings(separated by a space) slicing out an
 mixUp('dog', 'dinner'): 'dig donner'
 Look up the JavaScript string reference to find methods which may be useful! */
 
-const mixUp = function(str1, str2) {
+const mixUp = function (str1, str2) {
     let newStr1 = str2.substr(0, 2)
     let newStr2 =
 }
