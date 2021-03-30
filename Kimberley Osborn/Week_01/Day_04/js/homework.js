@@ -24,7 +24,7 @@ const isSquare = function (square) {
     return false;
   }
 };
-isSquare(rectangleB);
+isSquare(rectangleA);
 
 // area - Returns the area of the rectangle
 const area = function (rectangle) {
@@ -158,16 +158,13 @@ const validateCreditCard = function (creditCardNumber){
   for(let i = 0; i < creditCardNumber.length; i++){
     // store the current digit
     let cardNumber = creditCardNumber[i];
-
     // turn the digit from a string to an integer
     cardNumber = Number.parseInt(cardNumber);
-
     // check that the digit is a number
     if(!Number.isInteger(cardNumber)){
       return false;
     }
   }
-
   // The credit card number must be composed of at least two different digits
   let obj = {};
   for(let i = 0; i < creditCardNumber.length; i++){
@@ -176,12 +173,10 @@ const validateCreditCard = function (creditCardNumber){
   if(Object.keys(obj).length < 2){
     return false;
   }
-
   // The final digit of the credit card number must be even
   if(creditCardNumber[creditCardNumber.length - 1] % 2 !== 0){
     return false;
   }
-
   // The sum of all the digits must be greater than 16
   let sum = 0;
   for(var i = 0; i < creditCardNumber.length; i++){
@@ -190,12 +185,8 @@ const validateCreditCard = function (creditCardNumber){
   if(sum <= 16){
     return false;
   }
-
   return true;
 };
 
-console.log(validateCreditCard('1248573019583180')); //true
-console.log(validateCreditCard('6666666666661666')); //true
-console.log(validateCreditCard('a92332119c011112')); //false
-console.log(validateCreditCard('4444444444444444')); //false
-console.log(validateCreditCard('1211111111111112')); //true
+console.log(validateCreditCard('3059482594083180')); //true
+console.log(validateCreditCard('6666666666666666')); // false
