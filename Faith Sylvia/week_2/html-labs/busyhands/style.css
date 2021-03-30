@@ -1,0 +1,106 @@
+/* Suggestions for ID names and classes
+
+--------------------------------------------- */
+
+#logo {
+  margin-top: 20px;
+}
+
+.image-banner{
+  width: 100%;
+  display: block;
+}
+
+.image-shadow {
+  display: block;
+}
+
+
+#main-content {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#nav {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-family: arial;
+}
+
+#nav ul li {
+  display: inline-block;
+  padding: 0px 25px 0px 0px;
+}
+
+#socialMedia {
+	float: right;
+}
+
+#socialMedia ul li {
+	 display:inline-block;
+	 width:60px;
+	 height:60px;
+	 background:blue;
+	 text-indent:-9999em;
+}
+
+#socialMedia ul li.linkedIn {
+	background:url(images/socialNav.png) 0px 64px;
+}
+#socialMedia ul li.twitter {
+	background:url(images/socialNav.png) -60px 64px;
+}
+
+#socialMedia ul li.facebook {
+	background:url(images/socialNav.png) -120px 64px;
+}
+
+#socialMedia ul li.rss {
+	background:url(images/socialNav.png) -180px 64px;
+}
+
+#socialMedia ul li.linkedIn:hover {
+	background:url(images/socialNav.png) 0px 0px;
+}
+
+#socialMedia ul li.twitter:hover {
+	background:url(images/socialNav.png) -60px 0px;
+}
+
+#socialMedia ul li.facebook:hover {
+	background:url(images/socialNav.png) -120px 0px;
+}
+
+#socialMedia ul li.rss:hover {
+	background:url(images/socialNav.png) -180px 0px;
+}
+
+/*
+#wrapper
+#container
+
+<header>
+<nav>
+
+#main-content
+#social-media
+
+.photobanner
+.imageshadow
+
+#blurb
+
+#home-boxes
+    .home-box
+    .home-box
+    .home-box
+
+<footer>
+    .box-footer
+         .blogroll
+    .box-footer
+         .textwidget
+
+#copyright
+#companybottom */
