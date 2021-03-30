@@ -41,7 +41,7 @@ const planTrip = function(startLine, startStop, endLine, endStop){
 
     console.log(`Here are the stops you need to pass through: ${stopsNames.join(', ')} `);
     console.log("stops in total: " + totalStops);
-    
+
     return totalStops;
 
   } else { //if we need to switch lines

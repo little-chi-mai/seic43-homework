@@ -9,10 +9,10 @@
 // * perimeter - Returns the perimeter of the rectangle
 
 // ```javascript
-// const rectangleA = {
-//   length: 4,
-//   width: 4
-// };
+const rectangleA = {
+  length: 4,   
+  width: 4
+};
 // ```
 
 // ### Part 2, Triangle
