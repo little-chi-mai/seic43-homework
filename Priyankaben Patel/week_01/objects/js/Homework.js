@@ -181,7 +181,7 @@ const validateCreditCard = function (creditCard) {
   let firstNumberCount = 0;
 
   for (let i = 0; i < char.length; i++){
-    
+
 //The sum of all the digits must be greater than 16
     totalSum = totalSum + parseInt(char[i]);
 
@@ -214,3 +214,145 @@ const validateCreditCard = function (creditCard) {
 }
 
 validateCreditCard(creditCardDetails3)
+
+//avaScript Bank
+/*In this homework, you'll create a basic bank in Javascript. The bank has many accounts and the following capabilities that you need to write.
+
+Bank
+There is only one bank. This bank has an array of accounts. The bank needs a method that will return the total sum of money in the accounts. It also needs an addAccount method that will enroll a new account at the bank and add it to the array of accounts. There is no need to create additional functions of the bank to delete accounts, etc.
+
+The bank has many accounts. Accounts should be objects that all share a set of common functionality.
+
+Accounts
+Accounts have a current balance and owner's name. You should be able to deposit or withdraw from an account to change the balance.
+
+There is no need to write a user interface. Make sure functions return values -- you may also have your functions console.log() values to help you see your code working.
+
+You should write a basic story through a series of JavaScript commands that shows that the methods do indeed work as expected: add some accounts, show the total balance, make some deposits and withdrawals, show the new total balance.
+*/
+//Account to add;
+const newAccount = {
+  id: 4,
+  name: 'jpo',
+  currentBalace: 10
+}
+//array of accounts
+let accounts = [
+  {
+  id: 1,
+  name: 'Gary',
+  currentBalace: 20
+  },
+  {
+    id: 2,
+    name: 'George',
+    currentBalace: 40
+  },
+  {
+    id: 3,
+    name: 'Matte',
+    currentBalace: 50
+  },
+  {
+    id: 4,
+    name: 'jo',
+    currentBalace: 0
+  }
+];
+
+// Calculate total bank amount
+let totalAmountsInBank = 0;
+
+for (let i = 0; i < accounts.length; i++) {
+  totalAmountsInBank = totalAmountsInBank + accounts[i].currentBalace;
+
+};
+console.log ('Total amount in bank is $' + totalAmountsInBank);
+
+// to add new acccount
+const addAccount = function (account) {
+  let accountFound = false; // Account not exist
+
+  for (let i = 0; i < accounts.length; i++) {
+
+    if (account.id === accounts[i].id ) {
+      accountFound = true; // account exist
+      break;
+    }
+  }
+
+  if(!accountFound) {
+    accounts.push(account);
+  }
+
+  return accounts;
+}
+addAccount(newAccount);
+// Validating an account
+const validateAccount = function (accountid) {
+let validAccount = false;
+  for (let i = 0; i < accounts.length; i++) {
+
+    if (accounts[i].id === accountid) {
+      console.log('Valid Account');
+      validAccount = true;
+      break;
+    }
+  };
+  if (!validAccount) {
+    console.log('Invalid account ID please enter valid ID')
+
+  };
+}
+
+
+//validateAccount();
+// to deposit an ammount
+  let deposit = function (id, amount) {
+  //const accountHolderid = prompt ('Please enter you account id');
+  let accountHolderid = id;
+  console.log('Your accountid is ' + accountHolderid);
+  checkid = parseInt(accountHolderid);
+  validateAccount (checkid);
+  if (!validateAccount) {
+    return deposit;
+  }
+
+  //let depositeAmount = prompt ('How much would you like to deposite?');
+    let depositeAmount = amount;
+    for (let i = 0; i < accounts.length; i++){
+      if (checkid === accounts[i].id){
+      newBalance = parseInt(depositeAmount) + accounts[i].currentBalace;
+      console.log ('Your new balance is $' + newBalance);
+
+    }
+  }
+}
+deposit(3, 20);
+
+//deposit function
+
+const withdraw = function (id, amount) {
+  //const accountHolderid = prompt ('Please enter you account id');
+  let accountHolderid = id;
+  console.log('Your accountid is ' + accountHolderid);
+  let checkid = parseInt(accountHolderid);
+  validateAccount (checkid); // call validateAccount function
+  //let withdrawAmount = prompt ('How much would you like to withdraw?');
+    withdrawAmount = amount;
+    for (let i = 0; i < accounts.length; i++) {
+
+      if (checkid === accounts[i].id) {
+
+        if (!(accounts[i].currentBalace <= 0))
+       {
+          newBalance = accounts[i].currentBalace - parseInt(withdrawAmount);
+          console.log ('You had $' + accounts[i].currentBalace + ' in you account. Your new balance is $' + newBalance + '. $Amount withdrawn is ' + withdrawAmount + '$.' );
+       }
+       else {
+         console.log ('Sorry invalid transaction, not have enough amount');
+    }
+  }
+}
+}
+withdraw(3, 20);
