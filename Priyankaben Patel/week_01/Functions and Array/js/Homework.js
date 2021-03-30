@@ -21,7 +21,7 @@ const maxOfTwoNumbers = function (x, y) {
      return c
    }
  }
-
+maxOfThree();
 //Write a function that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
 /*const checkIfVowels = function (z) {
 if ( z === 'a' || z === 'e' || z === 'i' || z === '0' || z === 'u') {
