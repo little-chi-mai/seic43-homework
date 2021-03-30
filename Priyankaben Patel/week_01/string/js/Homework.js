@@ -1,4 +1,4 @@
-// Create a function called DrEvil
+//Create a function called DrEvil
     const DrEvil = function (amount) {
     let dollars = amount + ' dollars';
     //console.log(`Totalamount is ${dollars} dollars`);
@@ -52,45 +52,30 @@ const fixStart = function (a) {
 verbing('going');
 
 //Create a  function Not Bad
-/*const notBad = function (z){
-  const separator = "";
-  const arrayOfString = z.split(separator);
-  for (i = 0, i <= arrayOfString.length; i++);
-  {
-    if ( arrayOfString[i] === "not" || arrayOfString[i] === "bad");
-    {
-      if ((arrayOfString[i] === "not") > (arrayOfString[i] === "bad");
-      {
-        arrayOfString [i] = "good"
-      }
+
+const notBad = function (z) {
+  let arrayOfString = z.split (' ');
+  let indexNot;
+  let indexBad;
+  for (let i = 0; i < arrayOfString.length; i++) {
+
+    if (arrayOfString[i] === 'not') {
+      indexNot = i;
+    }
+
+    if (arrayOfString[i] === 'bad' || arrayOfString[i] === 'bad!') {
+      indexBad = i;
     }
   }
-  const stg = arrayOfString.toString();
-  console.log(stg);
-  return stg;
+
+  if ( indexNot < indexBad) {
+    arrayOfString[indexNot] = 'good';
+    for (let index = indexNot + 1; index <= indexBad; index++) { //'This dinner is not that bad!'
+
+      arrayOfString[index] = '';
+    }
+
+  }
+  return arrayOfString.join(' ');
 }
-notBad('This dinner is not that bad!');*/
-
-const displayResult = function (x){
-
-    for  (let i = 1; i <= x; i++)
-    {
-      if ( (x / i) === 0) {
-        console.log (i);
-        if ( i === 3)
-        {
-          console.log ('Pling');
-        }
-        else if ( i === 5) {
-          console.log ('Plang');
-        }
-        else if (i === 7) {
-          console.log ('Plong')
-        }
-        else {
-          console.log(x.tostring(x))
-        }
-      }
-    }
-  }
-  displayResult(28);
+notBad('This dinner is not that bad!');
