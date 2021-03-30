@@ -56,6 +56,7 @@ const planTrip = (getOnLine, getOnStop, getOffLine, getOffStop) => {
     getOffStopName
   ) => {
     const stopsOfTheLine = lines[LineName]["stops"];
+
     const getOnIndex = stopsOfTheLine.indexOf(getOnStopName);
     const getOffIndex = stopsOfTheLine.indexOf(getOffStopName);
     const indexDifference = getOffIndex - getOnIndex;
@@ -70,6 +71,7 @@ const planTrip = (getOnLine, getOnStop, getOffLine, getOffStop) => {
     getOffStopName
   ) => {
     const stopsOfTheLine = lines[LineName]["stops"];
+    
     const getOnIndex = stopsOfTheLine.indexOf(getOnStopName);
     const getOffIndex = stopsOfTheLine.indexOf(getOffStopName);
     const indexDifference = getOffIndex - getOnIndex;
@@ -81,12 +83,16 @@ const planTrip = (getOnLine, getOnStop, getOffLine, getOffStop) => {
     if (indexDifference > 0) {
       for (let i = 0; i < indexDifference; i++) {
         stopsToGoThroughOnOneLine += stopsOfTheLine[getOnIndex + i + 1] + ", ";
+        // travel from begin stop to end stop in a line
       }
     } else {
       for (let i = 0; i < indexDifference * -1; i++) {
         stopsToGoThroughOnOneLine += stopsOfTheLine[getOnIndex - i - 1] + ", ";
+        // travel backwards in a line
+
       }
     }
+
     stopsToGoThroughOnOneLine =
       stopsToGoThroughOnOneLine.substr(
         0,
@@ -94,10 +100,13 @@ const planTrip = (getOnLine, getOnStop, getOffLine, getOffStop) => {
       ) + ".";
     return stopsToGoThroughOnOneLine;
   };
+// replace last ', ' in a sentence with '.'
+
 
   //output
 
   if (getOnLine === getOffLine || getOffStop === "Union Square") {
+    // if the get off stop is Union Square, then even though it shows get on line and get off line are different, we could consider it as the same line(get on line) and no need to change
     console.log(
       `You must travel through the following stops on the ${getOnLine} line: ${showStopsToGoThroughOnOneLine(
         getOnLine,
@@ -115,6 +124,7 @@ const planTrip = (getOnLine, getOnStop, getOffLine, getOffStop) => {
     );
   } else {
     if (getOnStop === "Union Square") {
+      // if the get off stop is Union Square, then even though it shows get on line and get off line are different, we could consider it as the same line(get off line) and no need to change
       console.log(
         `You must travel through the following stops on the ${getOffLine} line: ${showStopsToGoThroughOnOneLine(
           getOffLine,
@@ -138,6 +148,7 @@ const planTrip = (getOnLine, getOnStop, getOffLine, getOffStop) => {
           "Union Square"
         )}`
       );
+      // stops before Union Square
 
       console.log(`Change to ${getOffLine} Line at Union Square`);
 
@@ -148,6 +159,7 @@ const planTrip = (getOnLine, getOnStop, getOffLine, getOffStop) => {
           getOffStop
         )}`
       );
+      // stops after Union Square
 
       console.log(
         `${
