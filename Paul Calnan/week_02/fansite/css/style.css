@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+
+body {
+  background-color: white;
+  margin-bottom: 40px
+
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  font-family: 'Epilogue', 'Quantico', sans-serif;
+}
+
+
+.header {
+  background-color: black;
+  width: 100%;
+  height: 300px;
+  border: 1px solid black;
+  text-align:center;
+  line-height: 300px
+}
+
+.box {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  text-align:center;
+  line-height: 300px
+}
+
+  #container {
+    text-align: justify;
+    margin-top: 100px;
+    }
+
+  .box1,
+  .box2,
+  .box3 {
+    width: 300px;
+    height: 300px;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1
+  }
+
+  .stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+
+  }
+
+  .box1 {
+    background: #ccc;
+    margin-left: 70px;
+
+  }
+
+  .box2 {
+    background: #0ff;
+  }
+
+
+  .box3 {
+    background: #ccc;
+    margin-right: 70px;
+  }
+
+  .spooky span {
+  visibility: hidden;
+
+}
+
+/* .spooky:hover {
+  background-color: black;
+} */
+
+.spooky:hover span {
+  visibility: visible;
+  color: yellow;
+  transition: 2s all;
+}
+
+.texthometown {
+text-align: justify;
+max-width: 960px;
+color: green;
+}
+
+.texttrivia {
+
+color: red;
+}
+
+.textbio {
+
+color: blue;
+}
