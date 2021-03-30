@@ -12,9 +12,6 @@
 
 // ```javascript
 // planTrip('N', 'Times Square', '6', '33rd'); // This is only a suggested function name and signature.
-const planTrip = function (startLine, startStop, finshLine, finishStop) {
-
-}
 
 // // console.log() shows output similar to this:
 // // "You must travel through the following stops on the N line: 34th, 28th, 23rd, Union Square."
@@ -37,16 +34,14 @@ const lines = {
   6: ["Grand Central", "33rd", "28th", "23rd", "Union Square", "Astor Place"]
 };
 
-//  first go at tripPlan function
-
-const tripPlan = function(startLine, startStop, finishLine, finishStop){
-  return;
-}
-
 
 const arrStopsA = [];
 const arrStopsB = [];
 const arrStopsTotal = [];
+
+const tripPlan = function(startLine, startStop, finishLine, finishStop){
+  return;
+}
 
 const legA = lines[startLine];
 const legB = lines[finishLine];
@@ -80,7 +75,7 @@ const finishIndex = legB.indexOf(finishStop);
       for (i = startIndex + 1; i <= finishIndex; i++) {
         arrStopsTotal.push(legA[i]);
       }
-    }
+    } 
     // travelling backwards
     else {
       for (i = startIndex - 1; i >= finishIndex; i--) {
@@ -89,7 +84,11 @@ const finishIndex = legB.indexOf(finishStop);
     }
   };
 
-    // console.log('Travel through these stops on the ' + startLine + ' line: ' + arrStopsTotal.join(', '));
-    // console.log(arrStopsA.length + arrStopsTotal.length + ' stops in total');
+console.log(`Travel through these stops on the ${startLine} line: ${arrStopsTotal.join(', ')}`);    
 
 
+// 1 line, forwards
+tripPlan("N", "Times Square", "N", "Union Square" );
+
+// 1 line, backwards
+// tripPlan('N', 'Union Square', 'N', 'Times Square');
