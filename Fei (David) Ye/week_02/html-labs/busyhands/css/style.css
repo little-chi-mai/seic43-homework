@@ -1,0 +1,150 @@
+
+body {
+    background-image: url(/images/bg_body.jpg);
+}
+
+#container {
+    width: 900px;
+    margin:0 auto;
+
+}
+
+#banner {
+    width: 100%;
+}
+
+/* #linkedin {
+    background:url(/images/B&W/Social-Media_LinkedIn_B&W.png);
+}
+
+#linkedin:hover {
+    background:url(/images/colour/Social-Media_LinkedIn_Colour);
+} */
+
+
+header {
+
+} 
+
+nav {
+    background-color: black;
+}
+
+ul {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 265px;
+}
+
+li {
+    color: white;
+    display:inline;
+    margin-right:15px;
+}
+
+#social-media {
+    float:right;
+}
+
+
+main {
+    
+    /* background-color: red; */
+   
+}
+
+#intro-section {
+    box-shadow: 0 1px 5px 1px grey inset;
+    padding:20px 50px;
+    width: 800px;
+    /* background-color: yellow; */
+    /* margin:0 auto; */
+    height: 50px;
+    
+}
+
+#logo {
+    padding-top: 30px;
+}
+
+#intro-span {
+    width: 70%;
+    /* background-color: yellow; */
+    float: left;
+    margin:0;
+    padding:0;
+}
+
+#intro-img {
+    /* background-color: yellowgreen; */
+    float:right;
+    margin:0;
+    padding:0;
+}
+
+p {
+    display: inline;
+}
+
+article {
+    width: 100px;
+    display: inline;
+}
+
+
+#section-bottom {
+    display:inline;
+
+}
+
+footer {
+    background-color: black;
+    height: 20px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+}
+
+.p-bottom {
+    width: 200px;
+    
+}
+
+#home1 {
+    display: inline;
+    width: 20%;
+}
+
+#home2 {
+    display: inline;
+    width: 20%;
+
+}
+
+#home3 {
+    display: inline;
+    width: 20%;
+
+}
+
+/* #main-content 
+#social-media 
+
+.photobanner 
+.imageshadow
+
+#blurb 
+
+#home-boxes 
+    .home-box
+    .home-box
+    .home-box
+
+footer
+
+    .box-footer 
+         .blogroll
+    .box-footer 
+         .textwidget 
+
+#copyright 
+#companybottom  */
