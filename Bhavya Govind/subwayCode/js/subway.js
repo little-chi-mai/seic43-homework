@@ -30,7 +30,15 @@ const train = {
   getPathWay:function(line,start,destination){
      let startIndex = train[line].indexOf(start);
      let destinationIndex = train[line].indexOf(destination);
-     this.pathway = train[line].slice(startIndex,destinationIndex + 1);
+
+     if(startIndex > destinationIndex){
+       let path = train[line].slice(destinationIndex,startIndex);
+         this.pathway = path.reverse()
+     }else{
+
+       this.pathway = train[line].slice(startIndex + 1,destinationIndex + 1);
+     }
+
   },
   planTrip:function(line1,start,line2,destination){
     if (line1 === line2){
@@ -39,18 +47,53 @@ const train = {
       console.log(this.pathway.length + ` stops in total.`);
     }else{
       let junction = 'Union Square'
-      this.getPathWay(line1,start,junction);
-      console.log(`You must travel through the following stops on the ${line1} line: ${this.pathway.join(`,`)} .`);
-      console.log( "Change at Union Square.");
-      let numberOfStops = this.pathway.length;
-      this.getPathWay(line2,junction,destination);
-      numberOfStops = numberOfStops + this.pathway.length;
-      console.log(`Your journey continues through the following stops: ${this.pathway.join(`, `)} .`);
-      console.log(`${numberOfStops - 1} stops in total.`);
+      let numberOfStops;
+      if(start === junction){
+        console.log( "Change at Union Square.");
+        this.getPathWay(line2,junction,destination);
+        numberOfStops =  this.pathway.length;
+        console.log(`Your journey continues through the following stops: ${this.pathway.join(`, `)} .`);
+        console.log(`${numberOfStops} stops in total.`);
+      }else if(destination === junction){
+
+        this.getPathWay(line1,start,junction);
+        console.log(`You must travel through the following stops on the ${line1} line : ${this.pathway.join(`,`)} .`);
+        console.log( "Change at Union Square.");
+        numberOfStops = this.pathway.length;
+        console.log(`${numberOfStops} stops in total.`);
+      }else{
+        this.getPathWay(line1,start,junction);
+        console.log(`You must travel through the following stops on the ${line1} line: ${this.pathway.join(`,`)} .`);
+        console.log( "Change at Union Square.");
+        numberOfStops = this.pathway.length;
+        this.getPathWay(line2,junction,destination);
+        numberOfStops = numberOfStops + this.pathway.length;
+        console.log(`Your journey continues through the following stops: ${this.pathway.join(`, `)} .`);
+        console.log(`${numberOfStops - 1} stops in total.`);
+      }
+
+
     }
   },
   pathway:[]
 };
+console.log(`trip--`);
+train.planTrip(`lineN`,`34th`,`lineN`,`8th`);
 
-//train.planTrip(`lineN`,`34th`,`lineN`,`8th`);
+console.log(`trip ++`);
 train.planTrip(`lineN`,`34th`,`line6`,`Astor Place`);
+
+console.log(`trip 1`);
+train.planTrip("lineL", "3rd", "lineL", "6th");
+
+console.log(`trip 2`);
+train.planTrip("line6", "Astor Place", "line6", "Grand Central");
+
+console.log(`trip 3`);
+train.planTrip("line6", "Astor Place", "lineN", "Times Square");
+
+console.log(`trip 4`);
+train.planTrip("line6", "Union Square", "lineN", "Times Square");
+
+console.log(`trip 5`);
+train.planTrip("lineL", "1st", "line6", "Union Square");

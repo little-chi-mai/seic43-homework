@@ -1,0 +1,54 @@
+/*
+
+## Style Hints:
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+} /* When you set box-sizing: border-box; on an element, the padding and
+border of that element no longer increase its width. */
+
+/* Bookmarks:
+https://learnlayout.com/position.html
+*/
+
+.logoTitle {
+  size: .25%;
+}
+#container {
+  max-width: 950px; <!-- when you resize a browser this will always fit-->
+  margin: 0 auto;
+}
+
+#content p {
+  color: grey;
+  text-align: justify;
+}
+#content span {
+  color: #add8e6;
+  text-decoration: underline;
+}
+h2 {
+  color: grey
+}
+h3{
+  color: #add8e6;
+}
+#bottomBanner img {
+  border: 5px solid #b7b7b7;
+}
+
+h6 {
+  color: grey;
+  text-decoration: bold;
+}

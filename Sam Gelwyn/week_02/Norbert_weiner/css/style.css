@@ -1,0 +1,67 @@
+/* * {
+  border: 1px solid whitesmoke;
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Roboto+Mono:wght@300&display=swap');
+
+body {
+  background-color: #222;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kiwi Maru', serif;
+}
+
+.container {
+  max-width: 960px;
+  background-color: #ccc;
+  margin: 0 auto;
+  padding: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  color: green;
+}
+
+h1 {
+  text-align: center;
+  background-color: #222;
+  color: #ccc;
+  font-size: 400%;
+  padding: .5em;
+  text-transform: uppercase; /* accessible ALL CAPPS*/
+  border-radius: .2em;
+}
+
+main {
+  display: inline-block;
+  width: 74%;
+}
+
+main img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 1em;
+}
+
+aside {
+  display: inline-block;
+  width: 21%;
+  vertical-align: top;
+  background-color: wheat;
+  padding: 1em;
+  border-radius: .5em;
+  box-shadow: 0 0 10px black;
+  margin-top: 1em;
+
+}
+
+aside ul {
+  padding-inline-start: 17px;
+}

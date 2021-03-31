@@ -1,0 +1,77 @@
+/* 
+
+## Style Hints: 
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#container {
+  margin: 40px 500px 20px 100px;
+}
+
+main img {
+  width: 100%;
+}
+
+main {
+  margin-top: 20px;
+}
+
+.date {
+  color: blue;
+}
+
+article {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+img.small {
+  width: 24%;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0 0 0 0;
+}
