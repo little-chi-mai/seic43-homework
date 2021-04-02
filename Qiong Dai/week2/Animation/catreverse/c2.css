@@ -1,0 +1,8 @@
+body {
+  margin: 0;
+}
+.rotate {
+  position: absolute;
+  transform: rotateY(180deg);
+  transition: 1s;
+}

@@ -1,0 +1,8 @@
+body {
+  background-image: url(bg.gif);
+}
+
+.rotate {
+  transform: rotateY(180deg);
+  transition: 1s;
+}
