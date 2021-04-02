@@ -1,0 +1,75 @@
+/* {
+  border: 1px solid limegreen;*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px; /* lazy responsive container */
+  margin: auto;
+  font-family: 'Cormorant Garamond', serif;
+  /*font-family: 'Libre Baskerville', serif;*/
+}
+
+nav {
+  text-align: right;
+  padding: 15px 70px;
+  background-color: black;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding-right: 4em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  font-size: 400%;
+}
+
+main {
+  display: inline-block;
+  width: 70%;
+  border-right: 1px solid lightgrey;
+  padding-right: 1em;
+}
+
+aside {
+  display: inline-block;
+  width: 26%;
+  vertical-align: top;
+  margin-left: 1em;
+}
+
+img.portrait {
+  width: 25%;
+}
+
+img.portrait2 {
+  width: 40%;
+}
+
+img.portrait3 {
+  width: 22%;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+aside h3 {
+  text-decoration: underline;
+}
+
+img.architecture {
+  width: 70%;
+}
