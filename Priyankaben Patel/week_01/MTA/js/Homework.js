@@ -33,17 +33,17 @@ const subwayLines =[
   {
     id: 'N',
     stops: ['Times Square', '34th', 'n28th', 'n23rd', 'Union Square', 'n8th'],
-    junction: 'Union Square'
+    //junction: 'Union Square'
   },
   {
     id: 'L',
     stops: ['l8th', '6th', 'Union Square', '3rd', '1st'],
-    junction: 'Union Square'
+    //junction: 'Union Square'
   },
   {
     id:'six',
     stops: ['Grand Central', '33rd', 'six28th', 'six23rd', 'Union Square', 'Astor Place'],
-    junction: 'Union Square'
+    //junction: 'Union Square'
   }
 ];
 
@@ -113,9 +113,9 @@ const subwayLines =[
     return firstMetroLineStops;
 };
 
-//planTrip('L', 'l8th', 'six', '33rd')
+planTrip('L', 'l8th', 'six', '33rd')
 //planTrip('N', 'Times Square', 'L', '1st')
 //planTrip('N', '34th', 'L', 'l8th')
 //planTrip('L', '6th', 'six', 'Astor Place')
 //planTrip("six", "Union Square", "N", "Times Square");
-planTrip("L", "1st", "six", "Union Square");
+//planTrip("L", "1st", "six", "Union Square");
