@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&family=Shadows+Into+Light&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+@keyframes fadeOut {
+            0% {opacity: 1;}
+            100% {opacity: 0;}
+         }
+
+/*----------------All Pages---------------------------*/
+body {
+  background-color: #310402;
+}
+
+.container {
+  max-width: 960px;
+  background-color: white;
+  margin: 0 auto; /* Center container on page*/
+  padding: 1em;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  color: #9a2523;
+  padding: 0.5em;
+  font-family: 'Balsamiq Sans', cursive;
+  letter-spacing: 1.3px;
+}
+
+nav a {
+  color: #433723;
+  text-decoration: none;
+  margin-right: 101px;
+  text-align: center;
+  padding-left: 56px;
+}
+
+a:hover {
+  color: #9a2523;
+}
+
+nav {
+  line-height: 4em;
+  border-top: solid 1px #9a2523;
+  border-bottom: solid 1px #9a2523;
+  width: 960px;
+  height: 4em;
+  letter-spacing: 1.3px;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+ul {
+  font-family: 'Balsamiq Sans', cursive;
+  line-height: 3.7em;
+  font-size: 12.5px;
+  padding-left: 16px;
+  margin-top: 20px;
+}
+
+
+.home {
+  color: #9a2523;
+  text-decoration: none;
+}
+
+.home:hover {
+  color: #310402;
+}
+
+/*----------------Home Page---------------------------*/
+
+.face_art {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  box-shadow: 0 0 20px #310402;
+  border-radius: 10px;
+}
+
+.quote {
+  font-style: italic;
+  text-align: center;
+  width: 26em;
+  margin-left: 16.6em;
+  margin-top: -1em;
+  margin-bottom: 2em;
+}
+
+/*----------------About Page---------------------------*/
+
+.about1{
+  letter-spacing: 1.3px;
+  color: #433723;
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 12.5px;
+}
+/* Image of RS on the about page */
+.image2 {
+  width: 47%;
+  display: inline-block;
+  border: 5px solid #310402;
+}
+.image2a {
+  height: 16em;
+  display: inline-block;
+  margin-left: 31px;
+  width: 28em;
+  border: 5px solid #310402;
+}
+
+/*----------------Mythical Page---------------------------*/
+
+.main_mythical {
+  display: inline-block;
+  width: 64%;
+}
+.aside_mythical {
+  display: inline-block;
+  width: 20%; /* 75% + 20% = 100% in css (approximately) */
+  vertical-align: top;
+}
+/* Image of RS on the mythical page */
+.image3 {
+  width: 21em;
+  border-radius: 5px;
+  margin-top: 34px;
+  box-shadow: 0 0 20px #310402;
+}
+/* Quote on the mythical page */
+.quote3 {
+  font-style: italic;
+  width: 26em;
+  text-align: center;
+  padding-left: 4em;
+  margin-top: 2em;
+}
+
+.main_mythical {
+  display: inline-block;
+  width: 64%;
+}
+.aside_mythical {
+  display: inline-block;
+  width: 20%; /* 75% + 20% = 100% in css (approximately) */
+  vertical-align: top;
+}
+
+/*----------------Hometown Page---------------------------*/
+
+/* Google Maps map of New York */
+.image4 {
+  border:0;
+  display: inline-block;
+  /*padding-left: 12em;*/
+  margin-top: 1.5em;
+}
+
+  /* Quote on the hometown page */
+.quote4 {
+  font-style: italic;
+  width: 20em;
+  text-align: center;
+  padding-left: 21em;
+  margin-top: 3em;
+}
+
+/* Image of RS on the hometown page */
+
+.image4 {
+  padding-left: 13em;
+  margin-top: 2.5em;
+}
+
+.details {
+  width: 20em;
+  text-align: center;
+  padding-left: 20em;
+  margin-top: 2em;
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 16.5px;
+}

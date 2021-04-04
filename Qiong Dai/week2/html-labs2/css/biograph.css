@@ -1,0 +1,12 @@
+img {
+  display: inline;
+  width: 30%;
+  vertical-align: top;
+  margin: 19px 16px 0 0;
+}
+
+p {
+  display: inline-block;
+  width: 65%;
+  vertical-align: top;
+}

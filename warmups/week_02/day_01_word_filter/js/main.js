@@ -25,6 +25,7 @@
 
 //     const inputArray = string.split(' ');
 
+         // for loop
 //     // for (let i = 0; i < inputArray.length; i++) {
 //     //     const word = inputArray[i];
 //     //     if (!outputArray.includes(word)) {

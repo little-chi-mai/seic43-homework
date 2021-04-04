@@ -14,35 +14,38 @@ $(document).ready(function(){
         wthdrwBtn : $(':button#checking-withdraw').click(function(){
             var withdrawAmount = checkingAcc.inputAmount.val();
             let currentBalance = checkingAcc.accountBalance.text().replace('$','');
-            let savingsBalance = savingsAcc.checkBal.text().replace('$','');
+            let savingsBalance = savingsAcc.accountBalance.text().replace('$','');
             let result =  withdraw(currentBalance,savingsBalance,withdrawAmount);
+            changeBackground(result[0],result[1]);
             if(result){
                 checkingAcc.accountBalance.text('$' + result[0]); 
-                savingsAcc.checkBal.text('$' + result[1]);
+                savingsAcc.accountBalance.text('$' + result[1]);
             }
+            
         })
     };
 
     // Accessing inputs and value in the  checking account
     const savingsAcc = {
-        checkBal: $('div.balance#savings-balance'),
-        amount : $('#savings-amount'),
-        dpstBtn : $(':button#savings-deposit').click(function(){
-            var transferAmount = parseInt(savingsAcc.amount.val());
-            let currentBal = savingsAcc.checkBal.text();
+        accountBalance: $('div.balance#savings-balance'),
+        inputAmount : $('#savings-amount'),
+        deposit : $(':button#savings-deposit').click(function(){
+            var transferAmount = parseInt(savingsAcc.inputAmount.val());
+            let currentBal = savingsAcc.accountBalance.text();
             currentBal = parseInt(currentBal.replace('$','')) + transferAmount;
-            savingsAcc.checkBal.text('$' + currentBal);
+            savingsAcc.accountBalance.text('$' + currentBal);
         }),
-        wthdrwBtn : $(':button#savings-withdraw').click(function(){
-            var transferAmount = parseInt(savingsAcc.amount.val());
-            let currentBal = savingsAcc.checkBal.text();
-            currentBal = parseInt(currentBal.replace('$',''))
-            if(currentBal !== 0 && currentBal > transferAmount){
-                currentBal = currentBal - transferAmount;
-            }else{
-                
+        withdraw : $(':button#savings-withdraw').click(function(){
+            var withdrawAmount = savingsAcc.inputAmount.val();
+            let savingsBalance = savingsAcc.accountBalance.text().replace('$','');
+            let checkingBlance =  checkingAcc.accountBalance.text().replace('$','');
+            let result =  withdraw(savingsBalance,checkingBlance,withdrawAmount);
+            changeBackground(result[0],result[1]);
+            if(result){
+                savingsAcc.accountBalance.text('$' + result[0]); 
+                checkingAcc.accountBalance.text('$' + result[1]);
             }
-            savingsAcc.checkBal.text('$' + currentBal);
+            
 
         })
     };
@@ -65,6 +68,15 @@ $(document).ready(function(){
                 alert('Insufficient funds amount cannot be withdrawn.');
             }
             
+    }
+    function changeBackground(balance1,balance2){
+        console.log(balance1,balance2);
+        if(balance1 === 0){
+          $('div.balance#checking-balance').addClass('zero').removeClass('balance');
+        }
+        if(balance2 === 0){
+            $('div.balance#savings-balance').addClass('zero').removeClass('balance');
+        }
     }
 });
  

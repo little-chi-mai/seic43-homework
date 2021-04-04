@@ -1,0 +1,119 @@
+/* * {
+    border: 1px solid green;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+    background-color: white;
+    color: black;
+    margin:0;
+    padding:0;
+    
+}
+
+nav {
+    position: fixed;
+    top:0.4px;
+    z-index: 3;
+    background: white;
+    width: 100%;
+}
+
+
+h1 {
+    font-weight: bold;
+  color:black;
+  font-size: 40px;
+}
+
+
+
+h1 h2 h3 h4 h5 h6{
+    text-align: center;
+    font-family: 'Playfair Display',serif
+}
+
+main h1 {
+    text-align: center;
+}
+
+p {
+    line-height: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+main p {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+main {
+    background-color: white;
+    width: 650px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1em;
+    left:200px;
+    position: absolute;
+    top:550px;
+    z-index: 2;  
+    
+}
+
+
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+    background-image: url(/img/ada-background.png);
+    background-size: cover;
+    
+    height: 1000px;
+}
+
+a {
+    color:black;
+    font-weight: bolder;
+    line-height: 50px;
+    margin-left: 20px;
+    font-size: larger;
+    /* line-height: 200px; */
+    font-family: 'Train One', cursive;
+}
+
+iframe {
+    position: fixed;
+    top: 150px;
+    left:400px;
+}
+
+
+
+footer {
+    position: absolute;
+    top:1000px;
+    border-bottom: 50px;
+    height: 50px;
+    
+}
+
+main p {
+    text-align: center;
+}
+
+main {
+    background-color: wheat;
+    position:fixed;
+    top: 650px;
+    left:400px;
+    width: 568px;
+}
+
+footer p {
+    font-family: 'Train One', cursive;
+}
+
+
