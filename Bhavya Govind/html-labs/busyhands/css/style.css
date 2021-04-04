@@ -1,0 +1,153 @@
+nav {
+  width:100%;
+	background-color: black;
+	height: 60px;
+	display: block;
+}
+nav>ul{
+  text-align: left;
+  padding-left: 140px;
+}
+nav > ul > li {
+  color:white;
+	display: inline-block;
+	padding: 15px;
+}
+nav > ul > li > a{
+	color:white;
+	text-decoration:none;
+}
+nav > ul > li > a:hover {
+	background: url("../images/bg_nav_rollover.png");
+	padding-top: 10px;
+}
+.container{
+	text-align: center;
+	width:1000px;
+	margin: 0 auto;
+}
+header{
+	width:100%;
+	background-color: yellow;
+}
+
+#logo {
+	background: url(../images/logo.png) no-repeat;
+	width: 305px;
+	height: 80px;
+  	padding-left: 1em;
+}
+#logo h1 {
+	text-indent: -99999em;	/* hides the H1 tag from the page, while semantically keeping it present in your HTML */
+}
+
+#socialMedia {
+	float: right;
+}
+
+#socialMedia ul li {
+	 display:inline-block;
+	 width:60px;
+	 height:60px;
+	 background:blue;
+	 text-indent:-9999em;
+}
+
+#socialMedia ul li.linkedIn {
+	background:url(../images/socialNav.png) 0px 64px;
+}
+#socialMedia ul li.twitter {
+	background:url(../images/socialNav.png) -60px 64px;
+}
+
+#socialMedia ul li.facebook {
+	background:url(../images/socialNav.png) -120px 64px;
+}
+
+#socialMedia ul li.rss {
+	background:url(../images/socialNav.png) -180px 64px;
+}
+
+#socialMedia ul li.linkedIn:hover {
+	background:url(../images/socialNav.png) 0px 0px;
+}
+
+#socialMedia ul li.twitter:hover {
+	background:url(../images/socialNav.png) -60px 0px;
+}
+
+#socialMedia ul li.facebook:hover {
+	background:url(../images/socialNav.png) -120px 0px;
+}
+
+#socialMedia ul li.rss:hover {
+	background:url(../images/socialNav.png) -180px 0px;
+}
+.photobanner{
+  
+  width:100%;
+  box-shadow: 0px 40px 25px -15px #544e4e;
+}
+
+.divOfThree{
+  display:inline-block;
+  width:30%;
+  text-align: left;
+}
+
+.divOfThree:not(:last-child) {
+	margin-right: 30px;
+}
+
+.divOfThree > img {
+	border: solid #c7c6ce;
+	width: 95%;
+}
+.requestQuote{
+  box-shadow: inset 0 0 1px grey;
+  margin-top: 50px;
+  padding: 5px 0px;
+}
+
+.requestQuoteText{
+	width: 75%;
+	display: inline-block;
+	text-align: left;
+	padding: 0px 5px;
+}
+
+.readMore{
+	color: #0389f3d4;
+}
+
+footer{
+  background-color: black;
+}
+.footer{
+  text-align: center;
+  margin: 0 100px;
+  background-color: black;
+  display: flex;
+
+}
+.footer *{
+  color: white;
+  text-align: center;
+
+}
+.footer1{
+  width:25%;
+  display: inline-block;
+  padding-left: 10px;
+}
+.footer2{
+  width:40%;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer3{
+  width:25%;
+  display:inline-block;
+  padding-right: 10px;
+}
