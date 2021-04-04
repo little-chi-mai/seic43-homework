@@ -1,117 +1,174 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+ /* * {
+  border: 1px solid limegreen;
+} */
 
-@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 
-body {
+#bio {
+  margin-top: 20px;
+  max-width: 960px;
   background-color: white;
-  margin-bottom: 40px
-
+  margin: 20px;
+  padding: 0px;
+  font-family: 'Cabin', sans-serif;
+  background: url("../images/bioBackground.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-img {
-  max-width: 100%;
-  max-height: 100%;
-
+#home {
+  max-width: 960px;
+  background-color: white;
+  font-family: 'Cabin', sans-serif;
+  background: url("../images/homeBackground.jpeg") no-repeat ;
+  background-size: contain;
+  background-position: 840px;
+  background-size: 600px;
 }
 
-h1 {
-  text-transform: uppercase;
-  font-size: 50px;
-  color: white;
+#trivia {
+  margin-top: 20px;
+  max-width: 960px;
+  background-color: #f6f5f3;
+  margin: 20px;
+  padding: 0px;
+  font-family: 'Cabin', sans-serif;
+  background: url("../images/triviaBackground.jpg") no-repeat center right fixed;
+  background-size: 800px;
+}
+
+#textContainer {
+  max-height: 300px;
+  max-width: 800px;
+  padding: 10px;
+  overflow: auto;
+  border-radius: 5px;
+  background-color: rgba(210, 215, 211, .5);
+}
+
+#vidmap {
+  height: 300px;
+  width: 860px;
+
+}
+#map {
+  margin: 15px;
+  width: 387px;
+  height: 200px;
+  display: inline-block;
+  box-shadow: 3px 4px 3px 3px #484848;
+  border-radius: 5px;
+}
+
+#vid {
+  margin: 15px;
+  width: 387px;
+  height: 200px;
+  display: inline-block;
+  box-shadow: 3px 4px 3px 3px #484848;
+  border-radius: 5px;
+}
+
+#wrapper {
+  height: 200px;
+  display: inline-block;
+  position: relative;
+}
+
+#wrapper:hover .text {
+  opacity: 1;
 }
 
 .container {
-  width: 100%;
-  font-family: 'Epilogue', 'Quantico', sans-serif;
+  max-width: 960px;
+  max-height: 400px;
+  align: left;/*lazy resposive container */
+  padding: 1em;/*chunky pixels*/
 }
 
-
-.header {
-  background-color: black;
-  width: 100%;
-  height: 300px;
-  border: 1px solid black;
-  text-align:center;
-  line-height: 300px
-}
-
-.box {
-  background-color: white;
-  width: 300px;
-  height: 300px;
-  border: 1px solid black;
-  text-align:center;
-  line-height: 300px
-}
-
-  #container {
-    text-align: justify;
-    margin-top: 100px;
-    }
-
-  .box1,
-  .box2,
-  .box3 {
-    width: 300px;
-    height: 300px;
-    vertical-align: top;
-    display: inline-block;
-    *display: inline;
-    zoom: 1
-  }
-
-  .stretch {
-    width: 100%;
-    display: inline-block;
-    font-size: 0;
-    line-height: 0
-
-  }
-
-  .box1 {
-    background: #ccc;
-    margin-left: 70px;
-
-  }
-
-  .box2 {
-    background: #0ff;
-  }
-
-
-  .box3 {
-    background: #ccc;
-    margin-right: 70px;
-  }
-
-  .spooky span {
-  visibility: hidden;
+.images {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  padding-top: 40px;
 
 }
 
-/* .spooky:hover {
-  background-color: black;
-} */
-
-.spooky:hover span {
-  visibility: visible;
-  color: yellow;
-  transition: 2s all;
+.text {
+  font-size: 2em;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity .5s;
+  background: rgba(0, 0, 0, .2);
+  color: white;
+  margin: 0 auto;
+  padding-top: 80px;
+  text-align: center;
+  border-radius: 5px;
 }
 
-.texthometown {
-text-align: justify;
-max-width: 960px;
-color: green;
+.hover {
+  display: block;
 }
 
-.texttrivia {
-
-color: red;
+body {
+  transition: 2s;
 }
 
-.textbio {
+header {
+overflow: hidden;
+max-width: 800px;
+max-height: 200px;
+margin: 10px;
+transition: 2s;
+}
 
-color: blue;
+h1 {
+  text-align: center;
+  color: #444;
+  font-size: 400%;
+  margin:5px;
+  text-transform: uppercase;/*accesible ALL CAPS */
+}
+
+h2 {
+  text-align: center;
+  color: #444;
+  font-size: 200%;
+  text-transform: uppercase;/*accesible ALL CAPS */
+}
+
+h3 {
+  color: darkred;
+}
+
+html {
+  max-width: 960px;
+  max-height: inherit;
+}
+
+a {
+  max-height: 80%;
+  max-width: 80%;
+  margin: 20px;
+  display: block;
+}
+
+img {
+  width: 80%;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 3px 4px 3px 3px #484848;
+  border-radius: 5px;
+}
+
+footer {
+  margin: 20px;
 }
