@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Raleway&display=swap');
+
+
+/* *{
+  border: 1px solid limegreen;
+} */
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #f0ece3;
+}
+/* .container{
+  max-width: 960px;
+  margin: 0 auto;
+} */
+
+.title {
+  text-align: left;
+  margin: 0 0 25px 0;
+  font-family: 'Fjalla One', sans-serif;
+  border: 6px solid #596e79;
+  margin-left: 0px;
+  display: inline;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  background-color: #dfd3c3;
+  padding: 56px 0px 30px 0px;
+}
+
+header nav{
+  margin-top: 47px;
+  font-size: 20px;
+}
+
+header nav a:hover{
+  color: white
+}
+
+header nav a{
+  margin: 0 15px;
+  text-decoration: none;
+  color: #c7b198;
+  font-weight: bold;
+}
+
+.intro{
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: -2%;
+  font-size: 2em;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.image-container {
+  border-radius: 13px;
+    width: 30%;
+    background: white;
+    height: 316px;
+    margin-left: -6%;
+    margin-top: 5%;
+    display: inline-block;
+    position: relative;
+    left: 11%;
+}
+
+.image-container img{
+  display: block;
+  margin: 0 auto;
+}
+
+.biography{
+  padding: 2em;
+  background-color: #dfd3c3;
+  border-radius: 1em;
+  width: fit-content;
+  line-height: 1.5;
+  display: inline-block;
+  position: relative;
+  left: 4%;
+  font-family: 'Raleway', sans-serif;
+}
+
+article{
+  text-align: center;
+}
+
+article h2{
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 2em;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.contribution{
+  display: inline-block;
+  background-color: white;
+  padding: 20px;
+  border-radius: 1em
+}
+
+.contribution img{
+  width: 100px;
+  height: 100px;
+}
+
+.contribution-text{
+  display: inline-block;
+  background-color: #dfd3c3;
+  padding: 50px 40px;
+  border-radius: 1em;
+  width: 200px;
+  height: 104px;
+  position: relative;
+  left: -2%;
+  z-index: -1;
+  font-family: 'Raleway', sans-serif;
+}
+
+.family h2{
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 2em;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.family div{
+  display: inline-block;
+  width: 18%;
+  height: 200px;
+  margin-left: 5px;
+  margin-bottom: 10%;
+  border-radius: 1em;
+  padding: 10px;
+  text-align: center;
+  background-color:#dfd3c3;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+}
