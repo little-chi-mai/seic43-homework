@@ -1,0 +1,90 @@
+/* /use * for easy debugging
+* {
+ /* border: limegreen; */
+ /* border: 1px solid limegreen;
+}  */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+body {
+background-image: image("background.webp");
+background-color: #E4EBEB;
+font-family: 'PT Serif', serif;
+
+/* margin: 0;
+padding: 0; */
+}
+
+.container {
+ max-width: 1000px;
+ background-color: #93B8C2;
+ margin: auto;
+ padding: 12em;
+ border-radius: 1em;
+ border-bottom-right-radius: 1em;
+}
+
+nav {
+ text-align: right;
+
+ }
+
+nav  a {
+   color: black;
+   font-size: 20px;
+   margin: 0 15px 0 0;
+   text-decoration: none;
+
+   }
+
+h1 {
+ text-align: center;
+ /* background-color: #73BCCF; */
+ color: #323636
+ font-size: 40px;
+ padding: 0.5em;
+ text-transform: uppercase;
+ /* text-transform: change text to upper or lower case */
+ box-shadow: 0 0 15px black;
+ font-weight: bold;
+}
+
+img {
+ display: inline-block;
+ width: 37%;
+
+}
+.dropcap {
+  color: ##053541; /* #053541 */
+  float: left;
+  line-height: .9;
+  padding-top: 0;
+  font-size: 50px;
+}
+.aboutme {
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+  padding-left: 1em;
+  line-height: 1.5em;
+}
+
+.birthinfo {
+  display: inline-block;
+  width: 21%;
+
+}
+
+.deathinfo {
+  display: inline-block;
+  width: 30%;
+}
+h3 {
+  font-size: 25px;
+  color: #3B4747;
+  margin: 40px 0 0 0;
+
+}
+aside ul {
+ padding-left: 17px;
+ line-height: 1.5em;
+}

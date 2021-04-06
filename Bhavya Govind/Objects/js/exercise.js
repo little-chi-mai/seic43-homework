@@ -123,10 +123,10 @@ const validateCard = function(cardNum1){
 
   //code to check duplicates in the number
 
-  for (let i = 1; i < cardNum.length; i++){
+  for (let i = 1; i < cardNum.length && isDuplicate === false; i++){
     if (cardNum[0] !== cardNum[i]) {
             isDuplicate = false;
-            break;
+
         }
   }
   //code to add all numbers in the code
@@ -240,5 +240,7 @@ Westpac.addAccount(acc2);
 console.log("Account details before transfer: \n", Westpac.accounts);
 
 Westpac.transfer(Westpac.accounts[0],Westpac.accounts[1],10);
+Westpac.transfer(Westpac.accounts[0],Westpac.accounts[1],100);
+Westpac.transfer(Westpac.accounts[0],Westpac.accounts[1],1000);
 
 console.log("Account details after transfer:\n ", Westpac.accounts);
