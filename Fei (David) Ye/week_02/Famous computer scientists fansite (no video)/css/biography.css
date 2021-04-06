@@ -1,0 +1,215 @@
+/* * {
+    border: 1px solid green;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+    background-color: white;
+    color: black;
+    margin:0;
+    padding:0;
+    
+    
+}
+
+nav {
+    position: fixed;
+    top:0.4px;
+    z-index: 3;
+    background: white;
+    width: 100%;
+}
+
+img {
+    margin-top: 70px;
+}
+
+#initial-article {
+    
+}
+
+h1 {
+    font-weight: bold;
+  color:black;
+  font-size: 40px;
+}
+
+
+#cute {
+    width: 100px;
+    height: 150px;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+
+h1 h2 h3 h4 h5 h6{
+    text-align: center;
+    font-family: 'Playfair Display',serif
+}
+
+main h1 {
+    text-align: center;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+main p {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+main {
+    background-color: white;
+    width: 650px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1em;
+    left:200px;
+    position: absolute;
+    top:550px;
+    z-index: 2;
+    border-right: 1px solid grey;
+    
+    
+}
+
+
+
+aside {
+    position: relative;
+    left:880px;
+    width: 380px;
+
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+
+
+a {
+    color:black;
+    font-weight: bolder;
+    line-height: 50px;
+    margin-left: 20px;
+    font-size: larger;
+    /* line-height: 200px; */
+    font-family: 'Train One', cursive;
+}
+
+h1 h2{
+    text-align: center;
+    margin:0;
+    font-family: 'Playfair Display', serif;
+}
+
+video {
+    position: fixed;
+}
+
+
+img {
+ width: 380px;
+ height: 540px;
+}
+
+figure {
+    margin-left: 120px;
+    margin-top: 20px;
+    width: 1200px;
+}
+
+.pic{
+    display:inline-block;
+}
+
+@keyframes fadeIn1 {
+    0% {opacity:1}
+    30% {opacity:0}
+   100% {opacity:0};
+}
+
+@keyframes fadeIn2 {
+    0% {opacity:0}
+    20% {opacity:0}
+   100% {opacity:0};
+}
+
+@keyframes fadeIn3 {
+    0% {opacity:0}
+    1% {opacity: 1;}
+    2% {opacity: 0;}
+    30% {opacity:0}
+   100% {opacity:0};
+}
+
+.who {
+    animation:fadeIn1, 10s ;
+    -webkit-animation: fadeIn1 ease 10s;
+    /* -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s; */
+}
+
+.turing {
+    animation:fadeIn2, 5s ;
+    -webkit-animation: fadeIn2 ease 7s;
+    /* -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s; */
+}
+
+.ada {
+    animation:fadeIn3, 500s ;
+    -webkit-animation: fadeIn3 ease 500s;
+    /* -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s; */
+}
+
+#bottom-h1 {
+    position:absolute;
+    left:450px;top:50px;
+    object-fit:cover;
+    pointer-events:none;
+    z-index:2;
+}
+
+#name1 {
+    color:orange;
+}
+
+#name2 {
+    color:pink;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+
+footer {
+    position: relative;
+    top:20px;
+    border-bottom: 50px;
+    height: 50px;
+    
+}
+
+footer p {
+    font-family: 'Train One', cursive;
+}
+
+

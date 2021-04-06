@@ -1,0 +1,12 @@
+.computer-cat{
+  bottom: :0;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.visibile{
+  visibility: visible;
+  opacity: 0.1;
+}
