@@ -1,0 +1,106 @@
+
+
+/* ## Style Hints: */
+
+/* Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a */
+.container #text {
+  margin: 0 auto; /*centers our container on the page */
+}
+
+p {
+  margin: 10px auto;
+}
+
+body {
+	line-height: 2;
+  font-family: Arial, Helvetica, sans-serif;
+	color: #7f7d78;
+	font-size: 12px;
+  margin: 50px auto;
+}
+
+h3 {
+  font-size: 17px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+a:hover {
+  color: #20222a;
+}
+
+#footer {
+  padding: 0 0 15px 10px;
+  margin: 0 auto;
+  width: 60%;
+}
+
+
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+
+}
+.container #image {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.container #bottom-images {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#small-images {
+   padding:1px;
+   border:5px solid lightgrey;
+
+}
+
+#image {
+  padding: 3px;
+
+}
+
+}
+#header {
+	padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+
+  #logo-image {
+	background: url(../images/logo.png) no-repeat;
+	width: 275px;
+	height: 76px;
+}
+
+
+#date {
+  color: lightblue;
+  margin-bottom: 0;
+  align-content: flex-start;
+}
