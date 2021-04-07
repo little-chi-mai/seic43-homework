@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+body {
+  margin: 0;
+  background-color: #faebd761;
+  font-family: 'Open Sans Condensed', sans-serif;
+  height: 100%;
+}
+
+header {
+  min-width: 960px;
+  /* position: fixed; */
+}
+
+.container{
+  max-width: 960px;
+  min-width: 500px;
+  margin: 0 auto;
+  padding: 0em 10em 0em 10em;
+}
+
+main {
+  display: inline-block;
+  width: 70%;
+  height: 350px;
+  margin-top: 20px;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: justify;
+  box-shadow: 0.5px 1px 1px 1px #96969661 inset;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-left: 8px;
+}
+
+.expanded_text p {
+  font-size: 16px;
+  margin: 0px 0px 10px 8px;
+}
+
+.longer_name {
+  display: none;
+}
+
+.expanded_text:hover span.shorter_name {
+  visibility: none;
+}
+
+.expanded_text:hover span.longer_name {
+  visibility: visible;
+}
+
+
+header h1 a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul {
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  padding-right: 30px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #e21e28;
+}
+
+.header_image {
+  background-image:url(../images/Banner1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 125px;
+  margin: 0;
+  padding: 0;
+  border-top: 0.3px solid #f9ebdd;
+}
+
+nav {
+  border-bottom: 0.3px solid #f68685;
+}
+
+.about_me h1{
+  font-size: 1.5em;
+}
+
+.about_me p {
+  font-size: 16px;
+}
+
+aside .bio h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+aside ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+  margin-top: 10px;
+}
+
+
+aside {
+  display: inline-block;
+  width: 16%;
+  vertical-align: top;
+  height: 350px;
+  margin-top: 20px;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-shadow: 0.5px 1px 1px 1px #96969661 inset;
+}
+
+li span {
+  font-weight: bolder;
+}
+
+aside .photo {
+  background-image:url(../images/Matzphoto.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 10px;
+  height: 130px;
+  /* background-color: green; */
+  height: 130px;
+}
