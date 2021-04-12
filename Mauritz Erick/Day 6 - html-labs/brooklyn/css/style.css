@@ -1,0 +1,59 @@
+h1{
+	position: absolute;
+	left: 260px;
+	top: 0px;
+	color: grey;
+}
+
+.hero{
+	position: absolute;
+	left: 260px;
+	top: 70px;
+
+}
+
+.ring{
+	position: absolute;
+	left: 260px;
+	top: 580px;
+
+}
+
+.collection{
+	position: absolute;
+	left: 260px;
+	top: 1100px;
+	color: grey;
+	margin: auto;
+	right: 200px;
+	line-height: 1.5;
+}
+
+.four{
+	position: absolute;
+	left: 255px;
+	top: 1350px;
+	width: 69%;
+	
+}
+
+
+h5{
+	color: rgb(116, 167, 214);
+}
+
+.newyork, .huffpost, .lucky, .marie{
+	border: 5px solid rgb(189, 186, 186);
+	padding: 5px;
+}
+
+.footer{
+	position: absolute;
+	left: 260px;
+	top: 1520px;
+	color: grey;
+}
+
+
+
+

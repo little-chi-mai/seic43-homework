@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+body{
+  background-color: #edf1f7
+
+}
+* {
+  font-family: 'New Tegomin', serif;
+}
+.container{
+  width:90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner{
+  width: 100%;
+
+}
+nav{
+  background-color: #afe6eb;
+  height:50px;
+}
+nav > ul{
+  padding-left: 94.453px;
+  padding-top: 12px;
+}
+nav > ul > li{
+  display:inline-block;
+  color:black;
+  margin-right: 15px;
+  font-weight: bold;
+
+}
+nav > ul > li > a{
+  color:black;
+  text-decoration: none;
+}
+#logo {
+	width: 90px;
+}
+
+
+header{
+  background-color: #ece9e9;
+  margin-bottom: 30px;
+}
+
+.header{
+  width:90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.about h2{
+  text-align: left;
+}
+.about p{
+  text-align: left;
+}
+.workTitle p{
+ text-align: left;
+ background-color:#afe6eb;
+ padding:5px;
+ font-weight: bold;
+}
+.lastSection{
+  height:300px;
+  display: flex;
+}
+.work{
+  width:24%;
+  height: 90%;
+  display:inline-block;
+  margin: 10px 5px 10px 0px;
+  padding:15px;
+  border: 2px solid grey;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.work img{
+  width:100%;
+}
+.work p{
+  text-align: justify;
+}
+.seminar1{
+  width:100%;
+  display: flex;
+  margin-bottom: 10px;
+}
+.aboutSeminar {
+  width:70%;
+  height:100%;
+  text-align: justify;
+  margin-right: 40px;
+  display:inline-block;
+  background-color: #d8edee;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding:5px;
+  box-shadow: 3px 3px 5px 6px #d8edee;
+}
+.videoSeminar{
+  display:inline-block;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px #d8edee;
+}
+.seminar2{
+  width:100%;
+  display: flex;
+  margin-top: 20px;
+}
+.aboutSeminar2{
+  width:70%;
+  height:100%;
+  text-align: justify;
+  margin-left: 40px;
+  display:inline-block;
+  background-color: #d8edee;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding:5px;
+  box-shadow: 3px 3px 5px 6px #d8edee;
+}
+.videoSeminar2{
+  display:inline-block;
+  border: 1px solid grey;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px #d8edee;
+}
+footer{
+  background-color: #d8edee;
+  opacity: 0.8;
+}
+.footer{
+  width:90%;
+  margin: 0 auto;
+}
+.innerFooter{
+  text-align: left;
+}
+.homeTownDiv{
+  width:90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.imageQuest{
+  width:90%;
+  margin: 0 auto;
+  text-align: center;
+  display:flex;
+}
+.question1{
+  width:50%;
+  margin:0 auto;
+  display:inline-block;
+
+}
+.question1 > p {
+  color: red;
+  font-weight: bolder;
+}
