@@ -18,7 +18,7 @@ def bmi_calculator
     elsif bmi>=25 && bmi<30
       puts"Overweight"
     else 
-      puts "Obesity"ß
+      puts "Obesity"
   end
 
 end
