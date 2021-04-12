@@ -52,20 +52,22 @@ puts 'Thanks for using this calculator'
 puts '-=' * 40
 
 puts 'Mortgage Calculator'.center(30)
-print 'Please enter total mortgage amount: '
+print 'Please enter total mortgage amount ($): '
 mortgage = gets.to_i # input 100,0000
-print 'Please enter annual interest rate: '
+print 'Please enter annual interest rate (%): '
 rate = gets.to_f # why input 20% result is 210,0000? How debug
-puts "Your monthly replayment is: #{mortgage * (1 + rate) / 12}"
+print 'Please enter years to replay: '
+years = gets.to_i # input 100,0000
+puts "Your monthly replayment is: #{(mortgage * (1 + rate / 100) / years / 12).round(2)}"
 
 puts '-=' * 40
 
 puts 'BMI Calculator'.center(30)
 print 'Please enter your height(m): '
-height = gets.to_f
+height = gets.to_f # ternary not working? (height > 100 ? gets.to_f / 100 : gets.to_f)
 print 'Please enter your weight(kg): '
 weight = gets.to_f
-puts "Your BMI is: #{(weight / height ** 2).round(2)}"
+puts "Your BMI is: #{(weight / height**2).round(2)}"
 
 puts '-=' * 40
 
@@ -88,11 +90,11 @@ def my_repl
   # index += 1
   print '> '
   input = gets.chomp.to_s
-  if input.start_with?("puts") 
+  if input.start_with?('puts')
     print eval(input).to_s
   else
     puts eval(input).to_s
-  end 
+  end
   my_repl
 end
 
