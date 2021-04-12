@@ -5,8 +5,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Roboto+Mono:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karma&display=swap');
 
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	z-index: -1;
+  /* Preserve aspet ratio */
+  min-width: 101%;
+  min-height: 101%;
+}
+
 body {
   background-color: #444;
+  /* background: url("img/931292.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+  background-size: cover;
+  
   margin: 0;
   padding: 0;
   font-family: 'Karma', serif;
@@ -96,6 +112,10 @@ main img {
   ;
 }
 
+.main {
+  width: 90%;
+}
+
 aside {
   display: inline-block;
   vertical-align: top;
@@ -108,6 +128,7 @@ aside {
       rgb(198, 212, 232), rgb(148, 162, 182)
     );
   box-sizing: border-box;
+  border: 1px solid rgba(255,255,255,0.4);
   padding: .5em;
   border-radius: .75em;
   margin-left: 3%;
