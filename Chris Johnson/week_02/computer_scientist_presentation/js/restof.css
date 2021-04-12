@@ -1,0 +1,66 @@
+/* body{
+  max-width: 75%;
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Roboto+Mono:wght@500&display=swap');
+body{
+  background-color: black;
+}
+
+.bg-image {
+  outline: 2px solid limegreen;
+padding:0;
+background-image: url(https://i.imgur.com/ptMqH0r.jpg);
+ height: 100vh;
+/* padding: 100vh; */
+background-repeat: no-repeat;
+background-size: 100%
+}
+
+.lifeofbig{
+  text-align: left;
+  font-size: 5.5vw;
+  padding-top: 3.5%;
+  padding-left: 3.5%;
+  padding-bottom: 2%;
+  text-shadow: 3px 3px #c46999;
+  color: #282c47;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.life-of{
+  text-align: left;
+  font-size: 1.5vw;
+  padding-top: 0%;
+  padding-right: 40%;
+  margin-left: 3%;
+  text-shadow: 2px 1px #e573ae;
+  color: #353757;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+  }
+
+.best-known{
+  text-align: left;
+  font-size: 1.5vw;
+  padding-top: 2%;
+  padding-right: 40%;
+  margin-left: 3%;
+  text-shadow: 2px 1px #e573ae;
+  color: #353757;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bold;
+  }
+
+  #bottomtext{
+    padding-bottom: 5%;
+    padding-top: 1%;
+  }
+
+  ul{
+      list-style-type: disc;
+  }

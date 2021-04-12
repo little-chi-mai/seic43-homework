@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+body {
+background-image: url(" ../Images/background.webpage.jpeg");
+background-position: center;
+background-size: 100% 100%;
+background-color: #E4EBEB;
+font-family: 'PT Serif', serif;
+
+/* margin: 0;
+padding: 0; */
+}
+
+.container {
+ /* background-image: url("../Images/background.webpage.jpeg"); */
+ max-width: 1000px;
+ background-color: #dcd2d2;
+ margin: auto;
+ padding: 12em;
+ border-radius: 1em;
+ border-bottom-right-radius: 1em;
+}
+
+nav {
+ text-align: right;
+ background-color: #c3a3a3;
+ color: #323636;
+ margin: 0 0 20px 0;
+ }
+
+nav  a {
+   color: black;
+   font-size: 20px;
+   margin: 0 15px 0 0;
+   text-decoration: none;
+
+   }
+img {
+  box-shadow: 0 0 15px black;
+  border: 5px solid #c7a7a7;
+}
+.bombe1 {
+  /* width: 45%; */
+  /* display: inline-block;
+  vertical-align: top; */
+}
+
+.aboutmachine1 {
+/* vertical-align: top;
+display: inline-block; */
+/* width:100%; */
+padding-left: 1em;
+line-height: 1.5em;
+}
+
+.bombe2 {
+  width: 50%;
+  padding-top: 1em;
+}
+
+.aboutmachine2 {
+  line-height: 1.5em;
+
+}
