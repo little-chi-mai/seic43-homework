@@ -1,0 +1,7 @@
+body {
+  background-color: #fbd7e347;
+}
+
+.flip {
+  transform: scaleX(-1);
+}
