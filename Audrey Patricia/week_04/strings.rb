@@ -8,18 +8,18 @@
 
 #ANSWER ---
 
-# def dr_evil(amount)
-#   unless amount == 1000000
-#     puts "#{amount} dollars"
-#   else
-#     puts "#{amount} dollars (pinky)"
-#   end
-# end
-#
-# print "Give me an amount: "
-# amount = gets.to_i
-#
-# dr_evil(amount)
+def dr_evil(amount)
+  unless amount == 1000000
+    puts "#{amount} dollars"
+  else
+    puts "#{amount} dollars (pinky)"
+  end
+end
+
+print "Give me an amount: "
+amount = gets.to_i
+
+dr_evil(amount)
 
 ## MixUp
 
@@ -32,23 +32,23 @@
 
 #ANSWER ---
 
-# def mix_up(str1, str2)
-#   str1_initial = str1[0,2]
-#   str1_end = str1[2, str1.length - 1]
-#   str2_initial = str2[0,2]
-#   str2_end = str2[2, str2.length - 1]
-#   puts "#{str2_initial + str1_end} #{str1_initial + str2_end}"
-# end
-#
-# mix_up('mix', 'pod')
-# mix_up('dog', 'dinner')
-#
-# print "Enter first string: "
-# str1 = gets.chomp
-# print "Enter second string: "
-# str2 = gets.chomp
-#
-# mix_up(str1, str2)
+def mix_up(str1, str2)
+  str1_initial = str1[0,2]
+  str1_end = str1[2, str1.length - 1]
+  str2_initial = str2[0,2]
+  str2_end = str2[2, str2.length - 1]
+  puts "#{str2_initial + str1_end} #{str1_initial + str2_end}"
+end
+
+mix_up('mix', 'pod')
+mix_up('dog', 'dinner')
+
+print "Enter first string: "
+str1 = gets.chomp
+print "Enter second string: "
+str2 = gets.chomp
+
+mix_up(str1, str2)
 
 ## FixStart
 
@@ -59,24 +59,24 @@
 
 #ANSWER
 
-# def fix_start(string)
-#   char_array = string.split("")
-#   first_char = string[0]
-#   new_array = Array.new
-#
-#   char_array.each do |i|
-#     if i == "b"
-#       new_array.push("*")
-#     else
-#       new_array.push(i)
-#     end
-#   end
-#
-#   new_array[0] = first_char
-#   puts new_array
-# end
-#
-# fix_start("babble")
+def fix_start(string)
+  char_array = string.split("")
+  first_char = string[0]
+  new_array = Array.new
+
+  char_array.each do |i|
+    if i == "b"
+      new_array.push("*")
+    else
+      new_array.push(i)
+    end
+  end
+
+  new_array[0] = first_char
+  puts new_array
+end
+
+fix_start("babble")
 
 ## Verbing
 
@@ -87,25 +87,25 @@
 #   verbing('go'): 'go'
 # ```
 
-#ANSWER --- 
+#ANSWER ---
 
-# def verbing(string)
-#
-#   end_chars = string[string.length - 3, string.length - 1]
-#
-#   if end_chars != "ing" && string.length > 3
-#     puts string + "ing"
-#   elsif end_chars == "ing"
-#     puts string + "ly"
-#   else
-#     puts string
-#   end
-#
-# end
-#
-# verbing('swim')
-# verbing('swimming')
-# verbing('go')
+def verbing(string)
+
+  end_chars = string[string.length - 3, string.length - 1]
+
+  if end_chars != "ing" && string.length > 3
+    puts string + "ing"
+  elsif end_chars == "ing"
+    puts string + "ly"
+  else
+    puts string
+  end
+
+end
+
+verbing('swim')
+verbing('swimming')
+verbing('go')
 
 ## Not Bad
 
