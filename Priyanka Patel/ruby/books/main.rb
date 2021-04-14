@@ -3,8 +3,6 @@ require 'sinatra/reloader'
 require 'pry'
 require 'httparty'
 
-#  GET https://www.googleapis.com/books/v1/volumes?q={title}
-
 get '/' do
   erb :home
 end
