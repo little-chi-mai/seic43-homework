@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Book</title>
+  </head>
+  <body>
+    <div class = "container">
+      <nav><a href="/">Home</a></nav>
+      <%=yield %>
+    </div>
+  </body>
+</html>
+<%# Build a search form that lets the user enter a book title. The Sinatra app will use HTTParty to fetch the data for the chosen book from Google Books and display it on the page. Display the cover, as a bare minimum.
+
+Sample HTTParty URL
+https://www.googleapis.com/books/v1/volumes?q=title:Ulysses
+
+Additional Resources
+Sinatra
+Google Books Search API
+HTTParty Tutorial %>
