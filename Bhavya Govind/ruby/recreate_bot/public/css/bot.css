@@ -1,0 +1,52 @@
+/*div {
+	border: 1px solid #f0f;
+}*/
+
+
+body {
+	background-color: black;
+}
+
+#container {
+	text-align:center;
+    font-family: "Tahoma", "Verdana", "Helvetica", "Arial", sans-serif;
+	color:white;
+	margin: 30vh auto;
+	max-height:90vh;
+}
+h2{
+	color:white;
+}
+button{
+	padding: 10px;
+	color: white;
+	border: 1px;
+	border-radius: 5px;
+}
+.yes{
+	background-color: green;
+}
+.no{
+	background-color: red;
+}
+.reset{
+	background-color: #006dcc;
+
+}
+form{
+	display:inline
+}
+footer{
+	text-align: left;
+
+}
+a{
+	color:green
+}
+p{
+	font-weight: bold;
+	font-size: 30px;
+}
+.auhtor{
+	color: grey;
+}
