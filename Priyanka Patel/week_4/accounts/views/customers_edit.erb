@@ -1,0 +1,39 @@
+<h2>Edit customer details</h2>
+
+<form action="/customers/<%= @customer.id %>" method="post">
+
+  <label>
+    First name:
+    <input name="first_name" placeholder="first name" required value= "<%= @customer.first_name %>">
+  </label>
+
+  <label>
+    Last name:
+    <input name= "last_name" placeholder="last_name" required value= "<%= @customer.last_name %>">
+  </label>
+
+  <label>
+    Gender:
+    <input name="gender" placeholder="123" value= "<%= @customer.gender %>">
+  </label>
+
+  <label>
+    Contact:
+    <input name="contact_detail" placeholder="123" value= "<%= @customer.contact_detail %>">
+  </label>
+
+  <label>
+    Email Address:
+    <input name="email"placeholder="acb@" value= "<%= @customer.email %>">
+  </label>
+
+  <label>
+    Home Address
+    <input name="address" placeholder="12%" value= "<%= @customer.address %>">
+  </label>
+
+  <div class="">
+    <button class="submit">Submit</button>
+  </div>
+
+</form>
