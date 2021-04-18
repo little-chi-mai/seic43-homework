@@ -1,0 +1,22 @@
+<h2>Edit Mugshot</h2>
+
+<form action="/mugshots/<%= @mugshot["id"] %>" method="post">
+
+  <label>
+    Name:
+    <input name="name" placeholder="Bill Gates" required value="<%= @mugshot["name"] %>">
+  </label>
+
+  <label>
+    Family:
+    <input name="crime" placeholder="crime" value="<%= @mugshot["crime"] %>">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="http://..." value="<%= @mugshot["image"] %>">
+  </label>
+
+  <button>Update Mugshot</button>
+
+</form>
