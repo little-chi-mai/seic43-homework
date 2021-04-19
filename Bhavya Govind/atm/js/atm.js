@@ -1,6 +1,9 @@
 
 $(document).ready(function(){
+    
+    changeBackground();
 // Accessing inputs and value in the  checking account
+    changeBackground();
     const checkingAcc = {
         accountBalance: $('div.balance#checking-balance'),
         inputAmount : $('#checking-amount'),
@@ -16,7 +19,7 @@ $(document).ready(function(){
             let currentBalance = checkingAcc.accountBalance.text().replace('$','');
             let savingsBalance = savingsAcc.accountBalance.text().replace('$','');
             let result =  withdraw(currentBalance,savingsBalance,withdrawAmount);
-            changeBackground(result[0],result[1]);
+            changeBackground();
             if(result){
                 checkingAcc.accountBalance.text('$' + result[0]); 
                 savingsAcc.accountBalance.text('$' + result[1]);
@@ -40,7 +43,7 @@ $(document).ready(function(){
             let savingsBalance = savingsAcc.accountBalance.text().replace('$','');
             let checkingBlance =  checkingAcc.accountBalance.text().replace('$','');
             let result =  withdraw(savingsBalance,checkingBlance,withdrawAmount);
-            changeBackground(result[0],result[1]);
+            changeBackground();
             if(result){
                 savingsAcc.accountBalance.text('$' + result[0]); 
                 checkingAcc.accountBalance.text('$' + result[1]);
@@ -69,12 +72,15 @@ $(document).ready(function(){
             }
             
     }
-    function changeBackground(balance1,balance2){
-        console.log(balance1,balance2);
-        if(balance1 === 0){
+    function changeBackground(){
+        let checkBalance = $('#checking-balance').text();
+        checkBalnce = parseInt(checkBalance.replace('$',''));
+        let savingBalance = $('#savings-balance').text();
+        savingBalnce = parseInt(savingBalance.replace('$',''));
+        if(checkBalance === 0){
           $('div.balance#checking-balance').addClass('zero').removeClass('balance');
         }
-        if(balance2 === 0){
+        if(savingBalance === 0){
             $('div.balance#savings-balance').addClass('zero').removeClass('balance');
         }
     }

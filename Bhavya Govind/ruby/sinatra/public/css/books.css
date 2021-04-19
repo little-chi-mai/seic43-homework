@@ -1,0 +1,9 @@
+body{
+    background-color: aliceblue;
+}
+#container{
+    background: rgd(255,255,255,0.8);
+    margin: 0 auto;
+    text-align: center;
+    max-height: 90vh;
+}
