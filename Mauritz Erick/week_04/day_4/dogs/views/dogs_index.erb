@@ -1,0 +1,11 @@
+<h2>Dogs List </h2>
+
+<ul>
+  <% @dogs.each do |dogs| %>
+    <li>
+      <a href="/dogs/<%=dogs['id']%>">
+        <%= dogs['breed']%>
+      </a>
+    </li>
+  <% end %>
+</ul>
