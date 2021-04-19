@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+body {
+background-image: image("background.webp");
+background-color: #D4EAEE;
+font-family: 'PT Serif', serif;
+}
+
+.container {
+ max-height: 1000px;
+ background-color: #93B8C2;
+ margin: auto;
+ padding: 12em;
+ border-radius: 1em;
+ border-bottom-right-radius: 1em;
+}
+
+nav {
+	width: 100%;
+	border-top: dashed #07404B 1px;
+	border-bottom: dashed #07404B 1px;
+	display: block;
+  text-align: right;
+
+}
+nav a {
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    margin: 0 30px 0 0;
+    text-decoration: none;
+
+	}
+
+  img {
+    width: 400 !important;
+    border-radius: 2em;
+    border: 5px solid #3D9CAE;
+  }
+
+  .mycollege {
+    display: inline-block;
+    width: 40%;
+    margin:15px 0 0 0;
+
+  }
+
+.college {
+  display: inline-block;
+  vertical-align: top;
+   width: 42%;
+   padding-left: 1em;
+   line-height: 1.5em;
+}
+
+.dropcap {
+  color: #053541; /* #053541 */
+  float: left;
+  line-height: .9;
+  padding-top: 0;
+  font-size: 50px;
+}
+
+.bombeimg {
+
+  float: right;
+  width: 40%;
+  margin:15px 0 0 -15px;
+}
+.bombe {
+   display: inline-block;
+   width: 42%;
+   padding-left: 1em;
+   line-height: 1.5em;
+   margin: 25px 0 90px 0;
+}
+.mystatue {
+  float: left;
+  width: 35%;
+  margin:15px 0 0 0;
+}
+.statue {
+  display: inline-block;
+  width: 55%;
+  padding-left: 1em;
+  line-height: 1.5em;
+  margin: 25px 0 0 0;
+  vertical-align: top;
+}
