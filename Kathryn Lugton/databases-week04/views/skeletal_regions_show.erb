@@ -1,0 +1,25 @@
+<h1> <%= @region.name %></h1>
+
+<h2> Region: <%= @region['region'] %></h2> <!--(to try associate later (was position)-->
+
+<div class="control">
+<a href="/skeletal_regions/<%= @region["id"] %>/edit"> Edit region </a>
+<a href="/skeletal_regions/<%= @region['id'] %>/delete"> Delete region </a>
+</div>
+
+<div class="association">
+
+</div>
+
+<% unless @region.image.nil? || @region.image.empty? %>
+<img src="<%= @region.image %>" alt="<%= @region.name %> Skeletal Region" class="feature">
+<% end  %>
+
+<div class="association">
+<h4>Related bones:</h4>
+  <ul>
+    <% Bone.all.each do |bone| %>
+        <a href="/skeletal_regions/<%= bone.id %>"><%= bone.name %></a>
+    <% end %>
+  </ul>
+</div>
