@@ -68,6 +68,9 @@
 # => "8 seconds since last boot, 29 seconds since creation"
 # ```
 
+# reference about Epoch time https://en.wikipedia.org/wiki/Unix_time
+# Time.to_i reference https://ruby-doc.org/core-2.6.3/Time.html#method-i-to_i
+
 require 'pry'
 
 class Robot
@@ -76,7 +79,7 @@ class Robot
     def initialize
         @name = random_name
         @instruction_count = 0
-        @created_at = Time.now.to_i
+        @created_at = Time.now.to_i  # Reference above
         @reset_at = Time.now.to_i
     end
 
@@ -108,7 +111,7 @@ class Robot
         @message = "#{@reset_time} seconds since last boot, #{@create_time} seconds since creation"
     end
 
-    # function 
+    # function to generate random name
     def random_name
         letters = ('AA'..'ZZ').to_a.sample()
         digits = ('000'..'999').to_a.sample()
