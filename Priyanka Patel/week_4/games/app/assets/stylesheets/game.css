@@ -1,0 +1,61 @@
+body {
+  /* background-color: #a3c2c2;
+  /* background-image: url(/assets/image3.jpeg); */
+  background-image: url(image8.jpeg);
+}
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+input {
+  padding: 10px 20px;
+  border: 3px solid #cc7a00;
+}
+
+.question {
+  font-size: 2em;
+  color: black;
+}
+
+nav a {
+  font-size: 1.3em;
+  color: #000066;
+  text-align: right;
+  padding: 5px 15px;
+}
+
+.result {
+  animation: key1 .3s ease infinite alternate;
+  font-size: 3em;
+  box-shadow: 0 0 15px #3399ff;
+  padding-left: 10px;
+}
+
+@keyframes key1 {
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(-20px);}
+}
+
+p a {
+  font-size: 2em;
+  color: #ff0000;
+}
+
+label {
+  color: #003366;
+  font-size: 1.2em;
+}
+
+.img {
+  max-width: 100%;
+}
+
+div a {
+  color: #003366;
+  font-size: 2em;
+  padding: 5px 20px;
+}
