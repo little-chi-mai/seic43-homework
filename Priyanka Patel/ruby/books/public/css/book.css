@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+body{
+  text-align: center;
+  background-image: url("../image.org/book.jpeg");
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffefcc;
+  max-height: 100vh;
+  padding: 1em;
+  font-family: 'Playfair Display', serif;
+
+}
+
+nav {
+  font: 20px bold;
+}
+
+h1 {
+  font: 30px bold;
+}

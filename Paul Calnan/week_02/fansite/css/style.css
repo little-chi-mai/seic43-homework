@@ -123,11 +123,11 @@ body {
 }
 
 header {
-overflow: hidden;
-max-width: 800px;
-max-height: 200px;
-margin: 10px;
-transition: 2s;
+  overflow: hidden;
+  max-width: 800px;
+  max-height: 200px;
+  margin: 10px;
+  transition: 2s;
 }
 
 h1 {

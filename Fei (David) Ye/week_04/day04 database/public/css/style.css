@@ -1,0 +1,12 @@
+body {
+    background-color: lightblue;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.feature {
+    max-width: 100%;
+}

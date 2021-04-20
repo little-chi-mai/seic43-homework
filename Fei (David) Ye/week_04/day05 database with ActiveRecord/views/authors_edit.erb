@@ -1,0 +1,22 @@
+<h2>Edit Author</h2>
+
+<form action="/authors/<%= @author['id'] %>" method="post">
+    <label>
+        Name:
+        <input name="name" placeholder="Please enter author name" required  value="<%=@author["name"]%>">
+    </label>
+
+    <label>
+        Birth Year:
+        <input name="birth_year" placeholder="Please enter birth year"  value="<%=@author["birth_year"]%>">
+    </label>
+
+    <label>
+        Image:
+        <input name="image" type="url" placeholder="http://..." value="<%=@author["image"]%>">
+    </label>   
+
+    <button>
+        Update author
+    </button>
+</form>

@@ -1,0 +1,26 @@
+<h2>Edit Book</h2>
+
+<form action="/books/<%= @book["id"] %>" method='post'>
+    <label>
+        Title:
+        <input name="title" placeholder="Enter book title" required value="<%=@book["title"]%>">
+    </label>  
+
+    <label>
+        Author:
+        <input name="author" placeholder="Enter author" value="<%=@book["author"]%>">
+    </label>  
+
+    <label>
+        Publish Year:
+        <input name="publish_year" placeholder="Enter publish year" value="<%=@book["publish_year"]%>">
+    </label>  
+
+    <label>
+       Cover:
+        <input type="url" name="cover" value="<%=@book["cover"]%>">
+    </label>   
+
+    <button>Update Book</button>
+
+</form>

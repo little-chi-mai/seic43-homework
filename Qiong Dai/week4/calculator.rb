@@ -30,7 +30,6 @@ def show_menu
   puts "[d] - Divion"
   puts "[e] - Exponents"
   puts "[sr] - Square Roots"
-  # TODO: Add other options here.
   puts "[q] - Quit"
   print "Enter your choice: "
 end
