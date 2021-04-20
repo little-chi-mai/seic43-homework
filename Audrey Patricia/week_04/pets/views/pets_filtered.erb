@@ -1,0 +1,9 @@
+<ul class="all_pets">
+  <% @pets.each do |pet| %>
+  <li>
+    <a href="/pets/<%= pet["id"] %>">
+      <%= pet["name"] %>
+    </a>
+  </li>
+  <% end %>
+</ul>

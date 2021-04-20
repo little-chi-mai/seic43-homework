@@ -1,0 +1,21 @@
+
+<div class="container">
+  <h2 class="search_result">You searched for: <%=@title.capitalize%></h2>
+
+  <div class="main">
+    <img class="book_cover" src=<%=@img_src%> alt="">
+    <a class="book_link" href=<%=@preview_link%>>Preview</a>
+    <a id="buy" class="book_link" href=<%=@buy_link%>>Buy</a>
+  </div>
+
+  <div class="aside">
+    <h2><%=@ret_title%>:</h2>
+    <h3>Author: <%=@authors%></h3>
+    <p>Published by <%=@publisher.to_s%> on <%=@published_date%> </p>
+    <p>Category: <%=@categories%> </p>
+    <p>Page Count: <%=@page_count%></p>
+    <p>Average Rating: <%=@average_rating%>/5</p>
+  </div>
+
+  <p class="description"><%=@description%></p>
+</div>
