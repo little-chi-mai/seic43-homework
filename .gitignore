@@ -52,5 +52,5 @@ node_modules/
 
 .byebug_history
 
-#something in rails
+# Ignore master key for decrypting credentials and more.
 /config/master.key
