@@ -1,0 +1,12 @@
+<h1><%= @skeleton.name %></h1>
+
+<h2>Position: <%= @skeleton.position %></h2>
+
+<div class="control">
+<a href="/skeletons/<%= @skeleton["id"] %>/edit"> Edit skeleton</a>
+<a href="/skeletons/<%= @skeleton[:id] %>/delete">Delete skeleton</a>
+</div>
+
+<% unless @skeleton.image.nil? || @skeleton.image.empty? %>
+<img src="<%= @skeleton.image %>" alt="<%= @skeleton.name %> skeleton diagram" class="feature">
+<% end  %>

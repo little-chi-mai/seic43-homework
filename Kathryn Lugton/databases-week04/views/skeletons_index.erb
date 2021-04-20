@@ -1,0 +1,9 @@
+<h1>All Skeletons</h1>
+
+<% @skeletons.each do |skeleton| %>
+  <p>
+    <a href="/skeletons/<%= skeleton["id"]%>">
+    <%= skeleton["name"]%>
+  </a>
+  </p>
+<% end %>

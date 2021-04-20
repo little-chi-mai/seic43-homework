@@ -1,0 +1,21 @@
+<h1> Edit Skeletal Region </h1>
+
+<form action="/skeletal_regions/<%= @region["id"] %>" method="post">
+  <label>
+    Name:
+    <input name="name" placeholder="Thoracic Cage" required value="<%= @region.name%>">
+  </label>
+
+  <label>
+   Position:
+   <input name="position" placeholder="Anterior" required value="<%= @region.position %>">
+  </label>
+
+ <label>
+   Image:
+   <input type="url" name="image" placeholder="http://..." value="<%= @region.image %>">
+ </label>
+
+<button> Update region </button>
+
+</form>

@@ -1,0 +1,9 @@
+<h2>All potatoes</h2>
+<p>coming soon
+<% @potatoes.each do |potato| %>
+</p>
+<p>
+<a href="/potatoes/<%= potato["id"]%>">
+  <%= potato["name"] %>
+</p>
+<% end %>

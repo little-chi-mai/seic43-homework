@@ -1,0 +1,11 @@
+<h2>All Account holders</h2>
+
+<% @customers.each do |customer| %>
+<p class = "customer">
+  <a href="/customers/<%= customer["id"] %>">
+  <%= customer["first_name"] %> <%= customer["last_name"] %>
+  </a>
+</p>
+<% end %>
+
+<a class= "new" href="/customers/new">New customer</a>

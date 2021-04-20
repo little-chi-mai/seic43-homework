@@ -1,0 +1,14 @@
+<h2><%= @book["title"] %></h2>
+
+<h3>Author: <%= @book["author"] %></h3>
+<h3>Publish Year: <%= @book["publish_year"] %></h3>
+
+<% unless @book["cover"].nil? || @book["cover"].empty? %>   
+    <img src="<%= @book["cover"] %>" alt="<%= @book["title"] %>" class="feature">
+<% end %>
+
+<div class="controls">
+    <a href="/books/<%=@book["id"]%>/edit">Edit book</a>
+    <a href="/books/<%=@book["id"]%>/delete">Delete book</a>
+</div>
+

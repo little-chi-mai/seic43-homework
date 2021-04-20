@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Acme&display=swap');
+
+body {
+  background-color: #d3e0dc;
+  margin: 0;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 90%;
+  padding: 1em;
+  background-color: #f0ece3;
+  padding: 50px;
+  margin-top: 50px;
+  border-radius: 2.5em 0em 2em 0em;
+}
+
+
+.logo{
+  width: 10%;
+  padding-top: 20px;
+}
+
+.header{
+  background-color: #fafafb;
+  padding-bottom: 10px;
+  position: relative;
+  font-family: 'Acme', sans-serif;
+}
+
+.intro{
+  position: absolute;
+  left: 36%;
+  top: 17%;
+  color: #d3e0dc;
+  font-size: 3em;
+}
+
+nav {
+  text-align: right;
+  margin-right: 15%;
+}
+
+nav a{
+  padding: 10px;
+  text-decoration: none;
+  color: #aee1e1;
+  font-size: 18px;
+}
+
+nav a:hover{
+  color: #fcd1d1;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.feature {
+  max-width: 100%;
+  /* takes a 100% of whatever it is inside of */
+}
+
+form{
+  font-size: 18px;
+}
+
+input{
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin-left: 5px;
+}
+
+label{
+  display: block;
+  padding: 10px;
+}
+
+button{
+  padding: 8px;
+  border-radius: 9px;
+  margin-top: 15px;
+}
+
+button:hover{
+  background-color: #d3e0dc;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+
+.pet_photo{
+  border-radius: 1em;
+}
+
+/* .main{
+  display: inline-block;
+  width: 50%;
+}
+
+.aside{
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  text-align: left;
+  margin-top: 4%;
+} */
+
+.pet_photo{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.welcome_text{
+  line-height: 1.5;
+}
+
+.controls a{
+  text-decoration: none;
+    border: 2px solid #99bbad;
+    border-radius: 1em;
+    padding: 9px;
+    color: black;
+
+}
+
+.controls a:hover{
+  background-color: #d3e0dc;
+  font-size: 18px;
+  border: none;
+}
+
+.all_pets{
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.all_pets li a{
+  text-decoration: none;
+  margin: 5px;
+}
+
+.all_pets li a:hover{
+  font-size: 22px;
+  color: #7c9473;
+}
+
+#paw_trail{
+  width: 7%;
+  position: absolute;
+  right: 8%;
+  top: 13%;
+  transform: rotate(45deg);
+}
