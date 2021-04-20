@@ -1,0 +1,33 @@
+<h2>Edit account</h2>
+<h3>please fill out the form</h3>
+<form action="/customers/<%= @account.customer_id %>/accounts/<%= @account["account_number"] %>" method="post">
+
+<label>
+  Customer ID:
+  <input name= "customer_id" value= "<%= @account.customer_id %>" required readonly>
+</label>
+
+<label>
+  Account Number:
+  <input name= "account_number" value= "<%= @account["account_number"] %>" required readonly>
+</label>
+
+<label>
+  Account type:
+  <input name= "account_type" value= "<%= @account.account_type %>" required>
+</label>
+
+<label>
+  Current Balance
+  <input name="balance" value= "<%= @account.balance %>">
+</label>
+
+<label>
+  Account status
+  <input name="account_status" value= "<%= @account.account_status %>" placeholder="active/inactive">
+</label>
+
+<div>
+  <button class="submit">Submit</button>
+</div>
+</form>

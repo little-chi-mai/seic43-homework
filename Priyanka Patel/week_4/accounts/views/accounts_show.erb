@@ -1,0 +1,12 @@
+<h3>Account number: <%= @account["account_number"] %></h3>
+<h3>Name: <%= @customer["first_name"] %> <%= @customer["last_name"] %></h3>
+<h3>Account type: <%= @account["account_type"] %> </h3>
+<h3>Account balace: <%= @account["balance"] %> </h3>
+<h3>Account status: <%= @account["account_status"] %> </h3>
+
+<div >
+  <a class="controls" href="/customers/<%= @customer["id"]%>/accounts/<%= @account["account_number"]%>/edit">Edit account</a></br>
+  <a class="controls" href="/customers/<%= @customer["id"]%>/accounts/<%= @account["account_number"]%>/delete">delete account</a></br>
+  <a class="controls" href="/customers/<%= @customer["id"]%>/edit">Edit customer</a></br>
+  <a class="controls" href="/customers/<%= @customer["id"]%>/delete">Delete customer</a>
+</div>
