@@ -1,0 +1,10 @@
+<h3>All accounts</h3>
+
+<% @accounts.each do |account| %>
+<p>
+  <a href="/customers/<%= account[:customer_id] %>/accounts/<%= account[:account_number] %>">
+    <h3>Account number: <%= account[:account_number] %> : <%= account[:account_type] %></h3>
+  </a>
+</p>
+
+<% end %>

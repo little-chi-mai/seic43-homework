@@ -1,0 +1,10 @@
+<h2><%= @author['name'] %></h2>
+
+<% unless @author['image'].nil? || @author['image'].empty? %>
+    <img src="<%= @author['image'] %>" alt="<%= @author['image'] %>" class='feature'>
+<% end %>
+
+<div class="control">
+    <a href="/authors/<%= @author["id"] %>/edit">Edit author</a>
+    <a href="/authors/<%= @author["id"] %>/delete">Delete author</a>
+</div>

@@ -1,0 +1,13 @@
+<h2> <%= @potato["name"] %> </h2>
+<h3> Family: <%= @potato["family"] %></h3>
+<% 
+  unless @potato["image"].nil? || @potato["image"].empty? %>
+<img src="<%= @potato["image"] %>" alt="<%= @potato["name"] %>" class="feature"> 
+
+<% end %>
+
+<div class="controls">
+<a href="/potatoes/<%= @potato["id"]%>/edit">Edit potato</a>
+<a href="/potatoes/<%= @potato["id"]%>/delete">DELETE potato</a>
+
+</div>

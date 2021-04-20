@@ -1,0 +1,13 @@
+<h2><%= @mugshot["name"] %></h2>
+
+<h3>Crime: <%= @mugshot["crime"] %></h3>
+
+<% unless @mugshot["image"].nil? || @mugshot["image"].empty? %>
+
+<img src="<%= @mugshot["image"] %>" alt="<%= @mugshot["name"] %>" class="feature">
+<% end %>
+
+<div class="controls">
+  <a href="/mugshots/<%= @mugshot["id"] %>/edit">Edit mugshot</a>
+  <a href="/mugshots/<%= @mugshot["id"] %>/delete">Delete mugshot</a>
+</div>

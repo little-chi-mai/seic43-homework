@@ -1,0 +1,18 @@
+<h2><%= @country["name"] %></h2>
+
+<h3>Capital City: <%= @country["capital_city"] %></h3>
+
+<h3>Population: <%= @country["population"] %></h3>
+
+<h3>Land Area (km2): <%= @country["land_area"] %></h3>
+
+<h3>Wrold_share(%): <%= @country["wrold_share"] %></h3>
+
+<% unless @country["image"].nil? || @country["image"].empty? %>
+  <img src="<%= @country["image"] %>" alt="<%= @country["name"] %>"class = "img">
+<% end %>
+
+<div class="controls">
+  <a href="/countries/<%= @country["id"]%>/edit">Edit</a>
+  <a href="/countries/<%= @country["id"]%>/delete">Delete</a>
+</div>
