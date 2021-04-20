@@ -1,0 +1,13 @@
+<h2> <%= @criminals["name"]  %> </h2>
+
+<h3> Crime: <%= @criminals["crime"] %></h3>
+
+<div class="controls">
+
+  <a href="/criminals/<%= @criminals["id"] %>/edit">Edit criminal</a>
+  <a href="/criminals/<%= @criminals["id"] %>/delete">Delete criminal</a>
+</div>
+
+<%  unless @criminals["image"].nil? || @criminals["image"].empty? %>
+  <img src="<%= @criminals["image"] %>" alt="<%= @criminals["name"] %>" class="feature">
+<% end  %>

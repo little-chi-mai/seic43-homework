@@ -1,0 +1,22 @@
+<h2>Edit Criminal</h2>
+
+<form action="/criminals/<%= @criminals["id"] %>" method="post">
+
+<label>
+  Full name:
+  <input name="name" placeholder="John Smith" required value="<%=  @criminals["name"] %>">
+</label>
+
+<label>
+  Crime:
+  <input name="crime" placeholder="Theft" value="<%= @criminals["crime"] %>">
+</label>
+
+<label>
+  Image:
+  <input type="url" name="image" placeholder="http://..." value="<%= @criminals["image"] %>">
+</label>
+
+<button> Update this scumbag </button>
+
+</form>

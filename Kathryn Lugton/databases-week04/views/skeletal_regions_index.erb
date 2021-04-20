@@ -1,0 +1,9 @@
+<h1> All Skeletal Regions </h1>
+
+<% @regions.each do |region| %>
+<p>
+<a href="/skeletal_regions/<%= region["id"]%>">
+  <%= region["name"] %>
+</a>
+</p>
+<% end %>

@@ -1,0 +1,21 @@
+<h1> Edit Bone </h1>
+
+<form action="/bones/<%= @bone["id"] %>" method="post">
+  <label>
+    Name:
+    <input name="name" placeholder="L5" required value="<%= @bone.name%>">
+  </label>
+
+  <label>
+   Region:
+   <input name="region" placeholder="Lumbar" required value="<%= @bone.region %>">
+  </label>
+
+ <label>
+   Image:
+   <input type="url" name="image" placeholder="http://..." value="<%= @bone.image %>">
+ </label>
+
+<button> Update bone</button>
+
+</form>
