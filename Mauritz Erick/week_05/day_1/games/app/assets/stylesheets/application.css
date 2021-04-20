@@ -1,0 +1,88 @@
+  body {
+    background-color: rgb(185, 228, 245);
+    margin: 0 auto;
+    padding: 50px;
+    max-width: 960px;
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  .home {
+    text-align: center;
+  }
+  
+  span {
+    font-size: 100px;
+  
+  }
+  
+  
+  .homenav {
+    color: rgb(55, 105, 161);
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .homenav:hover {
+    color: rgb(245, 179, 35);
+    background-color: rgba(54, 64, 211, 0.53);
+    box-shadow: 5px 5px 5px rgb(245, 179, 35);
+    font-size: 40px;
+    transition: 0.3s;
+  }
+  
+  .numbers {
+    font-size: 50px;
+    padding:30px;
+    text-decoration: none;
+    color: rgb(247, 85, 80);
+  }
+  
+  .numbers:hover {
+    background-color: rgb(81, 236, 158);
+  }
+  
+  
+  nav {
+    background-color: rgb(185, 228, 245);
+    padding: 5px;
+    margin-bottom: 70px;
+    width: auto;
+  }
+  #mainnav {
+    color: rgb(17, 197, 113);
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bolder;
+    
+  }
+  
+  #mainnav:hover {
+    background-color: white;
+    padding:20px;
+    transition: 0.3s;
+    box-shadow: 10px 10px 5px rgb(245, 179, 35);
+  }
+  
+  #answer {
+    font-size: 70px;
+    text-align: center;
+  }
+  
+  #secretnumber {
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 50px;
+    font-size: 50px;
+  }
+  
+  #secretnumberanswer {
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 50px;
+    font-size: 100px;
+    color: rgb(11, 214, 89);
+  }
+  
