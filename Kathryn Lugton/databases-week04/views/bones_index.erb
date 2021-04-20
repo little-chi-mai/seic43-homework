@@ -1,0 +1,9 @@
+<h1> All Bones </h1>
+
+<% @bones.each do |bone| %>
+<p>
+<a href="/bones/<%= bone["id"]%>">
+  <%= bone["name"] %>
+</a>
+</p>
+<% end %>

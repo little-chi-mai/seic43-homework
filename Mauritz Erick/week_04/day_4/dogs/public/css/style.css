@@ -1,0 +1,27 @@
+body {
+    color: rgb(57, 129, 236);
+    background-color: rgb(95, 153, 230);
+    margin: 0;
+  }
+  
+  a{
+    color: limegreen;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #222;
+    padding: 1em;
+  }
+  
+  img.feature {
+    display: block;
+    margin: auto;
+    border-radius: 0.5em;
+    max-width: 100%;
+  }
+  
+  nav {
+    text-align: right;
+  }

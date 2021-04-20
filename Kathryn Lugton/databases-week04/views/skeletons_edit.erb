@@ -1,0 +1,22 @@
+<h1>Edit Skeleton</h1>
+
+<form action="/skeletons/<%= @skeleton.id %>" method="post">
+
+<label>
+  Name:
+  <input name="name" placeholder="Axial" value="<%= @skeleton.name %>">
+</label>
+
+<label>
+  Position:
+  <input name="position" placeholder="Medial" value="<%= @skeleton.position %>">
+</label>
+
+<label>
+  Image:
+  <input type="url" name="image" placeholder="http://..." value="<%= @skeleton.image %>">
+</label>
+
+<button> Update Skeletons </button>
+
+</form>

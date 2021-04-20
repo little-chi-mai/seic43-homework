@@ -1,0 +1,17 @@
+<h2>Edit Author</h2>
+
+<form action="/authors/<%= @author.id %>" method="post">
+
+  <label>
+    Name:
+    <input first_name="first_name" placeholder="first name" required value="<%= @first_name.first_name %>">
+  </label>
+
+  <label>
+    Name:
+    <input last_name="last_name" placeholder="last name" required value="<%= @last_name.last_name %>">
+  </label>
+
+  <button>Update Author</button>
+
+</form>

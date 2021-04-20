@@ -1,0 +1,47 @@
+body {
+  background-color: #a3c2c2;
+  background-image: url("/assets/images/image3.jpeg");
+  background-image: url("/images/image3.jpeg");
+  background-image: url("../images/image3.jpeg");
+
+}
+
+input {
+  padding: 10px 20px;
+}
+
+nav a {
+  font-size: 1.3em;
+  color: #000066;
+  text-align: right;
+  padding: 5px 15px;
+  animation: bounce;
+  animation-duration: 2s;
+  animation: key1 .3s ease infinite alternate;
+}
+
+@keyframes key1 {
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(-20px);}
+}
+
+p a {
+  font-size: 1.3em;
+  color: #003399;
+
+}
+
+label {
+  color: #003366;
+  font-size: 1.2em;
+}
+
+.img {
+  max-width: 100%;
+}
+
+div a {
+  color: #003366;
+  font-size: 2em;
+  padding: 5px 20px;
+}

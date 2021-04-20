@@ -1,0 +1,17 @@
+<h2> EDIT potato</h2>
+
+<form action ="/potatoes/<%= @potato["id"] %>" method="post">
+  <label>
+  Name:
+  <input name="name" placeholder="Gaudy Commodore" required value="<%= @potato["name"]%>" >
+  </label>
+  <label>
+  Family:
+  <input name="family" placeholder="Nymphalidae" value="<%= @potato["family"]%>">
+  </label>
+  <label>
+  Image:
+  <input name ="image" placeholder="http://..." value="<%= @potato["image"] %>" >
+  </label>
+  <button>Edit</button>
+  </form>

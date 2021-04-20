@@ -1,0 +1,28 @@
+<h2>Add new Account</h2>
+<h3>please fill out the form</h3>
+<form action="/customers/<%= @customer_id %>/accounts" method="post">
+
+<label>
+  Customer ID:
+  <input name= "customer_id" value= "<%= @customer_id %>" required>
+</label>
+
+<label>
+  Account type:
+  <input name= "account_type" placeholder="type" required>
+</label>
+
+<label>
+  Current Balance
+  <input name="balance" placeholder="123">
+</label>
+
+<label>
+  Account status
+  <input name="account_status" placeholder="active/inactive">
+</label>
+
+<div>
+  <button class="submit">Submit</button>
+</div>
+</form>
