@@ -1,0 +1,38 @@
+body {
+  text-align: center;
+  background-image: url('background2.jpeg');
+  background-size: cover;
+
+}
+
+/* makes the background image transparent */
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+input {
+  background-color: #D3D3D3;
+}
+
+button{
+  background-color: #ffd2db;
+}
+
+button:hover{
+  background-color: white;
+  color: #ffb9c7;
+  border: 2px solid #ffb9c7;
+}
+
+.feature{
+  max-width: 50%;
+  border-radius: 1em;
+}
