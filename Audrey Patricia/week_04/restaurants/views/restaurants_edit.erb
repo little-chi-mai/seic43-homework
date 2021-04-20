@@ -1,0 +1,52 @@
+<h2>Edit <%= @restaurant.name %> </h2>
+
+<form action="/restaurants/<%= @restaurant.id %>" method="post">
+  <label>
+    Restaurant name:
+    <input name="name" placeholder="McDonalds" value="<%= @restaurant.name %>" required>
+  </label>
+
+  <label>
+    Address:
+    <input name="address" placeholder="500 George Street" value="<%= @restaurant.address %>" required>
+  </label>
+
+  <label>
+    Opening Hours:
+    <input name="hours"  placeholder="Mon-Fri: 9am-5pm | Sat-Sun: 12pm-8pm" value="<%= @restaurant.hours %>"></input>
+  </label>
+
+  <label>
+    Cost (for 2 people):
+    <input name="cost" placeholder="45" value="<%= @restaurant.cost %>">
+  </label>
+
+  <label>
+    Popular Dishes:
+    <input name="popular_dishes" placeholder="Big Mac, Chicken McNuggets" value="<%= @restaurant.popular_dishes %>"></input>
+  </label>
+
+  <label>
+    Known for:
+    <input name="known_for" placeholder="Quick Service, Cheap junk food" value="<%= @restaurant.known_for %>"></input>
+  </label>
+
+  <label>
+    Menu Image:
+    <input type="url" name="menu" placeholder="http://..." value="<%= @restaurant.menu %>">
+  </label>
+
+  <label>
+    Cuisine type:
+    <select name="cuisine_id">
+      <option></option>
+      <% Cuisine.all.each do |cuisine| %>
+        <option value="<%= cuisine.id %>"  <%= "selected"  if cuisine.id == @restaurant.cuisine_id %>><%= cuisine.name %></option>
+      <% end %>
+    </select>
+  </label>
+
+
+  <button>Update restaurant</button>
+
+</form>

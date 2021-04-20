@@ -1,0 +1,27 @@
+<h1><%= @restaurant.name %></h1>
+<br>
+
+<p><strong>Address:</strong> <%= @restaurant.address %></p>
+<p><strong>Opening Hours:</strong> <%= @restaurant.hours %></p>
+<p><strong>Cost (for 2 people):</strong> $<%= @restaurant.cost %></p>
+<p><strong>Popular Dishes:</strong> <%= @restaurant.popular_dishes %></p>
+<p><strong>This place is known for:</strong> <%= @restaurant.known_for %></p>
+<p><strong>Image:</strong> coming soon</p>
+
+<div class="controls">
+  <a href="/restaurants/<%= @restaurant.id %>/edit">Edit</a>
+  <a href="/restaurants/<%= @restaurant.id %>/delete">Delete</a>
+</div>
+
+<% unless @restaurant.cuisine.nil? %>
+  <p>
+    Cuisine:
+    <a href="/cuisines/<%= @restaurant.cuisine_id %>">
+      <%= @restaurant.cuisine.name %>
+    </a>
+  </p>
+<% end %>
+
+<% unless @restaurant.menu.nil? || @restaurant.menu.empty? %>
+  <img src="<%= @restaurant.menu %>" alt="<%= @restaurant.menu %>" class="feature">
+<% end %>
