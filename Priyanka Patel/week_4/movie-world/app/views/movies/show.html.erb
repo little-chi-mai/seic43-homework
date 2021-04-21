@@ -1,0 +1,19 @@
+<h2><%= @movie.name %></h2>
+
+<%= image_tag @movie.image, :class => 'feature' if @movie.image.present? %>
+
+<ul>
+  <li>Name: <%= @movie.name %></li>
+  <li>Director: <%= @movie.director %></li>
+  <li>Producer: <%= @movie.producer %></li>
+  <li>Language: <%= @movie.language %></li>
+  <li>Country: <%= @movie.country %></li>
+  <li>Release date: <%= @movie.release_date %></li>
+  <li>Starring: <%= @movie.starring %></li>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit Movie', edit_movie_path(@movie.id) %>
+</div>
+
+  <%= button_to 'Delete Movie',  movie_path(@movie.id), :method => 'delete' %>
