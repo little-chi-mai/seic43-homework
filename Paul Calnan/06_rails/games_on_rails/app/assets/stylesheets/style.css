@@ -1,0 +1,24 @@
+body {
+  height: 700px;
+  display: flex
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+}
+
+nav {
+  min-height: 50px;
+  width: 700px;
+  padding: 10px;
+}
+
+a {
+  text-align:center;
+  padding: 20px;
+}
+
+.magic {
+  opacity: 1;
+   transition: opacity .25s ease-in;
+}
