@@ -1,0 +1,51 @@
+<h2>Insert a Restaurant: </h2>
+
+<form action="/restaurants" method="post">
+  <label>
+    Restaurant name:
+    <input name="name" placeholder="McDonalds" required>
+  </label>
+
+  <label>
+    Address:
+    <input name="address" placeholder="500 George Street" required>
+  </label>
+
+  <label>
+    Opening Hours:
+    <input name="hours" placeholder="Mon-Fri: 9am-5pm | Sat-Sun: 12pm-8pm"></input>
+  </label>
+
+  <label>
+    Cost (for 2 people):
+    <input name="cost" placeholder="45">
+  </label>
+
+  <label>
+    Popular Dishes:
+    <input name="popular_dishes" placeholder="Big Mac, Chicken McNuggets"></input>
+  </label>
+
+  <label>
+    Known for:
+    <input name="known_for" placeholder="Quick Service, Cheap junk food"></input>
+  </label>
+
+  <label>
+    Menu Image:
+    <input type="url" name="menu" placeholder="http://...">
+  </label>
+
+  <label>
+    Cuisine type:
+    <select name="cuisine_id">
+      <option></option>
+      <% Cuisine.all.each do |cuisine| %>
+        <option value="<%= cuisine.id %>"><%= cuisine.name %></option>
+      <% end %>
+    </select>
+  </label>
+
+  <button>Create Restaurant</button>
+
+</form>
