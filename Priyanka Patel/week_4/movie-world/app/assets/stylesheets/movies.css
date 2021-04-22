@@ -1,0 +1,51 @@
+body {
+  max-width: 100%;
+  background-image: url(image11.jpeg);
+}
+h1 {
+  font-size: 2em;
+  color: white;
+}
+
+h2 {
+  font-size: 2em;
+  color: #ccdcff;
+}
+
+ul {
+  color: #ff0000;
+  font-size: 1.5em;
+}
+
+.controls {
+  font-size: 2em;
+}
+
+p {
+  font-size: 2em;
+  color: #ffcc00 !important;
+}
+
+label {
+  color: #ffcc00;
+}
+
+nav {
+  font-size: 2em;
+  /* border :1px solid #ff0000; */
+}
+
+.btn {
+  color: #ffcc00;
+  /* border : 2px solid #ffcc00; */
+}
+
+.feature {
+  width: 1300px
+}
+
+.tag {
+  border : 2px solid #ffcc00;
+  padding-right: 20px;
+  margin-left: 10px;
+}
