@@ -1,5 +1,4 @@
 class ZodiacsController < ApplicationController
-    skip_before_action :verify_authenticity_token
     def index
         @zodiacs = Zodiac.all
     end

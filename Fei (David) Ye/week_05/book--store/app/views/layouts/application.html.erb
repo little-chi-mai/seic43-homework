@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ZodiacSystem</title>
+    <title>Book Store</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,8 +11,10 @@
 
   <body>
     <nav>
-      <%= link_to 'All Zodiacs', zodiacs_path %>
-      <%= link_to 'New Zodiac', new_zodiac_path %>
+      <%= link_to 'All Authors', authors_path %>
+      <%= link_to 'New Author', new_author_path %>
+      <%= link_to 'All Books', books_path %>
+      <%= link_to 'New Book', new_book_path %>
     </nav>
     <%= yield %>
   </body>
