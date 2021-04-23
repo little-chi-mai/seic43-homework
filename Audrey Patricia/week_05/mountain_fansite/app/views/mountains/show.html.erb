@@ -1,0 +1,15 @@
+<h1><%= @mountain.name %></h1>
+
+
+<%= image_tag @mountain.image, :class => 'feature' if @mountain.image.present? %>
+
+<p>Age: <%= @mountain.age %></p>
+<p>Mountain Type: <%= @mountain.mountain_type %></p>
+<p>Location: <%= @mountain.location %></p>
+<p>Elevation: <%= pluralize (number_to_human @mountain.elevation).downcase, 'metre' unless @mountain.elevation.nil?%> </p>
+<p>Activites to do here: <%= @mountain.activities %></p>
+
+<div class="controls">
+  <%= link_to 'Edit Mountain', edit_mountain_path(@mountain.id)%>
+  <%= button_to 'Delete 🏔', mountain_path(@mountain.id), :method => 'delete', :style => "display: inline" %>
+</div>

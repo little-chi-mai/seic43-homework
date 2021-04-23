@@ -1,0 +1,49 @@
+<h2>Edit Movie details</h2>
+
+<form action="<%= movie_path(@movie.id) %>" method="post">
+
+  <label>
+    Name:
+    <input type="text" name="name" value="<%= @movie.name %>" >
+  </label>
+
+  <label>
+    Director:
+    <input type="text" name="director" value="<%= @movie.director %>">
+  </label>
+
+  <label>
+    Producer:
+    <input type="text" name="producer" value="<%= @movie.producer %>">
+  </label>
+
+  <label>
+    Language:
+    <input type="text" name="language" value="<%= @movie.language %>">
+  </label>
+
+  <label>
+    Country:
+    <input type="text" name="country" value="<%= @movie.country %>">
+  </label>
+
+  <label>
+    Release_date:
+    <input type="text" name="release_date" value="<%= @movie.release_date %>">
+  </label>
+
+  <label>
+    Starring:
+    <input type="text" name="starring" value="<%= @movie.starring %>" >
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" >
+  </label>
+  <div class="btn">
+    <button>Update Movie</button>
+  </div>
+
+
+</form>

@@ -1,8 +1,5 @@
-<div class="grid-container" style="display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;">
-
-
+<div class="grid-container" >
+  
   <main>
     <% unless @pet["image"].nil? || @pet["image"].empty? %>
     <img class="pet_photo" src=<%= @pet["image"] %> alt=<%= @pet["name"] %> class="feature" style="width: 100%">
