@@ -1,0 +1,36 @@
+<h2>New Ocean Pool</h2>
+
+<form action="<%= ocean_pools_path %>" method= "post">
+
+  <label>
+    Name:
+    <input name = "name" required placeholder = "Bronte Pools">
+  </label>
+  <label>
+    Description:
+    <input name = "description" placeholder =  Lorem ipsum dolor sit amet...'>
+  </label>
+  <label>
+    Image:
+    <input type = "url" name = "image" placeholder = "http://....">
+  </label>
+  <label>
+    Map:
+    <input type = "url" name = "map" placeholder = "http://....">
+  </label>
+  <label>
+    State:
+    <input name = "state" placeholder = "New South Wales">
+  </label>
+  <label>
+    Depth:
+    <input type = "number" name = "depth" placeholder = "3">
+  </label>
+  <label>
+    Volume:
+    <input type = "number" name = "volume" placeholder =  1,000,000>
+  </label>
+
+  <button>Create Ocean Pool</button>
+
+</form>

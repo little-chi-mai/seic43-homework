@@ -1,0 +1,21 @@
+
+<%= form_for @brand do |brand| %>
+
+  <%= brand.label :name  %>
+  <%= brand.text_field :name  %>
+
+  <%= brand.label :motto  %>
+  <%= brand.text_field :motto  %>
+
+  <%= brand.label :logo  %>
+  <%= brand.text_field :logo  %>
+
+  <%= brand.label :description  %>
+  <%= brand.text_field :description  %>
+
+  <%= brand.label :established  %>
+  <%= brand.text_field :established  %>
+
+  <%= brand.submit %>
+
+<% end %>

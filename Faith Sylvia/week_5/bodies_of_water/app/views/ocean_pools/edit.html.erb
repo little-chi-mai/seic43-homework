@@ -1,0 +1,36 @@
+<h2>Edit Ocean Pool</h2>
+
+<form action="<%= ocean_pool_path(@pool.id) %>" method= "post">
+
+  <label>
+    Name:
+    <input name = "name" required value =  "<%= @pool.name %>">
+  </label>
+  <label>
+    Description:
+    <input name = "description" value =  "<%= @pool.description %>">
+  </label>
+  <label>
+    Image:
+    <input type = "url" name = "image" value = "<%= @pool.image %>">
+  </label>
+  <label>
+    Map:
+    <input type = "url" name = "map" value = "<%= @pool.map %>">
+  </label>
+  <label>
+    State:
+    <input name = "state" value = "<%= @pool.state %>">
+  </label>
+  <label>
+    Depth:
+    <input type = "number" name = "depth" value = "<%= @pool.depth %>">
+  </label>
+  <label>
+    Volume:
+    <input type = "number" name = "volume" value =  "<%= @pool.volume %>">
+  </label>
+
+  <button>Update Ocean Pool</button>
+
+</form>
