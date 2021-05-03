@@ -1,0 +1,5 @@
+<h1>All Zodiacs</h1>
+
+<% @zodiacs.each do |zodiac| %>
+    <p><%= link_to zodiac.latin_name, zodiac_path(zodiac.id) %>'s english name is <%= zodiac.english_name %></p>
+<% end %>

@@ -1,0 +1,10 @@
+<h1> Rivers Index </h1>
+
+<h3>Click the below links to see more information:</h3>
+
+<% @rivers.each do |river| %>
+<ul>
+<li><%= link_to river.name, river_path(river.id) %>
+</li>
+</ul>
+<% end  %>

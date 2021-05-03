@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat&display=swap');
+
+body {
+  text-align: center;
+  font-family:'Montserrat', sans-serif;
+}
+
+body::after {
+  background: url(/assets/background.jpg);
+  background-size: cover;
+  background-position: center;
+  content: "";
+  opacity: 0.32;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+h1, h2 {
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+
+.index-pool {
+  margin: 40px;
+}
+
+.index-heading {
+  font-weight: bolder;
+}
+
+.container {
+  width: 750px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+
+}
+
+a:hover {
+  background-color: pink;
+}
+
+.feature {
+  width: 600px;
+}

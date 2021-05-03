@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GamesOnRails</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/eight_ball">Magic Eight Ball</a>
+      <a href="/secret_number">Guess My Number</a>
+      <a href="/rock_paper_scissors">Rock Paper Scissors</a>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+<h1>Australia's Ocean Pools</h1>
+
+<% @pools.each do |pool|%>
+  <div class = "index-pool">
+    <p class = "index-heading"><%= link_to pool.name, ocean_pool_path(pool.id) %> </p>
+    <p><%= pool.description.truncate_words(7) %> </p>
+  </div>
+<% end %>

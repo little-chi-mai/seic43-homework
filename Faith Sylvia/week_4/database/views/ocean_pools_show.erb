@@ -1,0 +1,15 @@
+<h2><%= @pool["name"] %></h2>
+<h3><%= @pool["state"] %></h3>
+
+<% unless @pool["image"].nil? || @pool["image"].empty? %>
+
+  <img src="<%= @pool["image"] %>" alt="<%= @pool["name"]%>">
+
+<% end %>
+
+<p> <%= @pool["description"] %></p>
+
+<div class = "controls">
+  <a href="/ocean_pools/<%= @pool["id"] %>/edit">Edit Pool</a>
+  <a href="/ocean_pools/<%= @pool["id"] %>/delete">Delete Pool</a>
+</div>
