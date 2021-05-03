@@ -1,0 +1,23 @@
+<h1>Let's check your guess...</h1>
+
+<h1><%= @message %></h1>
+<% unless @hint.nil? %>
+  <h3><%= @hint %></h3>
+ <% end %>
+
+  <% if @correct == false %>
+    <form action="/game" >
+      <input name="number" value=<%= @number %> style="display: none">
+      <button> Guess Again</button>
+      <p></p>
+      <img src="/assets/lose.gif" alt="sad duck">
+
+    </form>
+    <% else %>
+      <form action="/">
+        <button>Play again</button>
+      </form>
+
+      <img src="/assets/yay.gif" alt="happy duck">
+
+  <% end %>

@@ -1,0 +1,13 @@
+<h2>All Mugshots</h2>
+
+<% @mugshots.each do |mugshot| %>
+  <p>
+    <div>
+    <a href="/mugshots/<%= mugshot["id"] %>">
+    <%= mugshot["name"] %>
+    </div>
+  <div>
+    <img src="<%= mugshot["image"] %>" class="minifeature">
+  </div>
+  </p>
+<% end %>

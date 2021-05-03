@@ -1,0 +1,26 @@
+<h2>Edit a Cuisine: </h2>
+
+<form action="/cuisines/<%= @cuisine.id %>" method="post">
+  <label>
+    Cuisine name:
+    <input name="name" placeholder="Japanese" value="<%= @cuisine.name %>" required>
+  </label>
+
+  <label>
+    Dishes famously known for:
+    <input name="famous_dishes" placeholder="Sushi" value="<%= @cuisine.famous_dishes %>" required></input>
+  </label>
+
+  <label>
+    Description:
+    <input name="description" placeholder="Japanese food is refined and elegant" value="<%= @cuisine.description %>" required></input>
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="http://..." value="<%= @cuisine.image %>">
+  </label>
+
+  <button>Update Cuisine</button>
+
+</form>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Project0 - Tic Tac Toe</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <main>
+        <h1>Tic Tac Toe</h1>
+        <h2 class="player-turn">player O's turn</h2>
+
+        <table>
+          <tr id="row1" class="row">
+              <td class="col0"></td>
+              <td class="col1"></td>
+              <td class="col2"></td>
+          </tr>
+          <tr id="row2" class="row">
+              <td class="col0"></td>
+              <td class="col1"></td>
+              <td class="col2"></td>
+          </tr>
+          <tr id="row3" class="row">
+              <td class="col0"></td>
+              <td class="col1"></td>
+              <td class="col2"></td>
+          </tr>
+        </table>
+        <br>
+
+        <div class="play_options">
+          <label class="player1_token" for="player1">Player 1 token:
+            <input id="player1" type="text" placeholder="choose your token!">
+          </label>
+          <br>
+          <br>
+          <label class="player2_token" for="player2" class="p2">Player 2 token:
+            <input id="player2" class="p2" type="text" placeholder="choose your token!">
+          </label>
+           <br><br>
+          <input type="checkbox" id="comp-player" name="computer" value="1">
+          <label for="comp-player">Play with computer</label><br>
+
+          <p>Please select who goes first:</p>
+          <input type="radio" id="option-player1" value="0" name="players">Player 1</input> <!--value attr is returned -->
+
+          <input type="radio" id="option-player2" class="p2" value="1" name="players"></input>
+          <label for="option-player2" class="p2">Player 2 </label>
+
+          <input type="radio" id="computer-player" class="cp" value="2" name="players"></input>
+          <label for="computer-player" class="cp">Computer 💻 </label>
+          <br>
+
+          <p>Select board size:</p>
+          <input type="radio" id="3x3" value="3" name="board-size" checked>3x3 (default)</input> <!--value attr is returned -->
+          <input type="radio" id="4x4" value="4" name="board-size">4x4</input>
+          <input type="radio" id="5x5" value="5" name="board-size">5x5</input>
+          <input type="radio" id="7x7" value="7" name="board-size">7x7</input>
+          <br>
+        </div>
+
+
+
+
+      </main>
+
+      <aside>
+        <div class="win-counter">
+          <h2>Score count:</h2>
+          <p class="0-win">Player 1 wins: 0</p>
+          <p class="1-win">Player 2 wins: 0</p>
+          <p class="2-win">Computer 👾 wins: 0</p>
+
+        </div>
+
+        <button class="start-game" type="button">Start game!</button>
+        <button class="play-again" type="button">Play again</button>
+        <button class="save-game" type="button">Save game</button>
+        <button class="clear-game" type="button">Clear game</button>
+        <p class="save-game">Press "Save game" to ensure you do not lose your game!</p>
+
+
+        <br>
+      </aside>
+
+    </div>
+
+    <script src="js/jquery.js" charset="utf-8"></script>
+    <script src="js/project0.js" charset="utf-8"></script>
+  </body>
+</html>

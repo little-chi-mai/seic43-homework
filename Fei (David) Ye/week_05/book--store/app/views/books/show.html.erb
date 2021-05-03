@@ -1,0 +1,12 @@
+<h1><%= @book.title %></h1>
+<%= image_tag @book.cover, :class => 'feature' if @book.cover.present? %>
+    <ul>
+        <li>Title: <%= @book.title %></li>
+        <li>Genre: <%= @book.genre %></li>
+        <li>Publish Year: <%= @book.publish_year if @book.publish_year.present? %></li>
+    </ul>
+
+<div class="controls">
+    <%= link_to 'Edit book', edit_book_path(@book.id) %>
+    <%= link_to 'Delete book', @book, :method => :delete, :data => {:confirm => 'Are you sure?'}  %>
+</div>

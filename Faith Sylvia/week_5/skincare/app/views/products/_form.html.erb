@@ -1,0 +1,29 @@
+<%= form_for @product do |product| %>
+
+  <%= product.label :name  %>
+  <%= product.text_field :name  %>
+
+  <%= product.label :image  %>
+  <%= product.text_field :image %>
+
+  <%= product.label :size  %>
+  <%= product.text_field :size  %>
+
+  <%= product.label :price  %>
+  <%= product.text_field :price  %>
+
+  <%= product.label :description  %>
+  <%= product.text_field :description  %>
+
+  <%= product.label :ingredients  %>
+  <%= product.text_field :ingredients  %>
+
+  <%= product.label :rating  %>
+  <%= product.text_field :rating  %>
+
+  <%= product.label :brand_id  %>
+  <%= product.text_field :brand_id  %>
+
+  <%= product.submit %>
+
+<% end %>

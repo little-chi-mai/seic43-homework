@@ -1,0 +1,30 @@
+<h2>Edit Zodiac</h2>
+
+<form action="<%= zodiac_path(@zodiac.id) %>" method="post">
+  <label>
+    Latin Name: 
+    <input name="latin_name" required value="<%= @zodiac.latin_name %>">
+    </label>
+
+    <label>
+        English Name: 
+        <input name="english_name" value="<%= @zodiac.english_name %>">
+    </label>
+
+  <label>
+    Symbol: 
+    <input name="symbol" value="<%= @zodiac.symbol %>">
+  </label>
+
+    <label>
+    Ecliptic Longitude: 
+    <input type="number" name="ecliptic_longitude" value="<%= @zodiac.ecliptic_longitude %>">
+  </label>
+
+   <label>
+    Image: 
+    <input type="url" name="image" value="<%= @zodiac.image %>">
+  </label>
+
+  <button>Update zodiac</button>
+</form>

@@ -1,0 +1,24 @@
+<h1>Lets see who won ... 🥁 *drumroll please*</h1>
+<img src="/assets/drumroll.png" alt="">
+<h2>You chose <%= params[:choice] %></h2>
+<h2 class="slide-right">computer chose: <%= @compChoice %></h2>
+<h1 class="slide-right"><%= @message %></h1>
+
+<form  action="/game">
+  <button>Play again</button>
+</form>
+
+<form  action="/">
+  <button>Return Home</button>
+</form>
+
+<h3>Your score: <%= @wins %></h3>
+<!-- <h3>Computer's score: <%= @cwins %></h3> -->
+<h3>Computer score: <%= @loses %></h3>
+
+
+<% if @win == true %>
+  <img class="slide-right result-img" src="/assets/win.gif" alt="">
+<% else %>
+  <img class="slide-right result-img" src="/assets/lose.gif" alt="">
+<% end %>

@@ -1,0 +1,25 @@
+<h2>Edit Pool</h2>
+
+<form action="/ocean_pools/<%= @pool["id"] %>" method = "post">
+
+  <label>
+    Pool Name:
+    <input name = "name" placeholder = "<%= @pool["name"] %>" required>
+  </label>
+  <label>
+    Location (State):
+    <input name = "state" placeholder = "<%= @pool["state"] %>">
+  </label>
+  <label>
+    Image URL:
+    <input name = "image" placeholder = ""<%= @pool["image"] %>"">
+  </label>
+  <label>
+    Description:
+    <input name = "description" placeholder = ""<%= @pool["description"] %>"">
+  </label>
+
+  <button>Update Pool</button>
+
+
+</form>

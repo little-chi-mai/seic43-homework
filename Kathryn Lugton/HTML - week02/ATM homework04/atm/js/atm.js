@@ -1,15 +1,15 @@
 // check if $0 balance and change css format/class if so
-  const checkForZero = function() {
-    $('.zero').removeClass('zero');
-    const checkingBal = + $('checking-balance').text().slice(1);
-    if(checkingBalance <= 0) {
-      $('checking-balance').addClass('zero');
-    }
-    const savingsBal = + $('savings-balance').text().slice(1);
-    if(savingsBalance <= 0) {
-      $('savings-balance').addClass('zero');
-    }
-  };
+  // const checkForZero = function() {
+  //   $('.zero').removeClass('zero');
+  //   const checkingBal = + $('checking-balance').text().slice(1);
+  //   if(checkingBalance <= 0) {
+  //     $('checking-balance').addClass('zero');
+  //   }
+  //   const savingsBal = + $('savings-balance').text().slice(1);
+  //   if(savingsBalance <= 0) {
+  //     $('savings-balance').addClass('zero');
+  //   }
+  // };
 //outside the document ready because it's always available outside the dom etc (global scope)
 
 
@@ -17,7 +17,7 @@
 
 $(document).ready(function () {
 
-checkForZero();
+// checkForZero();
 
 //store checking account balance
   let checkingBalance = $('checking-balance').html(); // = null (initially);
@@ -42,7 +42,7 @@ $('#checking-deposit').click(function() {
         return;
   }
 }); //end deposit to check account function;
-checkForZero();
+// checkForZero();
 
 //Receive withdrawal request on checking account - BUG HERE - lets you overdraw when taking from the other account (savings) - USE JOEL'S SOLTUTION AS A REFERENCE INSTEAD
 $('#checking-withdraw').click(function() {
@@ -61,7 +61,7 @@ $('#checking-withdraw').click(function() {
     return checkingBalance = checkingDraw;
   }
 });//end checking account withdrawal function
-checkForZero();
+// checkForZero();
 //Receive deposit request to savings account and add to savingsBalance;
   $('#savings-deposit').click(function() {
     let inputSavings = $('#savings-amount').val();
@@ -77,6 +77,6 @@ checkForZero();
         return ;
   }
 }); //END - deposit to savings account function;
-checkForZero();
+// checkForZero();
 
 }); // END - $(document).ready function;

@@ -1,0 +1,34 @@
+<h2>Edit Country Information</h2>
+<form action="/countries/<%= @country["id"] %>" method="post">
+  <label>
+    Name of Country:
+    <input name="name" style="display:block" value="<%= @country["name"] %>" placeholder="country name" required>
+  </label>
+
+  <label>
+    Capital city:
+    <input name= "capital_city" value="<%= @country["capital_city"] %>" placeholder="capital">
+  </label>
+
+  <label>
+    Population:
+    <input name="population" value="<%= @country["population"] %>"placeholder="123">
+  </label>
+
+  <label>
+    Land area:
+    <input name="land_area" value="<%= @country["land_area"] %>" placeholder="123 km2">
+  </label>
+
+  <label>
+    World share
+    <input name="world_share" value="<%= @country["world_share"] %>" placeholder="12%">
+  </label>
+
+  <label>
+    Image
+    <input type="url" name = "image" value="<%= @country["image"] %>"placeholder="http://....">
+  </label>
+
+  <button>Update</button>
+</form>

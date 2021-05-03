@@ -1,0 +1,16 @@
+body{
+    background-image: url("/img/bgi.jpeg");
+    background-size: 100% auto;
+}
+
+.container{
+    display: inline-block;
+    position:absolute;
+    left:10%;
+    top:5%;
+}
+
+nav{
+    text-align: left;
+    
+}

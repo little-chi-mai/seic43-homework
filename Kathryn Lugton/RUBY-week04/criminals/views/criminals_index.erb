@@ -1,0 +1,9 @@
+<h2>MOST WANTED</h2>
+
+<% @criminals.each do |criminal| %>
+<p>
+  <a href="/criminals/<%= criminal["id"] %>">
+  <%= criminal["name"] %>
+  </a>
+</p>
+<% end %>
