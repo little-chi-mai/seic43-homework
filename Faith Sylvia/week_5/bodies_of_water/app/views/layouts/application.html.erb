@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BodiesOfWater</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class = "container">
+      <nav>
+        <%= link_to 'Home', ocean_pools_path%>
+        <%= link_to 'Add Ocean Pool', new_ocean_pool_path %>
+      </nav>
+
+      <%= yield %>
+
+    </div>
+  </body>
+</html>

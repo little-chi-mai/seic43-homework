@@ -1,0 +1,17 @@
+<h1><%= @pool.name %></h1>
+
+<p><%= @pool.description %></p>
+
+<%= image_tag @pool.image, :class => 'feature' if @pool.image.present? %>
+
+<ul>
+  <li>State: <%= @pool.state %></li>
+  <li>Depth: <%= pluralize @pool.depth, 'meter' %></li>
+  <li>Volume: <%= pluralize (number_to_human @pool.volume), 'litre' %></li>
+</ul>
+
+<div class = 'controls'>
+  <%= link_to 'Edit Ocean Pool', edit_ocean_pool_path(@pool.id)%>
+  <%= button_to 'Delete Ocean Pool', ocean_pool_path(@pool.id), :method=>'delete'%>
+
+</div>

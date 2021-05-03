@@ -77,6 +77,8 @@ const validateCreditCard = (cardNumber) => {
     isSumOfAllDigitsGreaterThan16 = false;
   }
 
+  // lunhTest
+
   let lunhTest = true;
 
   let oddDigits = [];
@@ -116,6 +118,8 @@ const validateCreditCard = (cardNumber) => {
   if ((sumOfAllOddDigits+sumOfAllEvenDigitsAfterFormula)%10!==0) {
     lunhTest=false;
   }
+
+// lunhTest
 
 
 
