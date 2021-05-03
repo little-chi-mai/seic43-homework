@@ -1,0 +1,26 @@
+<h1> Edit River Information </h1>
+
+<form action="<%= river_path(@river.id) %>" method="post">
+  <label>
+    Name:
+    <input name="name" placeholder="Nile" value="<%= @river.name %>">
+  </label>
+
+<label>
+  Length:
+  <input type="number" name="length" value="<%= @river.length %>">
+</label>
+
+<label>
+  Country:
+  <input name="country" value='<%= @river.country %>'>
+</label>
+
+<label>
+  Image:
+  <input type="url" name="image" value='<%= @river.image %>' %>
+</label>
+
+<button> Update </button>
+
+</form>

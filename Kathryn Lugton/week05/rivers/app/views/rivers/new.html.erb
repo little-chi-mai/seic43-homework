@@ -1,0 +1,27 @@
+<h1>Add New River</h1>
+
+
+<form action="<%= rivers_path %>" method="post">
+  <label>
+    Name:
+    <input name="name" required>
+  </label>
+
+  <label>
+    Length:
+    <input type="number" name="length"required>
+  </label>
+
+  <label>
+    Country:
+    <input name="country">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image">
+  </label>
+
+<button>Submit</button>
+
+</form>

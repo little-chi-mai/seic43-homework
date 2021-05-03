@@ -1,0 +1,12 @@
+<h1> <%= @river.name %></h1>
+
+<p>The <%= @river.name %> is located in <%= @river.country %> and is <%= (number_to_human @river.length).downcase %> kms long.
+</p>
+
+<%= image_tag @river.image, :class => 'feature' if @river.image.present? %>
+
+
+<div class="control">
+  <%= link_to 'Edit info', edit_river_path(@river.id) %>
+<%= button_to 'Delete info', river_path(@river.id), :method => 'delete' %>
+</div>
