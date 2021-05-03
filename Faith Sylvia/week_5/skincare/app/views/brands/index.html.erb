@@ -1,0 +1,7 @@
+<h1>Our Products</h1>
+
+<ul>
+  <% @brand.each do |brand| %>
+    <li><%= link_to brand.name, brand %></li>
+  <% end %>
+</ul>

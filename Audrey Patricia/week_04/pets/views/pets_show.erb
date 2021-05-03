@@ -1,0 +1,32 @@
+<div class="grid-container" >
+  
+  <main>
+    <% unless @pet["image"].nil? || @pet["image"].empty? %>
+    <img class="pet_photo" src=<%= @pet["image"] %> alt=<%= @pet["name"] %> class="feature" style="width: 100%">
+    <% end %>
+
+    <div class="controls">
+      <a href="/pets/<%= @pet["id"] %>/edit">Edit pet</a>
+      <a href="/pets/<%= @pet["id"] %>/delete">Delete pet</a>
+    </div>
+  </main>
+
+  <aside>
+    <h2>Name: <%= @pet["name"] %></h2>
+    <p>Type: <%= @pet["type"] %></p>
+    <p>Breed: <%= @pet["breed"] %></p>
+    <p>Gender: <%= @pet["gender"] %></p>
+    <p>Age: <%= @pet["age"] %></p>
+
+    <h3>Recommended Friends:</h3>
+      <% @pets.each do |pet|%>
+      <% if pet["type"] === @pet["type"] && pet["name"] != @pet["name"]%>
+      <img style="width: 20%; border-radius: 1em" id="friends" src=<%= pet["image"] %> alt="">
+      <a style="font-size: 18px" href="/pets/<%= pet["id"] %>">
+        <%= pet["name"] %>
+      </a>
+      <% end %>
+      <% end %>
+   </aside>
+
+ </div>

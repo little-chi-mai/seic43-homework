@@ -1,0 +1,13 @@
+<h3>Customer ID: <%= @customer["id"] %></h3>
+<h3>Name: <%= @customer["first_name"] %> <%= @customer["last_name"] %></h3>
+<h3>Gender: <%= @customer["gender"] %></h3>
+<h3>Contact_detail: <%= @customer["contact_detail"] %></h3>
+<h3>Email Address: <%= @customer["email"] %></h3>
+<h3>Home Address: <%= @customer["address"] %></h3>
+
+<div>
+  <a class="controls" href="/customers/<%= @customer["id"]%>/accounts">Accounts</a></br>
+  <a class="controls" href="/customers/<%= @customer["id"]%>/accounts/new">Create new account</a></br>
+  <a class="controls" href="/customers/<%= @customer["id"]%>/edit">Edit customer</a></br>
+  <a class="controls" href="/customers/<%= @customer["id"]%>/delete">Delete customer</a>
+</div>

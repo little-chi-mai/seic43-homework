@@ -32,7 +32,7 @@ const nameLineStops = function(lineArray, startStation, endStation){ // function
       }
     }
   }
-  return stopsToName;
+  return stopsToName;``
 }
 
 const linePicker = function (chosenLine){ // function takes a string which is the name of a line and returns the array of stops associated with that name.

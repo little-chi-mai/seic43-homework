@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+body {
+  max-width: 1000px;
+  max-height: 200vh;
+  align-items: center;
+  background-image: url("images/image1.jpeg");
+}
+
+.navigation {
+  font-size: 1.5em;
+  padding: 15px;
+}
+
+p, a {
+  color: #000066;
+  font-size: 1em;
+  font-variant-caps: unicase;
+  text-decoration: none;
+}
+
+.new {
+  font-size: 1.5em;
+  border-radius: 0.3em;
+  border: 2px solid #999966;
+  padding: 0 10px 0 10px;
+}
+
+.submit {
+  font-size: 1.5em;
+  border-radius: 0.3em;
+  border: 2px solid #999966;
+}
+
+.controls {
+  font-size: 1.5em;
+  border-radius: 0.3em;
+  padding: 0 0 10 0;
+}
+
+input {
+  border: 2px solid #999966;
+
+}
+
+nav {
+  text-align: right;
+}

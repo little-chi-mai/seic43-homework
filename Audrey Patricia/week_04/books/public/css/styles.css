@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap');
+
+body{
+  margin: 0;
+  text-align: center;
+  background-color: #ead3cb;
+  font-family: 'Poppins', sans-serif;
+}
+
+main{
+  margin: 20px;
+}
+
+input{
+  border-radius: 0.5em;
+  width: 40%;
+  padding: 5px;
+  color: #845460;
+  border-color: #d8e3e7;
+  font-size: 20px;
+}
+
+nav a{
+  color: #ead3cb;
+}
+
+.header{
+  text-align: center;
+  background-color: #845460;
+  padding: 10px 0px 0px 27px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.logo{
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+#title{
+  color: white;
+  border: 6px solid white;
+  display: inline;
+  margin-top: 10px;
+  padding: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 90%;
+  padding: 1em;
+}
+
+.find_button{
+  margin: 20px;
+  border-radius: 1em;
+  padding: 11px;
+  font-size: 16px;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  width: 30%;
+}
+
+.find_button:hover{
+  background-color: #845460;
+  color: white;
+  border-color: transparent;
+  font-size: 20px;
+}
+
+.search_result{
+  font-family: 'Josefin Sans', sans-serif;
+  margin-bottom: 40px;
+}
+
+.main{
+  display: inline-block;
+  width: 50%;
+  /* margin-right: 40px; */
+}
+
+.aside{
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  text-align: left;
+  margin-top: 4%;
+}
+
+.book_cover{
+  width: 50%;
+}
+
+.book_link{
+  display: block;
+  color: #2b4f60;
+  text-decoration: none;
+  border: 1px solid #2b4f60;
+  width: 25%;
+  border-radius: 1em;
+  margin-left: 37%;
+  margin-bottom: 9px;
+}
+
+.book_link:hover{
+  background-color: #2b4f60;
+  color: white;
+}
+
+.description{
+  line-height: 2;
+}

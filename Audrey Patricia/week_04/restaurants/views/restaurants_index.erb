@@ -1,0 +1,7 @@
+<h2>All Restaurants</h2>
+
+<% @restaurants.each do |resto| %>
+  <p class="index_list">
+    <a href="/restaurants/<%= resto.id %>"><%= resto.name %></a>
+  </p>
+<% end %>

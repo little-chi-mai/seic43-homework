@@ -1,0 +1,9 @@
+<h2 class = "title">All Countries</h2>
+
+<% @countries.each do |country| %>
+<p>
+  <a href="/countries/<%= country["id"] %>">
+  <%= country["name"] %>
+  </a>
+</p>
+<% end %>

@@ -1,0 +1,35 @@
+<h2>Edit Pets</h2>
+
+<form action="/pets/<%= @pet["id"] %>" method="post">
+  <label>
+    Name:
+    <input name="name" placeholder="McFluffy" required value="<%= @pet["name"] %>">
+  </label>
+
+  <label>
+    Type:
+    <input name="type" placeholder="cat, dog, fish" value="<%= @pet["type"] %>">
+  </label>
+
+  <label>
+    Breed:
+    <input name="breed" placeholder="Ragdoll, Pug, Goldfish" value="<%= @pet["breed"] %>">
+  </label>
+
+  <label>
+    Gender:
+    <input name="gender" placeholder="Male/ Female" value="<%= @pet["gender"] %>">
+  </label>
+
+  <label>
+    Age:
+    <input name="age" placeholder="2" value="<%= @pet["age"] %>">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="http://..." value="<%= @pet["image"] %>">
+  </label>
+
+  <button>Edit pet</button>
+</form>
