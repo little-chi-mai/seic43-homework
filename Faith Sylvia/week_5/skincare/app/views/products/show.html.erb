@@ -1,0 +1,23 @@
+<h2><%= @product.name %></h2>
+
+
+
+<%= image_tag @product.image, :class => 'feature' if @product.image.present? %>
+
+<div class = 'product-show'>
+
+<ul>
+  <li><%= @product.name %></li>
+  <li><%= @product.rating %> stars</li>
+  <li>$<%= @product.price %></li>
+  <li><%= @product.size %></li>
+  Ingredients
+  <li><%= @product.ingredients %></li>
+</ul>
+
+</div>
+
+<div class='controls'>
+<%= link_to 'Update Product', edit_product_path %>
+<%= link_to 'Remove Product', @product, :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
+</div>

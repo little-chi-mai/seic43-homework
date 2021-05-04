@@ -1,0 +1,29 @@
+body {
+  background-image: url('earth.jpg');
+  background-size: cover;
+}
+
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.thumb {
+  height: 5em;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.feature {
+  max-height: 30em;
+}

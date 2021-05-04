@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AnimalEncylopedia</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <div class="container">
+    <body>
+      <nav>
+        <%= link_to 'Home', root_path  %>
+        |
+        <%= link_to 'Habitats', habitats_path  %>
+        |
+        <%= link_to 'New Habitat', new_habitat_path %>
+        |
+        <%= link_to 'Animals', animals_path %>
+        |
+        <%= link_to 'New Animal', new_animal_path %>
+      </nav>
+      <%= yield %>
+    </body>
+  </div>
+
+
+</html>

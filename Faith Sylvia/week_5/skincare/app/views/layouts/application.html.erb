@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Makkah</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class = "container">
+      <h1>Makkah</h1>
+      <nav>
+        <%= link_to 'Our Brands', brands_path %>
+        <%= link_to 'Add New Brand', new_brand_path %>
+        <%= link_to 'Our Products', products_path %>
+        <%= link_to 'Add New Product', new_product_path %>
+      </nav>
+      <%= yield %>
+    </div>
+  </body>
+</html>
