@@ -53,8 +53,7 @@ const flattenMultiple = function (array, flattenedArray = []) {
             resultArray.push(element);
         
         // if it's an array, we pass the element as the argument to the function itself
-        // and carry the resultArray with it
-        // The next res
+        // and carry the resultArray with it to be the initial value of the next resultArray
         } else {
             flattenMultiple(element, resultArray);
         }
