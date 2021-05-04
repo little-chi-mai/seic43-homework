@@ -1,0 +1,14 @@
+<h1>Cities</h1>
+<% @cities.each do |city| %>
+<div class="cities">
+  <div class="city_index">
+    <%= image_tag city.image, :class => 'city_image' if city.image.present? %>
+    <div>
+      <%= city.name  %> <br/>
+      <%= city.country  %> <br/>
+      <%= city.info  %>
+    </div>
+    
+  </div>
+</div>
+<% end %>

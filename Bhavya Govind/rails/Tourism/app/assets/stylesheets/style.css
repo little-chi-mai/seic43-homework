@@ -1,0 +1,47 @@
+body{
+  background-color: #ccd;
+  text-align: center;
+}
+.home{
+  min-width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  opacity: 0.6;
+  background-image: url(https://s23527.pcdn.co/wp-content/uploads/2019/01/Aquamarine.jpg.optimal.jpg);
+  background-position: 80% 0;
+  background-size: cover;
+  color: Black;
+  font-size: bold;
+  text-align: center;
+
+}
+.cities{
+  display :inline-block;
+}
+.city_index{
+  display: inline;
+}
+.city_image{
+  width: 350px;
+  height: 350px;
+}
+/* .city_info{
+  min-width: 100vw;
+  min-height: 100vh;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+} */
+.city_index > div {
+  display :none;
+
+}
+.city_image:hover + div{
+  display :block;
+}
+label{
+  line-height: 40px;
+}
+.preview{
+  width: 50%;
+  height: 50%;
+}
