@@ -1,0 +1,40 @@
+body{
+  margin: 0 auto;
+  background-color: #fcecdd;
+}
+
+.search_section{
+  background-color: #fea82f;
+  padding: 3%;
+  border-radius: 1em;
+}
+
+#search_title{
+  width: 50%;
+  display: inline;
+  margin-right: 5px;
+}
+
+.display_section{
+  background-color: #ffc288;
+  padding: 3%;
+  border-radius: 1em;
+}
+
+.book_details{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.search_section{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#search{
+  margin: 10px 10px 10px 0px;
+}
