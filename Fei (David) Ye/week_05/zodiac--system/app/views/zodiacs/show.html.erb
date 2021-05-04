@@ -1,0 +1,17 @@
+<h2><%= @zodiac.latin_name %></h2>
+
+
+
+<%= image_tag @zodiac.image, :class => 'feature' if @zodiac.image.present? %>
+
+<ul>
+    <li>Latin Name: <%= @zodiac.latin_name %></li>
+    <li>English Name: <%= @zodiac.english_name %></li>
+    <li>Symbol: <%= @zodiac.symbol %></li>
+    <li>Ecliptic Longitude: <%= @zodiac.ecliptic_longitude %></li>
+</ul>
+
+<div class="controls">
+    <%= link_to 'Edit zodiac', edit_zodiac_path(@zodiac.id) %>
+    <%= button_to 'Delete zodiac', zodiac_path(@zodiac.id), :method => 'delete' %>
+</div>
