@@ -1,0 +1,15 @@
+<h1>All Habitats</h1>
+
+<ul>
+  <% @habitats.each do |habitat| %>
+    <li>
+      <%= link_to habitat.name, habitat %>
+    </li>
+  <% end %>
+</ul>
+
+<% @habitats.each do |habitat| %>
+  <% if habitat.image.present? %>
+    <%= link_to image_tag(habitat.image, :class => 'thumb'), habitat %>
+  <% end %>
+<% end %>
