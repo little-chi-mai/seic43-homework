@@ -1,0 +1,22 @@
+<h2><%= @patient.name %></h2>
+<ul>
+  <li>
+    Name: <%= @patient.name %>
+  </li>
+  <li>
+    date_of_joining: <%= @patient.date_of_joining %>
+  </li>
+  <li>
+    date_of_discharge: <%= @patient.date_of_discharge %>
+  </li>
+  <li>
+    City: <%= @patient.city_name %>
+  </li>
+  <li>
+    Cause of Infection: <%= @patient.cause %>
+  </li>
+</ul>
+<div class="controls">
+  <%= link_to 'Edit Patient Details', edit_patient_path(@patient.id) %>
+  <%= button_to 'Delete Patient Records', patient_path(@patient.id), :method => 'delete'%>
+</div>

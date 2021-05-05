@@ -1,0 +1,18 @@
+
+  <h1><%= @animal.name %></h1>
+
+  <%= image_tag @animal.image, :class => 'feature' %>
+
+  <p><strong>Scientific Name:</strong> <em><%= @animal.scientific_name %></em></p>
+  <p><strong>Weight:</strong> <%= @animal.weight %></p>
+  <p><strong>Diet:</strong> <%= @animal.diet %></p>
+  <% if @animal.habitat.present? %>
+    <p><strong>Habitat: <%= link_to @animal.habitat.name, @animal.habitat %></strong></p>
+  <% end %>
+  <p><strong>Fun fact:</strong> <%= @animal.funfact %></p>
+
+  <div class="controls">
+    <%= button_to "Edit Animal", edit_animal_path(@animal.id), :method => 'get' %>
+    <%= button_to "Delete Animal", @animal, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+
+  </div>

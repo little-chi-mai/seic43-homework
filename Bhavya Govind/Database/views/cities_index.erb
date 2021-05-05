@@ -1,0 +1,12 @@
+<h2> All Travel Locations </h2>
+<% @cities.each do |city| %>
+<table>
+  <tr>
+    <td>
+      <a href="/cities/<%= city['id'] %>">
+        <%= city['name'] %>
+      </a>
+    </td>
+  </tr>
+</table>
+<% end %>

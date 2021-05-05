@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="jquery.js" charset="utf-8"></script>
+    <script src="config.js"></script>
+    <script src="api.js" charset="utf-8"></script>
+    <script src="weather.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css" />
+    <title>Web API</title>
+  </head>
+  <body>
+    <nav>
+    </nav>
+    <h1>Programmer's Joke</h1>
+
+    <form id='joke-form'>
+
+      <div>
+        <input type='radio' id='programming' name='joke-type' value='programming' checked>
+        <label for="programming">Random</label>
+      </div>
+      <!-- <div>
+        <label>Get a job by type</label>
+        <input type="search" placeholder="general/programming" id='type'>
+      </div> -->
+      <button id='fetch-joke'>Get a joke</button>
+    </form>
+
+    <div>
+      <p id='joke-content'></p>
+      <p id='punchline'></p>
+
+    </div>
+
+    <h1>Weather App</h1>
+    <button id="weather">Get Weather</button>
+    <div class="container">
+        <div class="row" id="output"></div>
+    </div>    
+
+  </body>
+</html>
