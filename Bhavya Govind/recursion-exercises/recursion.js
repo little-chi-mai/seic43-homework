@@ -38,7 +38,7 @@ function fibonacci(num, result = 0, prev = 1, count = 0){
 
 }
 
-function coinFlips(){
+function coinFlips(n){
     // This function returns an array of all possible outcomes from flipping a coin N times.
     // Input type: Integer
     // For example, coinFlips(2) would return the following:
