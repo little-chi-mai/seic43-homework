@@ -5,9 +5,7 @@ const librarian = function (event) {
 
   xhr.onreadystatechange = function () {
 
-    if (xhr.readyState !== 4) {
-      return;
-    };
+    if (xhr.readyState !== 4) return; // don't need curlies if one liner!
 
     const data = JSON.parse(xhr.responseText);
 
