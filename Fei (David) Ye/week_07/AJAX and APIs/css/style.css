@@ -1,0 +1,15 @@
+body {
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40vw;
+    margin: 0 auto;
+    margin-top: 10vh;
+    padding: 10vh;
+    color: white;
+}
