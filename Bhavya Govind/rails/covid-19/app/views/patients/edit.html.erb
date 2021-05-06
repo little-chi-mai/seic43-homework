@@ -1,0 +1,25 @@
+<h2>Edit Patient record</h2>
+<form action="<%= patient_path(@patient.id) %>" method="post">
+<label>
+  Name:
+  <input type="text" name="name" value="<%= @patient.name %>" required>
+</label><br/>
+<label>
+  Date of joining:
+  <input type="date" name="date_of_joining" value="<%= @patient.date_of_joining %>" required>
+</label><br/>
+<label>
+  Date of Discharge:
+  <input type="date" name="date_of_discharge" value="<%= @patient.date_of_discarge %>">
+</label><br/>
+<label>
+  City:
+  <input type="text" name="city_name" value="<%= @patient.city_name %>" required>
+</label><br/>
+<label>
+  Cause:
+  <textarea name="cause" rows="8" cols="80"><%= @patient.cause %></textarea>
+</label><br/>
+<button> Update Patient </button>
+
+</form>
