@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pets</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <div class="header">
+      <img class="logo" src="/images/logo.png" alt="">
+      <h1 class="intro">All Pets are Welcome!</h1>
+      <img id="paw_trail" src="/images/paws.png" alt="">
+      <nav>
+        <a href="/">Home</a>
+        <a href="/pets">All Pets</a>
+        <a href="/pets/new">Register your Pet</a>
+      </nav>
+    </div>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>

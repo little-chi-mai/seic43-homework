@@ -1,0 +1,26 @@
+<h2>Insert a Cuisine: </h2>
+
+<form action="/cuisines" method="post">
+  <label>
+    Cuisine name:
+    <input name="name" placeholder="Japanese" required>
+  </label>
+
+  <label>
+    Dishes famously known for:
+    <input name="famous_dishes" rows="3" cols="80" placeholder="Sushi" required></input>
+  </label>
+
+  <label>
+    Description:
+    <input name="description" rows="5" cols="80" placeholder="Japanese food is refined and elegant..." required></input>
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="http://...">
+  </label>
+
+  <button>Create Cuisine</button>
+
+</form>

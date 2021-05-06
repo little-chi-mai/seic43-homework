@@ -1,0 +1,29 @@
+img{
+  width: 200px;
+}
+
+
+.slide-right {
+  width:100%;
+  overflow:hidden;
+}
+.slide-right  {
+  animation-delay: 2s;
+  animation: 2s slide-right;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.result-img{
+  width: 20%;
+}

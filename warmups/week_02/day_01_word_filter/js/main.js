@@ -60,7 +60,7 @@ const wordFilter = function (string) {
     console.log(outputSet);
 
     outputSet.forEach(word => outputArray.push(word));
-    
+
     output = outputArray.join(' ');
     return output;
 }
@@ -68,7 +68,7 @@ const wordFilter = function (string) {
 
 console.log(wordFilter('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'));
 
-// BONUS 
+// BONUS
 const banana = function () {
     const result = 'b' + 'a' + + 'a' + 'a';
     return result.toUpperCase();

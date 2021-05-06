@@ -1,0 +1,14 @@
+<h2><%= @brand.name %></h2>
+
+<%= image_tag @brand.logo, :class => 'feature' if @brand.logo.present? %>
+
+<ul>
+  <li><%= @brand.motto %></li>
+  <li>Established: <%= @brand.established %></li>
+  <li><%= @brand.description %></li>
+</ul>
+
+<div class = "controls">
+<%= link_to 'Update Brand Information', edit_brand_path %>
+<%= link_to 'Remove Brand', @brand, :method => 'delete', :data => { :confirm => 'Are you sure?'} %>
+</div>

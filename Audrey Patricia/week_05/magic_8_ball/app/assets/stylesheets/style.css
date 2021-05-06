@@ -1,0 +1,59 @@
+div.eight-ball {
+      background-color: black;
+      border: 1px solid black;
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      margin-top: 30px;
+
+    }
+
+div.eight-ball:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+ transform: translate3d(0, 0, 0);
+ backface-visibility: hidden;
+ perspective: 1000px;
+
+}
+
+@keyframes shake {
+ 10%, 90% {
+   transform: translate3d(-1px, 0, 0);
+ }
+
+ 20%, 80% {
+   transform: translate3d(2px, 0, 0);
+ }
+
+ 30%, 50%, 70% {
+   transform: translate3d(-4px, 0, 0);
+ }
+
+ 40%, 60% {
+   transform: translate3d(4px, 0, 0);
+ }
+}
+
+div.answer {
+  background-color: #333;
+  border: 1px solid #333;
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  margin: 25% auto;
+}
+
+/* p#eight {
+    font-size: 5em;
+    margin: 20% auto;
+    color: white;
+  } */
+
+p#answer {
+  padding: 23px;
+  color: lightblue;
+  letter-spacing: 2px;
+  font-size:18px;
+}

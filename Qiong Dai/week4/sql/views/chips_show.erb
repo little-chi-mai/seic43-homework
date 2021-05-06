@@ -1,0 +1,6 @@
+<h1>Flavour: <%= @chip["flavour"]%></h1>
+<h3>Weight: <%= @chip["weight"]%>g</h3>
+<h3>Price: $<%= @chip["price"]%></h3>
+<% unless @chip["image"].nil? || @chip["image"].empty? %>
+  <img src="<%= @chip["image"]%>" alt="<%= @chip["flavour"]%>">
+<% end %>

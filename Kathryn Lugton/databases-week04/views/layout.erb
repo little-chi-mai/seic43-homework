@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/style.css">
+  <title> Human Anatomy </title>
+</head>
+<body>
+<div class="container">
+
+  <nav>
+  <a href="/"> Home </a>
+  <br>
+  <a href="/skeletons"> All skeletons </a>|
+  <a href="/skeletons/new"> New skeleton </a>
+  <br>
+  <a href="/skeletal_regions"> All skeletal regions </a>|
+  <a href="/skeletal_regions/new"> New skeletal region </a>
+  <br>
+  <a href="/bones"> All Bones </a>|
+  <a href="/bones/new"> New Bone </a>
+  </nav>
+
+  <%= yield  %>
+
+</div>
+</body>
+</html>

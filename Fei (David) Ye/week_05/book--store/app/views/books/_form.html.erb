@@ -1,0 +1,15 @@
+<%= form_for @book do |f|%>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.label :genre %>
+    <%= f.text_field :genre %>
+
+    <%= f.label :publish_year, 'Publish Year' %>
+    <%= f.text_field :publish_year %>  
+
+    <%= f.label :cover %>
+    <%= f.url_field :cover %>
+
+    <%= f.submit %>
+<% end %>

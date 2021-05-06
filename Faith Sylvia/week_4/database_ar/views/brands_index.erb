@@ -1,0 +1,13 @@
+<h2>All Trainer Brands</h2>
+
+<% @brands.each do |brand| %>
+
+  <p>
+
+    <a href="/brands/<%=brand["brand_id"]%>">
+    <%=  brand["brand_name"]  %>
+    </a>
+
+  </p>
+
+<% end %>

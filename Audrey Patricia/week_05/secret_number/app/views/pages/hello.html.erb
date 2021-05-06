@@ -1,0 +1,12 @@
+<h1>Welcome to the Secret Number Guessing Game 👋</h1>
+
+<h3>How does the game work?</h3>
+
+<p>The computer picks a random number between 1 to 10 and your job is to guess this number</p>
+
+<h4>Are you ready? Click on the start button to begin</h4>
+
+<form action="/game">
+  <input name="number" value=<%= rand(0..10) %> style="display: none">
+  <button>Start</button>
+</form>

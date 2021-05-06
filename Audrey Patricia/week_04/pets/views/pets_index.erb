@@ -1,0 +1,11 @@
+<h2>All pets</h2>
+
+<ul class="all_pets">
+  <% @pets.each do |pet| %>
+  <li>
+    <a href="/pets/<%= pet["id"] %>"><img src=<%= pet["image"] %> style="width: 5%;" alt="">
+      <%= pet["name"] %>
+    </a>
+  </li>
+  <% end %>
+</ul>
