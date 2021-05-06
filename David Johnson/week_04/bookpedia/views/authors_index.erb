@@ -1,0 +1,12 @@
+<% @authors.each do |author|  %>
+
+  <a href="/authors/<%= author["id"] %>"><h3><%= "#{author["first_name"]} #{author["last_name"]}" %></h3></a>
+
+  <img src="<%= author["image"] %>" alt="" class="author-image">
+  <div class="intro">
+    <p><%= author["bio"] %></p>
+  </div>
+  <br>
+  <hr>
+  <br>
+<% end %>
