@@ -1,0 +1,14 @@
+body {
+  background-color: cadetBlue;
+  color: white;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 12px;
+}
+
+nav a:hover {
+  color: black;
+}

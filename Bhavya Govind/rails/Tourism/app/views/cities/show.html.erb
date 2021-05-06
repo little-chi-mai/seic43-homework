@@ -1,0 +1,11 @@
+<h1><%= @city.name %></h1>
+<%= image_tag @city.image, :class => 'preview' %>
+<ul>
+  <li>Country: <%= @city.country %></li>
+  <li>About: <%= @city.info %></li>
+</ul>
+<div class="controls">
+  <%= link_to 'Edit City', edit_city_path(@city) %>
+  <%= link_to 'Delete city', @city, :method => 'delete', :data => {:confirm => 'Are you sure?'} %>
+
+</div>

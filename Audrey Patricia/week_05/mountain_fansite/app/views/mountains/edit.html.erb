@@ -1,0 +1,48 @@
+<h1>Edit mountain</h1>
+
+<form action="<%= mountain_path(@mountain.id)%>" method="post">
+  <label>
+    Name:
+    <input name="name" placeholder="Blue Mountains" value="<%= @mountain.name %>" required>
+  </label>
+
+  <br>
+  <label>
+    Age:
+    <input name="age" placeholder="1 million" value="<%= @mountain.age %>">
+  </label>
+
+  <br>
+  <label>
+    Mountain Type:
+    <input name="mountain_type" placeholder="Fold" value="<%= @mountain.mountain_type %>">
+  </label>
+
+  <br>
+  <label>
+    Location:
+    <input name="location" placeholder="NSW" value="<%= @mountain.location %>">
+  </label>
+
+  <br>
+  <label>
+    Elevation:
+    <input type="number" name="elevation" placeholder="2220" value="<%= @mountain.elevation %>">
+  </label>
+
+  <br>
+  <label>
+    Activities:
+    <input name="activities" placeholder="Hiking, Camping" value="<%= @mountain.activities %>">
+  </label>
+
+  <br>
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="https://..." value="<%= @mountain.image %>">
+  </label>
+
+  <br>
+  <br>
+  <button>Create Mountain</button>
+</form>

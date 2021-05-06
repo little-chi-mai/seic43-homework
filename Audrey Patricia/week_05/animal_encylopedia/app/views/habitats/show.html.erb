@@ -1,0 +1,23 @@
+<h1><%= @habitat.name %></h1>
+
+<%= image_tag @habitat.image, :class => 'feature' %>
+
+<p><strong>Locations:</strong> <%= @habitat.location %></p>
+<p><strong>Characteristics:</strong> <%= @habitat.characteristics %></p>
+
+<% if @habitat.animals.present? %>
+  <p><strong>Animals (click to explore):</strong> </p>
+<% end %>
+<% @habitat.animals.each do |animal| %>
+  <%= link_to image_tag(animal.image, :class => 'thumb'), animal %>
+<% end %>
+
+<br>
+<% @habitat.animals.each do |animal| %>
+  <%= link_to animal.name, animal %>
+<% end %>
+
+<div class="controls">
+  <%= button_to 'Edit Habitat', edit_habitat_path(@habitat.id), :method => 'get' %>
+  <%= button_to 'Delete Habitat', @habitat, :method => 'delete', :data => { :confirm => 'Are you sure?'} %>
+</div>

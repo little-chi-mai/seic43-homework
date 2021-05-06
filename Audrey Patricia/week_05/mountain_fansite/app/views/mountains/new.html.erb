@@ -1,0 +1,48 @@
+<h1>Add a mountain</h1>
+<!-- action is to mountainS_path because you want to add this mountain to the page that display all the mountains! -->
+<form action="<%= mountains_path %>" method="post">
+  <label>
+    Name:
+    <input name="name" placeholder="Blue Mountains" required>
+  </label>
+
+  <br>
+  <label>
+    Age:
+    <input name="age" placeholder="1 million">
+  </label>
+
+  <br>
+  <label>
+    Mountain Type:
+    <input name="mountain_type" placeholder="Fold">
+  </label>
+
+  <br>
+  <label>
+    Location:
+    <input name="location" placeholder="NSW">
+  </label>
+
+  <br>
+  <label>
+    Elevation:
+    <input type="number" name="elevation" placeholder="2220">
+  </label>
+
+  <br>
+  <label>
+    Activities:
+    <input name="activities" placeholder="Hiking, Camping">
+  </label>
+
+  <br>
+  <label>
+    Image:
+    <input type="url" name="image" placeholder="https://...">
+  </label>
+
+  <br>
+  <br>
+  <button>Create Mountain</button>
+</form>

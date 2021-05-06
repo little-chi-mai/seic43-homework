@@ -1,0 +1,10 @@
+<h2>Explore Australia's Ocean Pools</h2>
+
+
+<% @ocean_pools.each do |pool| %>
+
+  <p>
+    <a href="/ocean_pools/<%= pool["id"] %>"> <%= pool["name"] %> </a>
+  </p>
+
+<% end %>

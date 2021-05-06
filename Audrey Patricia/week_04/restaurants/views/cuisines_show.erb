@@ -1,0 +1,27 @@
+<h1><%= @cuisine.name %> Cuisine</h1>
+
+<h2>Famously known dishes: <%= @cuisine.famous_dishes %></h2>
+
+<p>Description: </p>
+<p><%= @cuisine.description %></p>
+
+<div class="controls">
+  <a href="/cuisines/<%= @cuisine.id %>/edit">Edit</a>
+  <a href="/cuisines/<%= @cuisine.id %>/delete">Delete</a>
+</div>
+
+<% unless @cuisine.image.nil? || @cuisine.image.empty? %>
+  <img src="<%= @cuisine.image %>" alt="<%= @cuisine.image %>" class="feature">
+<% end %>
+
+<% unless @cuisine.restaurants.empty? %>
+  <p>Restaurants: </p>
+  <ul>
+    <% @cuisine.restaurants.each do |restaurant| %>
+    <li><a href="/restaurants/<%= restaurant.id %>">
+      <%= restaurant.name %>
+    </a>
+  </li>
+  <% end %>
+  </ul>
+<% end %>
