@@ -1,0 +1,22 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav a {
+  margin-right: 1em;
+}
+
+.ball {
+  margin-top: 2em;
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  border-radius: 200px;
+  color: white;
+}
+
+.ball h3 {
+  line-height: 400px;
+  text-align: center;
+}

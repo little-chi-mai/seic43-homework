@@ -1,0 +1,7 @@
+<h1>The Seven Peaks</h1>
+
+<%= link_to 'Add a Mountain', new_mountain_path %>
+
+<% @mountains.each do |mountain| %>
+  <p><%= link_to mountain.name, mountain_path(mountain.id) %></p>
+<% end %>

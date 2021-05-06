@@ -1,0 +1,22 @@
+<h3>Add a Book</h3>
+
+<form action="/authors/<%= @author["id"] %>" method="post">
+  <label>
+    Title:
+    <input name="title" placeholder="The Sun Also Rises">
+  </label>
+  <label>
+    Year Published:
+    <input name="year_published" placeholder="1926">
+  </label>
+  <label>
+    Awards:
+    <input name="book_prize_1" placeholder="Pulitzer Prize">
+  </label>
+  <label>
+    Cover Image:
+  <input type="url" name="book_image" placeholder="http://...">
+  </label>
+
+<button>Add a Book</button>
+</form>

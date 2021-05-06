@@ -1,0 +1,9 @@
+<h1><%="#{@specific_aircraft["manufacturer"]} #{@specific_aircraft["model"]}"%></h1>
+
+<a href="/aircraft/<%= @specific_aircraft["id"] %>/edit">Edit Aircraft</a>
+
+<p><%= @specific_aircraft["description"] %></p>
+
+<% unless @specific_aircraft["image"].nil? || @specific_aircraft["image"].empty? %>
+<img class="feature" src="<%= @specific_aircraft["image"] %>" alt="">
+<% end %>
