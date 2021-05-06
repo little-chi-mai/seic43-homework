@@ -1,0 +1,79 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  color: #5f6368;
+}
+
+body {
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  text-align: right;
+  background-color: #3366cc;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0.5% 0% 0.5% 0%
+}
+
+.nav-container {
+  margin-right: 3em;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+.author-image {
+  width: 20%;
+}
+
+.book-image {
+  width: 20%;
+}
+
+.intro {
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0em 0em 0em 1em;
+}
+
+.top-3 {
+  max-width: 30%;
+  display: inline-block;
+  margin-right: 1em;
+}
+.top-3 img {
+  width: 55%;
+}
+
+.explore {
+  border-radius: 2px;
+}
+
+form label {
+  display: block;
+  margin-top: 1em;
+}
+
+form input {
+  display: block;
+  margin-top: 0.5em;
+}
+
+form button {
+  margin-top: 0.5em;
+}
+
+#bio_input {
+  width: 720px;
+  height: 22px;
+  padding-bottom: 26em;
+}

@@ -1,0 +1,15 @@
+<%= form_for @habitat do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, :required => true %>
+
+  <%= f.label :location %>
+  <%= f.text_field :location %>
+
+  <%= f.label :characteristics %>
+  <%= f.text_field :characteristics %>
+
+  <%= f.label :image %>
+  <%= f.url_field :image %>
+
+  <%= f.submit %>
+<% end %>

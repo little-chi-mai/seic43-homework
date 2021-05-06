@@ -1,0 +1,28 @@
+<h3><%= "#{@author["first_name"]} #{@author["last_name"]}"%></h3>
+
+<img src="<%= @author["image"] %>" alt="" class="author-image">
+
+<div class="intro">
+  <p>Genre: <%= @author["genre"] %></p>
+  <p>Born: <%= @author["year_born"] %></p>
+  <p>Awards: <%= "#{@author["prize_1"]}, #{@author["prize_2"]}, #{@author["prize_3"]}" %></p>
+</div>
+<br>
+<a href="/authors/<%= @author["id"] %>/edit"><button>Edit</button></a>
+<a href="/authors/<%= @author["id"] %>/delete"><button>Delete</button></a>
+
+<p><%= @author["bio"] %></p>
+
+<h4>Books</h4>
+<a href="/authors/<%= @author["id"] %>/new_book"><button>Add a Book</button></a>
+
+<br>
+
+<% @books.each do |book|  %>
+
+<div class="top-3">
+  <h5><%= book["title"] %></h5>
+  <img src="<%= book["book_image"] %>" alt="">
+</div>
+
+<% end %>

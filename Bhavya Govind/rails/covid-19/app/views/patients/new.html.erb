@@ -1,0 +1,25 @@
+<h2>Create Patient record</h2>
+<form action="<%= patients_path %>" method="post">
+<label>
+  Name:
+  <input type="text" name="name" required>
+</label><br/>
+<label>
+  Date of joining:
+  <input type="date" name="date_of_joining" required>
+</label><br/>
+<label>
+  Date of Discharge:
+  <input type="date" name="date_of_discarge" >
+</label><br/>
+<label>
+  City:
+  <input type="text" name="city_name" required>
+</label><br/>
+<label>
+  Cause:
+  <input type="text" name="cause" >
+</label><br/>
+<button> Add Patient </button>
+
+</form>

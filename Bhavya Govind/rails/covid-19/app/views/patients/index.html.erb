@@ -1,0 +1,4 @@
+<h1>Covid-19 Patients List</h1>
+<% @patients.each do |patient| %>
+<p><%= link_to patient.name, patient_path(patient.id)%></p>
+<% end %>

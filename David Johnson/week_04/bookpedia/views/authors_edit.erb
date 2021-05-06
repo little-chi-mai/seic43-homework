@@ -1,0 +1,46 @@
+<h3>Edit Author</h3>
+
+<form action="/authors/<%= @author["id"] %>" method="post">
+  <label>
+    First Name:
+    <input name="first_name" placeholder="Ernest" required value="<%= @author["first_name"] %>" >
+  </label>
+  <label>
+    Last Name:
+    <input name="last_name" placeholder="Hemingway" required value="<%= @author["last_name"] %>">
+  </label>
+  <label>
+    Award 1:
+    <input type="text" name="award_1" placeholder="Pulitzer Prize for Fiction" value="<%= @author["prize_1"] %>">
+  </label>
+  <label>
+    Award 2:
+    <input type="text" name="award_2" placeholder="Pulitzer Prize for Fiction" value="<%= @author["prize_2"] %>">
+  </label>
+  <label>
+    Award 3:
+    <input type="text" name="award_3" placeholder="Pulitzer Prize for Fiction" value="<%= @author["prize_3"] %>">
+  </label>
+  <label>
+    Year Born:
+    <input type="number" name="year_born" placeholder="1900" value="<%= @author["year_born"] %>">
+  </label>
+  <label>
+    Year Died:
+    <input type="number" name="year_died" placeholder="1976" value="<%= @author["year_died"] %>">
+  </label>
+  <label>
+    Genre:
+    <input type="text" name="genre" placeholder="Spy Thriller" value="<%= @author["genre"] %>">
+  </label>
+  <label>
+    Profile Image:
+    <input type="url" name="image" placeholder="http://..." value="<%= @author["image"] %>">
+  </label>
+  <label>
+    Bio:
+    <input type="text" name="bio" placeholder="Hemingway was the greatest American novelist of the 20th century..." id="bio_input" value="<%= @author["bio"] %>">
+  </label>
+  <button>Update Author</button>
+</form>
+<br>
