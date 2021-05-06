@@ -8,7 +8,7 @@ get '/' do
 end
 
 get "/result" do
-  title = params[:book]
+  title = params[:title]
   url = "https://www.googleapis.com/books/v1/volumes?q=title:#{title}"
   @info = HTTParty.get url
   @cover = @info["items"][0]["volumeInfo"]["imageLinks"]["thumbnail"]
