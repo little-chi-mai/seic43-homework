@@ -19,11 +19,13 @@ const recurringLetter = function (string) {
   // omit() will exclude a key-value pair from an object
   letterCounts = _(letterCounts).omit(' ');
 
+  // find the maxScore
   const maxScore = _(letterCounts).max();
   console.log(maxScore);
 
   let maxLetter = '';
 
+  // loop through letterCounts to find maxLetter where the value === maxScore
   _(letterCounts).map((value, letter) => {
     // console.log(value, letter);
     if (value === maxScore) {
