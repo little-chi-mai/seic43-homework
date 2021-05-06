@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@500&display=swap');
+
+body {
+  /* text-align: center; */
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  margin: 3%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* makes the background image transparent */
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+h1, h2{
+  font-family: 'Raleway', sans-serif;
+}
+
+.app_name{
+  margin-bottom: 5%;
+  border: 4px solid black;
+  display: inline;
+  padding: 20px;
+}
+
+.weather{
+  margin-top: 5%;
+}
+
+.article_image{
+  height: 10em;
+  border-radius: 3em;
+}
+
+.article_div{
+  margin-bottom: 10%;
+}
+
+.news_header{
+  margin-bottom: 35px;
+}
+
+/* .news_widget{
+  border: 2px solid black;
+  border-radius: 1em;
+}
+
+.news_widget:before{
+  background-color: rgba(149, 165, 166, 0.6);
+  z-index: 0;
+} */
+
+.book_section{
+  margin-top: 17%;
+}
+
+.books_widget{
+  margin-top: 3%;
+}
+.book_image{
+  height: 8em;
+  margin-top: 20%;
+}
+
+.book_item{
+  margin-bottom: 15%;
+}
+
+.buy_button{
+  border: 1px solid #007bff;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.buy_button:hover{
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+}
+
+.recipe_widget{
+  margin-right: 10%;
+}
+
+.recipe_image{
+  height: 10em;
+  margin-bottom: 3%;
+  border-radius: 1em;
+}
+
+.recipe_header{
+  margin-bottom: 5%;
+}

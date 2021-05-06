@@ -1,0 +1,5 @@
+<h1>All Authors</h1>
+
+<% @authors.each do |author| %>
+    <%= link_to image_tag(author.image, :class => 'thumb'), author %>
+<% end %>

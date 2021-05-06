@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+body {
+  background-image: url("/images/library.jpeg");
+  text-align: center;
+  font-family: 'Courier Prime', monospace;
+}
+
+h1 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 15px 0px 15px 0px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 45px;
+}
+
+h3 {
+  font-size: 22px;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+h4 {
+  font-style: italic;
+}
+
+form {
+  margin-top: 15px;
+}
+
+nav {
+  padding: 15px;
+  background-color: #1c711f;
+  border-style: inset;
+  border-color: green;
+}
+
+nav a {
+  color: white;
+}
+
+button {
+  font-family: 'Courier Prime', monospace;
+}
+
+input {
+  font-family: 'Courier Prime', monospace;
+}
+
+img {
+  margin: 21.2px;
+  height: 400px;
+  width: 290px;
+}
+
+img:hover {
+  filter: hue-rotate(180deg);
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  min-height: 90vh;
+  padding: 1em;
+}

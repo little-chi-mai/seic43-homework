@@ -1,0 +1,14 @@
+<%= form_for @city do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name%> <br/>
+<%= f.label :country %>
+<%= f.text_field :country %>
+<br/>
+<%= f.label :image %>
+<%= f.url_field :image %>
+<br/>
+<%= f.label :info %>
+<%= f.text_area :info, :col => 4, :rows => 5 %>
+<br/>
+<%= f.submit %>
+<% end %>

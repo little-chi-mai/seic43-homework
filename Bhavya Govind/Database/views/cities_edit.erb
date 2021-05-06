@@ -1,0 +1,21 @@
+<h2>Edit City</h2>
+<div class="city_new">
+  <h2>Enter city name and details</h2>
+  <form action="/cities/<%= @city.id %>" method="post">
+    <label>Name:
+    <input type="text" name="name" placeholder="sydney" value="<%=@city.name%>" required>
+    </label><br>
+
+    <label>Country:
+    <input type="text" name="country" placeholder="Australia" value="<%=@city.country%>" required> </label><br>
+
+    <label>Map:
+    <input type="url" name="map" placeholder="https:/.." value="<%=@city.map%>">
+    </label><br>
+
+    <label>Information:<br />
+    <textarea name="information" rows="8" cols="80" value="<%=@city.information%>"></textarea>
+    </label><br />
+    <button> Update City </button>
+  </form>
+</div>

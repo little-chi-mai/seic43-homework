@@ -1,0 +1,28 @@
+<%= form_for @animal do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, :required => true %>
+
+  <%= f.label :scientific_name %>
+  <%= f.text_field :scientific_name %>
+
+  <%= f.label :weight %>
+  <%= f.text_field :weight %>
+
+  <%= f.label :diet %>
+  <%= f.text_field :diet %>
+
+  <%= f.label :funfact %>
+  <%= f.text_field :funfact %>
+
+ <%# <%= f.label :habitat_id %>
+ <%# <%= f.select(:habitat, :habitat_id, [['Forest', 25], ['Tundra', 26], ['Grasslands', 27], ['Aquatic', 28]] ) %>
+ <%# <%= f.collection_select :habitat_name, Habitat.all, :name, :name ) %>
+
+ <%= f.label :habitat_id %>
+ <%= f.select :habitat_id, Habitat.pluck(:name, :id), :include_blank => true %>
+
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+
+  <%= f.submit %>
+<% end %>

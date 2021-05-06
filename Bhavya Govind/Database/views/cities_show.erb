@@ -1,0 +1,23 @@
+<div class="about">
+  <h2><%= @city.name %></h2>
+  <h3>About:</h3>
+  <p><%= @city.information %></p>
+  <!--<iframe width="100%" height="600" src="<%= @city.map %>" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br />-->
+  <a href="<%= @city.map %>">Directions</a>
+  <% unless @city.locations.empty? %>
+    <h3>Assosiated locations</h3>
+    <ul>
+      <% @city.locations.each do |location| %>
+      <li>
+        <a href="/locations/<%= location.id %>">
+          <%= location.location_name %>
+        </a>
+      </li>
+      <% end %>
+    </ul>
+  <% end %>
+  <div class="controls">
+    <a href="/cities/<%=@city.id %>/edit"> Edit City </a>
+    <a href="/cities/<%= @city.id %>/delete"> Delete City</a>
+  </div>
+</div>

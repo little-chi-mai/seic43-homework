@@ -1,0 +1,59 @@
+body {
+    background-color:lightblue;
+    text-align: center;
+    background: url('../img/background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    background-color: rgba(0,0,0,0.7);
+    height: 80vh;
+    padding:1vh;
+    margin-top: 3vh;
+}
+
+h1 {
+    margin-top: 15vh;
+    color: white;
+}
+
+img {
+    height: 50vh;
+}
+
+input {
+    width: 50vh;
+    margin: 0 auto;
+    margin-top: 15vh;
+}
+
+button {
+    margin-top: 10vh;
+}
+
+footer {
+    color: white;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    font-size: 2vh;
+    margin: 3vh;
+    margin-top: 3vh;
+}
+
+header {
+    background-color:rgba(0,0,0,0.7) ;
+    text-align: left;
+}
+
+#info {
+    margin-top: 5vh;
+}
+
+.info {
+    color: white;
+    font-size: 3vh;
+}
