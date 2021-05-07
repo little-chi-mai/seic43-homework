@@ -1,0 +1,11 @@
+<h1>All Movies</h1>
+
+<% @movies.each do |movie| %>
+  <h4><%=link_to movie.title, movie %></h4>
+  <%= image_tag movie.image, :class => 'thumb' if movie.image.present? %>
+  <ul>
+    <li><%= movie.released %></li>
+    <li><%= movie.genre %></li>
+    <li><%= movie.cast %></li>
+  </ul>
+<% end %>

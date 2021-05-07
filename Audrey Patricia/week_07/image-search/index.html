@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Search</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/search.css">
+    <script src="js/jquery.js" charset="utf-8"></script>
+    <script src="js/underscore.js" charset="utf-8"></script>
+    <script src="js/search.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image Search</h1>
+      <form id="search">
+        <label>
+          Search terms:
+          <input type="search" id="query" class="form-control" required autofocus value="dogs">
+        </label>
+        <button class="btn btn-outline-secondary">Search</button>
+      </form>
+
+      <div id="images" class="row"></div>
+    </div>
+  </body>
+</html>

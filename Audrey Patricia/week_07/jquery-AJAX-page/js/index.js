@@ -85,23 +85,6 @@ $(document).ready(function(){
     }
   });
 
-  // const settings = {
-	// "async": true,
-	// "crossDomain": true,
-	// "url": "https://quotejoy.p.rapidapi.com/random",
-	// "method": "GET",
-	// "headers": {
-	// 	"x-rapidapi-key": "baa92a2642msh7d0f8cbdf9c79a3p19bab9jsn0eca1bacd09b",
-	// 	"x-rapidapi-host": "quotejoy.p.rapidapi.com"
-	//  }
-  //   };
-  //
-  // $.ajax(settings).done(function (response) {
-	//   const quoteWidget = $('.quote_widget');
-  //   $(quoteWidget).append(`<h3>${response[2][1]}</h3>`);
-  //   return response;
-  // });
-
   const settings = {
 	"async": true,
 	"crossDomain": true,

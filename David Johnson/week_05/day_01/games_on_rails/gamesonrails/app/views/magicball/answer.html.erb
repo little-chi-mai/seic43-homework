@@ -1,0 +1,13 @@
+<h1>Ask the Magic 8 Ball</h1>
+
+<form action="/">
+  <label for="">
+    Ask a question:
+    <input type="text" placeholder="When will I die?" name="question">
+  </label>
+</form>
+<br>
+  <a href="/magicball"><button>Ask Another Question</button></a>
+  <div class="ball">
+    <h3><%= @answer %></h3>
+  </div>

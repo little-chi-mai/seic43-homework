@@ -1,0 +1,26 @@
+<h3>Edit <%= @ocean.name %></h3>
+
+<form action="<%= ocean_path(@ocean.id) %>" method="post">
+  <label>
+    Name:
+    <input name="name" required>
+  </label>
+  <label>
+    Image:
+    <input type="url" name="image">
+  </label>
+  <label>
+    Area:
+    <input type="number" name="area">
+  </label>
+  <label>
+    Volume:
+    <input type="number" name="volume">
+  </label>
+  <label>
+    Average Depth:
+    <input type="number" name="depth">
+  </label>
+
+  <button>Update Ocean</button>
+</form>
