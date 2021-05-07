@@ -1,0 +1,42 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.feature {
+  max-width: 50%;
+}
+
+.preview {
+  max-width: 25%;
+  display: block;
+}
+
+.results {
+  display: inline;
+  max-width: 30%;
+  margin-bottom: 2em;
+}
+
+h1 {
+  font-family: 'Faster One', cursive;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  margin-right: 3em;
+  text-decoration: none;
+}
+
+img {
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 1em;
+}

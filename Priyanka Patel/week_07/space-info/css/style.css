@@ -1,0 +1,13 @@
+body {
+  background-image: url("../images/image1.jpeg");
+}
+
+h1 {
+  font-size: 3em;
+  color: white;
+}
+
+li, p {
+  font-size: 1.5em;
+  color: white;
+}

@@ -1,0 +1,12 @@
+<h1>All Aircraft</h1>
+
+<% @aircraft.each do |plane| %>
+  <p class="results">
+      <% unless plane["image"].nil? || plane["image"].empty? %>
+      <img class="preview" src="<%= plane["image"] %>" alt="">
+      <% end %>
+      <a href="/aircraft/<%= plane["id"] %>">
+        <%= "#{plane["manufacturer"]} #{plane["model"]}"  %>
+      </a>
+  </p>
+<% end %>

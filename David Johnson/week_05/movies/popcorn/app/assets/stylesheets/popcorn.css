@@ -1,0 +1,12 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.thumb {
+  max-width: 12em;
+}
+
+.feature {
+  max-width: 30%;
+}
