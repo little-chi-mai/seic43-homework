@@ -1,0 +1,24 @@
+body{
+  background-color: #e3cdc1;
+}
+
+div{
+  background-color: #f6e6cb;
+}
+
+h1{
+  padding-top: 3%;
+}
+
+.container{
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+img{
+  padding-bottom: 20px;
+}
+
+form{
+  margin-bottom: 5%;
+}
