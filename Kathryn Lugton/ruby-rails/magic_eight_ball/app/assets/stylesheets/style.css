@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+body {
+  background-color: lightpink;
+}
+
+nav {
+padding: 10px;
+background-color: lightpink;
+}
+
+.container {
+  max-width: 960px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: white;
+  border-bottom-right-radius: 5em;
+  border-bottom-left-radius: 5em;
+  font-family: 'Zen Dots', cursive;
+}
+h1{
+  padding: 20px;
+}
+
+img {
+  padding: 30px;
+  border-radius: 8em;
+}

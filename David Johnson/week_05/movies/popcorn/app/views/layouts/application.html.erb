@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Popcorn</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <%= link_to 'Directors', directors_path %>
+        <%= link_to 'New Director', new_director_path %>
+
+        <%= link_to 'Movies', movies_path %>
+        <%= link_to 'New Movie', new_movie_path %>
+      </nav>
+      <%= yield %>
+    </div>
+  </body>
+</html>

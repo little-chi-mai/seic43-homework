@@ -1,0 +1,13 @@
+<% if @computer_number == @player_guess %>
+<h1>You won!</h1>
+<% end %>
+
+<% if @computer_number != @player_guess %>
+<h1>You lost :(</h1>
+<% end %>
+
+<br>
+
+<h1>Results</h1>
+
+<h3>The computer chose <%= @computer_number %> and you chose <%= @player_guess %></h3>
