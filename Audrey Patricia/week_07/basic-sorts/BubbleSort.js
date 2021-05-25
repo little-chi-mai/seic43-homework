@@ -30,7 +30,6 @@ function bubbleSort(array) {
     // Make sure to keep track of whether a swap happened!
 
     // After both loops have exited, remember to return the array
-    return array;
 }
 
 module.exports = bubbleSort;
