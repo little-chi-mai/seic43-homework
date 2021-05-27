@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+body{
+  margin-top: 50px auto;
+  text-align: center;
+  background-image: url("../images/bookimage.jpeg");
+}
+.container {
+  max-width: 600px;
+  margin-top: 50px;
+  padding: 1em;
+  font-family: 'Playfair Display', serif;
+}
+
+
+h1 {
+  font: 30px bold;
+}
+
+img {
+  margin-top: 50px;
+  width: 150px;
+}
+
+nav {
+  margin-top: 30px;
+}
+
+a {
+  color: black;
+  font-size: 1.5em;
+}
