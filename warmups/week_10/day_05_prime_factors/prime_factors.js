@@ -60,12 +60,11 @@ const primeFactors = function(number) {
 // console.log(primeFactors(60));
 
 const recPrimeFactors = function(number, result = []) {
-  let numToConsider = number;
 
-  for (let i = 2; i <= numToConsider; i++) {
-    if (numToConsider % i === 0) {
+  for (let i = 2; i <= number; i++) {
+    if (number % i === 0) {
       result.push(i);
-      return recPrimeFactors(numToConsider / i, result);
+      return recPrimeFactors(number / i, result);
     }
   }
 
