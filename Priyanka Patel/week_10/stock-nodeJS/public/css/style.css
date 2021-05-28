@@ -1,0 +1,16 @@
+body{
+  background-color: aliceblue;
+  text-align: center;
+  background-image: url("../images/stock_image.jpeg")
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #ffcc66;
+  max-height: 90vh;
+  padding: 1em;
+}
+
+h2 {
+  color: #ffcc66;
+}
