@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MTA</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  </head>
+  <body>
+    <nav>
+      <a href="/">Plan Trip</a>
+    </nav>
+    <h1>Plan your Trip with A Metro</h1>
+    <form class="/search" action=search>
+      <label>Line from:</label>
+      <!-- <input type="text" name="line1" placeholder="N" required> -->
+      <select id="lineId"
+              type="text"
+              name="line1"
+              placeholder="N"
+              required>
+       <option value="empty"></option>
+       <option value="L">L</option>
+       <option value= "N">N</option>
+       <option value= "six">six</option>
+      </select>
+
+      <label>Line1 station:</label>
+      <select id= "N" name="station1" placeholder="Times Square" required>
+       <option></option>
+       <option>Times Square</option>
+       <option>34th</option>
+       <option >n28th</option>
+       <option >n23rd</option>
+       <option>Union Square</option>
+       <option>n8th</option>
+       <option>l8th</option>
+       <option>6th</option>
+       <option>Union Square</option>
+       <option>3rd</option>
+       <option>1st</option>
+       <option>Grand Central</option>
+       <option>33rd</option>
+       <option>six28th</option>
+       <option>six23rd</option>
+       <option>Union Square</option>
+       <option>Astor Place</option>
+      </select>
+
+      <!-- <select id= "L" name="station1" placeholder="Times Square" required>
+       <option></option>
+       <option>l8th</option>
+       <option>6th</option>
+       <option>Union Square</option>
+       <option>3rd</option>
+       <option>1st</option>
+      </select> -->
+
+      <!-- <select id= "six" name="station1" placeholder="Times Square" required>
+       <option></option>
+       <option>Grand Central</option>
+       <option>33rd</option>
+       <option>six28th</option>
+       <option>six23rd</option>
+       <option>Union Square</option>
+       <option>Astor Place</option>
+      </select> -->
+      <!-- <input type="text" name="station1" placeholder="Times Square" required> -->
+      <label>Line To:</label>
+      <select type="text" name="line2" placeholder="six" required>
+       <option></option>
+       <option>L</option>
+       <option>N</option>
+       <option >six</option>
+      </select>
+
+      <label>Line2 station:</label>
+      <select name="station2" placeholder="6th" required>
+       <option></option>
+       <option>Times Square</option>
+       <option>34th</option>
+       <option >n28th</option>
+       <option >n23rd</option>
+       <option>Union Square</option>
+       <option>n8th</option>
+       <option>l8th</option>
+       <option>6th</option>
+       <option>Union Square</option>
+       <option>3rd</option>
+       <option>1st</option>
+       <option>Grand Central</option>
+       <option>33rd</option>
+       <option>six28th</option>
+       <option>six23rd</option>
+       <option>Union Square</option>
+       <option>Astor Place</option>
+      </select>
+      <button name="button">Plan A Trip</button>
+    </form>
+  </body>
+
+</html>
