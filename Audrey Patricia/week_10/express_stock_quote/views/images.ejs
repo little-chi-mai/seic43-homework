@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>Giphy Results</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      |
+      <a href="/stock">Stock-Quote</a>
+      |
+      <a href="/gif-search">Giphy Search</a>
+    </nav>
+
+    <div class="container">
+      <h1>Here are the results for your search <%= searchTerm %></h1>
+
+      <%= console.log(data.length) %>
+
+      <% for(let i = 0; i < data.length; i++){ %>
+        <img class="gif" src="<%= data[i].images.original.url %>" alt="img">
+      <% } %>
+    </div>
+
+  </body>
+</html>

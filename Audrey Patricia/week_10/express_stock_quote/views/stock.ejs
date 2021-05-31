@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>Get Stock Quote</title></title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      |
+      <a href="/stock">Stock-Quote</a>
+      |
+      <a href="/gif-search">Giphy Search</a>
+    </nav>
+    <h1>Get the current price of any stock</h1>
+
+    <form action="/quote">
+      <label>
+        Stock Symbol:
+        <input name="symbol" placeholder="GOOGL" required>
+      </label>
+      <br>
+      <button>Quote!</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.gif {
+  height: 10em;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.welcome {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  height: 25em;
+}
