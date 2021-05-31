@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <%- include('partials/head') %>
+
+  <body>
+
+    <h1>Stops to Travel through</h1>
+
+    <p>Your trip:</p>
+    <p>From <strong>Line <%= startLine %> @<%= startStop %></strong> to <strong>Line <%= endLine %> @<%= endStop %></strong> </p>
+
+    <p>Total stops to travel: <%= trip.totalStops%></p>
+
+    <% if(trip.stopsNames2.length === 0){ %>
+      <p>Travel through these stops on line <%= startLine %></p>
+      <ul>
+        <% for(let i = 0; i < trip.stopsNames1.length; i++){ %>
+          <li><%= trip.stopsNames1[i] %></li>
+        <% } %>
+      </ul>
+    <% } else { %>
+      <p>Travel through these stops on line <%= startLine %></p>
+      <ul>
+        <% for(let i = 0; i < trip.stopsNames1.length; i++){ %>
+          <li><%= trip.stopsNames1[i] %></li>
+        <% } %>
+      </ul>
+      <p>Change at Union Square</p>
+      <p>Your journey continues on Line <%= endLine %> through these stops:</p>
+      <ul>
+        <% for(let i = 0; i < trip.stopsNames2.length; i++){ %>
+          <li><%= trip.stopsNames2[i] %></li>
+        <% } %>
+      </ul>
+    <% } %>
+
+    <!-- <img src="https://chew-chewtrain.com/wp-content/uploads/2015/11/trainred.gif" alt="train"> -->
+    <img src="images/train.gif" alt="train">
+
+  </body>
+</html>
