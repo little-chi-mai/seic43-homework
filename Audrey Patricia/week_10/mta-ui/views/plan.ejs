@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <%- include('partials/head') %>
+  <body>
+
+    <% let lines = Object.keys(trains) %>
+
+    <form action="/show">
+      <!-- <label>
+        Line from:
+        <select name="startStop" id="line-from">
+          <option value="">--choose a line--</option>
+          <% for(let i = 0; i < lines.length; i++){ %>
+            <option name="startStop" value="<% lines[i] %>"><%= lines[i] %></option>
+          <% } %>
+        </select>
+      </label> -->
+      <label>
+        Line From:
+        <input name="startLine" required>
+      </label>
+      <br>
+
+      <label>
+        Stop from:
+        <input name="startStop" required>
+      </label>
+      <br>
+
+      <!-- <label>
+        Line To:
+        <select name="endStop" id="line-to">
+          <option value="">--choose a line--</option>
+          <% for(let i = 0; i < lines.length; i++){ %>
+            <option name="endStop" value="<% lines[i] %>"><%= lines[i] %></option>
+          <% } %>
+        </select>
+      </label> -->
+      <label>
+        Line To:
+        <input name="endLine" required>
+      </label>
+      <br>
+
+      <label>
+        Stop To:
+        <input name="endStop" required>
+      </label>
+      <br>
+
+      <br>
+      <button>Show Trip!</button>
+
+    </form>
+
+  </body>
+</html>
