@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MTA</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  </head>
+  <body>
+    <nav>
+      <a href="/">Plan Trip</a>
+    </nav>
+    <h2>Your journey started from line: <%= line1 %></h2>
+    <h2>You must travel through the following stops on the: <%= line1 %> Line: <%= totalStationOnFirstLine %></h2>
+    <h2>Changed at: <%= junction %></h2>
+    <h2>Your journey continue on line: <%= line2 %></h2>
+    <h2>Your journey continues through the following stops: <%= totalStationOnSecondLine %></h2>
+    <h2>Number of stops in total are <%= totalStops %></h2>
+
+  </body>
+</html>
